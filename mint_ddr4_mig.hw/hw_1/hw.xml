@@ -5,7 +5,7 @@
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xcu250_0_1" gui_info="dashboard1=hw_ila_1[xcu250_0_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;xcu250_0_1/hw_ila_1/Settings=ILA_SETTINGS_1;xcu250_0_1/hw_ila_1/Status=ILA_STATUS_1;xcu250_0_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xcu250_0_1/hw_ila_1/Waveform=ILA_WAVE_1;]"/>
+  <device name="xcu250_0_1" gui_info=""/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xcu250_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/top_u250.ltx"/>
@@ -14,8 +14,8 @@
       <Properties Property="SLR.COUNT" value="4"/>
     </Object>
     <Object name="xcu250_0_1" gui_info="">
-      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/top_u250.ltx"/>
-      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/top_u250.ltx"/>
+      <Properties Property="FULL_PROBES.FILE" value=""/>
+      <Properties Property="PROBES.FILE" value=""/>
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/top_u250.bit"/>
       <Properties Property="SLR.COUNT" value="4"/>
     </Object>

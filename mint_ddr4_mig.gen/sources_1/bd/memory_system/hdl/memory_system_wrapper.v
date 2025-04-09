@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-//Date        : Thu Apr 10 02:39:53 2025
+//Date        : Thu Apr 10 03:29:27 2025
 //Host        : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 //Command     : generate_target memory_system_wrapper.bd
 //Design      : memory_system_wrapper
@@ -25,8 +25,10 @@ module memory_system_wrapper
     c0_ddr4_odt,
     c0_ddr4_par,
     c0_ddr4_reset_n,
+    c0_ddr4_ui_clk,
     c0_sys_clk_n,
-    c0_sys_clk_p);
+    c0_sys_clk_p,
+    sys_rst);
   output c0_ddr4_act_n;
   output [16:0]c0_ddr4_adr;
   output [1:0]c0_ddr4_ba;
@@ -41,8 +43,10 @@ module memory_system_wrapper
   output c0_ddr4_odt;
   output c0_ddr4_par;
   output c0_ddr4_reset_n;
+  output c0_ddr4_ui_clk;
   input c0_sys_clk_n;
   input c0_sys_clk_p;
+  input sys_rst;
 
   wire c0_ddr4_act_n;
   wire [16:0]c0_ddr4_adr;
@@ -58,8 +62,10 @@ module memory_system_wrapper
   wire c0_ddr4_odt;
   wire c0_ddr4_par;
   wire c0_ddr4_reset_n;
+  wire c0_ddr4_ui_clk;
   wire c0_sys_clk_n;
   wire c0_sys_clk_p;
+  wire sys_rst;
 
   memory_system memory_system_i
        (.c0_ddr4_act_n(c0_ddr4_act_n),
@@ -76,6 +82,8 @@ module memory_system_wrapper
         .c0_ddr4_odt(c0_ddr4_odt),
         .c0_ddr4_par(c0_ddr4_par),
         .c0_ddr4_reset_n(c0_ddr4_reset_n),
+        .c0_ddr4_ui_clk(c0_ddr4_ui_clk),
         .c0_sys_clk_n(c0_sys_clk_n),
-        .c0_sys_clk_p(c0_sys_clk_p));
+        .c0_sys_clk_p(c0_sys_clk_p),
+        .sys_rst(sys_rst));
 endmodule

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr 10 02:39:58 2025" VIVADOVERSION="2024.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr 10 03:29:33 2025" VIVADOVERSION="2024.1">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:au250:part0:1.3" DEVICE="xcu250" NAME="memory_system" PACKAGE="figd2104" SPEEDGRADE="-2L"/>
 
@@ -74,6 +74,11 @@
         <CONNECTION INSTANCE="DDR4_MIG" PORT="c0_ddr4_reset_n"/>
       </CONNECTIONS>
     </PORT>
+    <PORT CLKFREQUENCY="300000000" DIR="O" NAME="c0_ddr4_ui_clk" SIGIS="clk" SIGNAME="DDR4_MIG_c0_ddr4_ui_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DDR4_MIG" PORT="c0_ddr4_ui_clk"/>
+      </CONNECTIONS>
+    </PORT>
     <PORT CLKFREQUENCY="300000000" DIR="I" NAME="c0_sys_clk_n" SIGIS="clk" SIGNAME="DDR4_MIG_c0_sys_clk_n">
       <CONNECTIONS>
         <CONNECTION INSTANCE="DDR4_MIG" PORT="c0_sys_clk_n"/>
@@ -82,6 +87,11 @@
     <PORT CLKFREQUENCY="300000000" DIR="I" NAME="c0_sys_clk_p" SIGIS="clk" SIGNAME="DDR4_MIG_c0_sys_clk_p">
       <CONNECTIONS>
         <CONNECTION INSTANCE="DDR4_MIG" PORT="c0_sys_clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="sys_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_sys_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DDR4_MIG" PORT="sys_rst"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -413,7 +423,11 @@
             <CONNECTION INSTANCE="memory_system_imp" PORT="c0_ddr4_adr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="c0_ddr4_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst"/>
+        <PORT DIR="I" NAME="c0_ddr4_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="NOT_GATE_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NOT_GATE" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" LEFT="1" NAME="c0_ddr4_ba" RIGHT="0" SIGIS="undef" SIGNAME="DDR4_MIG_c0_ddr4_ba">
           <CONNECTIONS>
             <CONNECTION INSTANCE="memory_system_imp" PORT="c0_ddr4_ba"/>
@@ -612,11 +626,16 @@
         </PORT>
         <PORT CLKFREQUENCY="300000000" DIR="O" NAME="c0_ddr4_ui_clk" SIGIS="clk" SIGNAME="DDR4_MIG_c0_ddr4_ui_clk">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="c0_ddr4_ui_clk"/>
             <CONNECTION INSTANCE="smartconnect_0" PORT="aclk"/>
             <CONNECTION INSTANCE="axi_traffic_gen_0" PORT="s_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="c0_ddr4_ui_clk_sync_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst"/>
+        <PORT DIR="O" NAME="c0_ddr4_ui_clk_sync_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="DDR4_MIG_c0_ddr4_ui_clk_sync_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NOT_GATE" PORT="Op1"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="c0_init_calib_complete" SIGIS="undef"/>
         <PORT DIR="I" NAME="c0_sys_clk_n" SIGIS="clk" SIGNAME="DDR4_MIG_c0_sys_clk_n">
           <CONNECTIONS>
@@ -630,9 +649,9 @@
         </PORT>
         <PORT DIR="O" LEFT="511" NAME="dbg_bus" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="dbg_clk" SIGIS="undef"/>
-        <PORT DIR="I" NAME="sys_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="GND_dout">
+        <PORT DIR="I" NAME="sys_rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_sys_rst">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="GND" PORT="dout"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="sys_rst"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -776,18 +795,24 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="9" FULLNAME="/GND" HWVERSION="1.1" INSTANCE="GND" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+    <MODULE COREREVISION="4" FULLNAME="/NOT_GATE" HWVERSION="2.0" INSTANCE="NOT_GATE" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
-        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="Component_Name" VALUE="memory_system_xlconstant_0_0"/>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="memory_system_util_vector_logic_0_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="GND_dout">
+        <PORT DIR="I" LEFT="0" NAME="Op1" POLARITY="ACTIVE_HIGH" RIGHT="0" SIGIS="undef" SIGNAME="DDR4_MIG_c0_ddr4_ui_clk_sync_rst">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="DDR4_MIG" PORT="sys_rst"/>
+            <CONNECTION INSTANCE="DDR4_MIG" PORT="c0_ddr4_ui_clk_sync_rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" POLARITY="ACTIVE_LOW" RIGHT="0" SIGIS="undef" SIGNAME="NOT_GATE_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDR4_MIG" PORT="c0_ddr4_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

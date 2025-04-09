@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Apr 10 02:46:36 2025
-# Process ID: 16905
+# Start of session at: Thu Apr 10 03:34:12 2025
+# Process ID: 28661
 # Current directory: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1
 # Command line: vivado -log top_u250.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_u250.tcl
 # Log file: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/top_u250.vds
@@ -13,100 +13,104 @@
 # Platform          :CentOS
 # Operating System  :CentOS Linux release 7.9.2009 (Core)
 # Processor Detail  :AMD EPYC 7402 24-Core Processor
-# CPU Frequency     :2800.000 MHz
+# CPU Frequency     :1500.000 MHz
 # CPU Physical cores:48
 # CPU Logical cores :48
 # Host memory       :405447 MB
 # Swap memory       :115209 MB
 # Total Virtual     :520656 MB
-# Available Virtual :406960 MB
+# Available Virtual :406448 MB
 #-----------------------------------------------------------
 source top_u250.tcl -notrace
 WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
 WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
 WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
 WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1504.141 ; gain = 2.020 ; free physical = 250639 ; free virtual = 387794
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1510.078 ; gain = 2.020 ; free physical = 249666 ; free virtual = 387304
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/huy_k66/apps/tools/Vivado/2024.1/data/ip'.
 WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
 WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Command: read_checkpoint -auto_incremental -incremental /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/utils_1/imports/synth_1/top_u250.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/utils_1/imports/synth_1/top_u250.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_u250 -part xcu250-figd2104-2L-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
 INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17374
+INFO: [Synth 8-7075] Helper process launched with PID 29187
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3160.625 ; gain = 413.668 ; free physical = 248678 ; free virtual = 385835
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3163.062 ; gain = 414.637 ; free physical = 247831 ; free virtual = 385467
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_u250' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sources_1/new/top_u250.v:3]
 INFO: [Synth 8-6157] synthesizing module 'memory_system_wrapper' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/hdl/memory_system_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'memory_system' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:13]
-INFO: [Synth 8-6157] synthesizing module 'memory_system_ddr4_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-16905-edabk/realtime/memory_system_ddr4_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'memory_system_ddr4_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-16905-edabk/realtime/memory_system_ddr4_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'c0_init_calib_complete' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_ui_clk_sync_rst' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'addn_ui_clkout1' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'dbg_clk' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_arready' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_rvalid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_rdata' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_rresp' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_interrupt' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_bid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_arready' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rdata' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rresp' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rlast' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rvalid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7071] port 'dbg_bus' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-WARNING: [Synth 8-7023] instance 'DDR4_MIG' of module 'memory_system_ddr4_0_0' has 78 connections declared, but only 61 given [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:118]
-INFO: [Synth 8-6157] synthesizing module 'memory_system_xlconstant_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_xlconstant_0_0/synth/memory_system_xlconstant_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'memory_system_xlconstant_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_xlconstant_0_0/synth/memory_system_xlconstant_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'memory_system_axi_traffic_gen_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-16905-edabk/realtime/memory_system_axi_traffic_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'memory_system_axi_traffic_gen_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-16905-edabk/realtime/memory_system_axi_traffic_gen_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'done' of module 'memory_system_axi_traffic_gen_0_0' is unconnected for instance 'axi_traffic_gen_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:182]
-WARNING: [Synth 8-7071] port 'status' of module 'memory_system_axi_traffic_gen_0_0' is unconnected for instance 'axi_traffic_gen_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:182]
-WARNING: [Synth 8-7023] instance 'axi_traffic_gen_0' of module 'memory_system_axi_traffic_gen_0_0' has 15 connections declared, but only 13 given [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:182]
-INFO: [Synth 8-6157] synthesizing module 'memory_system_smartconnect_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-16905-edabk/realtime/memory_system_smartconnect_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'memory_system_smartconnect_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-16905-edabk/realtime/memory_system_smartconnect_0_0_stub.v:6]
-WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'memory_system_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:196]
-WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'memory_system_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:196]
-WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'memory_system_smartconnect_0_0' has 41 connections declared, but only 39 given [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:196]
+INFO: [Synth 8-6157] synthesizing module 'memory_system_ddr4_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_ddr4_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_system_ddr4_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_ddr4_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'c0_init_calib_complete' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'addn_ui_clkout1' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'dbg_clk' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_arready' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_rvalid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_rdata' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_ctrl_rresp' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_interrupt' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_bid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_arready' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rdata' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rresp' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rlast' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'c0_ddr4_s_axi_rvalid' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7071] port 'dbg_bus' of module 'memory_system_ddr4_0_0' is unconnected for instance 'DDR4_MIG' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+WARNING: [Synth 8-7023] instance 'DDR4_MIG' of module 'memory_system_ddr4_0_0' has 78 connections declared, but only 62 given [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:126]
+INFO: [Synth 8-6157] synthesizing module 'memory_system_util_vector_logic_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_system_util_vector_logic_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'memory_system_axi_traffic_gen_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_axi_traffic_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_system_axi_traffic_gen_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_axi_traffic_gen_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'done' of module 'memory_system_axi_traffic_gen_0_0' is unconnected for instance 'axi_traffic_gen_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:192]
+WARNING: [Synth 8-7071] port 'status' of module 'memory_system_axi_traffic_gen_0_0' is unconnected for instance 'axi_traffic_gen_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:192]
+WARNING: [Synth 8-7023] instance 'axi_traffic_gen_0' of module 'memory_system_axi_traffic_gen_0_0' has 15 connections declared, but only 13 given [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:192]
+INFO: [Synth 8-6157] synthesizing module 'memory_system_smartconnect_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'memory_system_smartconnect_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/.Xil/Vivado-28661-edabk/realtime/memory_system_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'memory_system_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:206]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'memory_system_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:206]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'memory_system_smartconnect_0_0' has 41 connections declared, but only 39 given [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:206]
 INFO: [Synth 8-6155] done synthesizing module 'memory_system' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/synth/memory_system.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'memory_system_wrapper' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/hdl/memory_system_wrapper.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'top_u250' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sources_1/new/top_u250.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3242.602 ; gain = 495.645 ; free physical = 248573 ; free virtual = 385731
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3245.039 ; gain = 496.613 ; free physical = 247728 ; free virtual = 385365
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3254.469 ; gain = 507.512 ; free physical = 248571 ; free virtual = 385728
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3245.039 ; gain = 496.613 ; free physical = 247728 ; free virtual = 385365
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3254.469 ; gain = 507.512 ; free physical = 248571 ; free virtual = 385728
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3245.039 ; gain = 496.613 ; free physical = 247728 ; free virtual = 385365
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3254.477 ; gain = 0.000 ; free physical = 248571 ; free virtual = 385729
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3249.039 ; gain = 0.000 ; free physical = 247729 ; free virtual = 385366
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/memory_system_ddr4_0_0/memory_system_ddr4_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG'
-create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3343.160 ; gain = 0.000 ; free physical = 248611 ; free virtual = 385768
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3369.293 ; gain = 19.812 ; free physical = 247683 ; free virtual = 385320
 Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/memory_system_ddr4_0_0/memory_system_ddr4_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG'
 Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/memory_system_smartconnect_0_0/memory_system_smartconnect_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0'
 Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/memory_system_smartconnect_0_0/memory_system_smartconnect_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0'
 Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/axi_traffic_gen_0'
 Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/axi_traffic_gen_0'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_util_vector_logic_0_0/memory_system_util_vector_logic_0_0/memory_system_util_vector_logic_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/NOT_GATE'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_util_vector_logic_0_0/memory_system_util_vector_logic_0_0/memory_system_util_vector_logic_0_0_in_context.xdc] for cell 'memory_system_i/memory_system_i/NOT_GATE'
 Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc]
 WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:167]
 WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:168]
@@ -217,13 +221,15 @@ Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_dd
 Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3343.160 ; gain = 0.000 ; free physical = 248609 ; free virtual = 385767
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3369.293 ; gain = 0.000 ; free physical = 247686 ; free virtual = 385324
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3343.160 ; gain = 0.000 ; free physical = 248609 ; free virtual = 385766
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3369.293 ; gain = 0.000 ; free physical = 247686 ; free virtual = 385324
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3343.164 ; gain = 596.207 ; free physical = 248606 ; free virtual = 385764
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3369.297 ; gain = 620.871 ; free physical = 247653 ; free virtual = 385310
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -231,7 +237,7 @@ Start Loading Part and Timing Information
 Loading part: xcu250-figd2104-2L-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3351.164 ; gain = 604.207 ; free physical = 248606 ; free virtual = 385764
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3377.297 ; gain = 628.871 ; free physical = 247653 ; free virtual = 385311
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -518,17 +524,19 @@ Applied set_property KEEP_HIERARCHY = SOFT for memory_system_i/memory_system_i. 
 Applied set_property KEEP_HIERARCHY = SOFT for memory_system_i/memory_system_i/DDR4_MIG. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for memory_system_i/memory_system_i/smartconnect_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for memory_system_i/memory_system_i/axi_traffic_gen_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for memory_system_i/memory_system_i/GND. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for memory_system_i/memory_system_i/NOT_GATE. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3351.164 ; gain = 604.207 ; free physical = 248606 ; free virtual = 385764
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 3377.297 ; gain = 628.871 ; free physical = 247655 ; free virtual = 385312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3351.168 ; gain = 604.211 ; free physical = 248605 ; free virtual = 385764
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3377.301 ; gain = 628.875 ; free physical = 247654 ; free virtual = 385312
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -546,25 +554,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3351.168 ; gain = 604.211 ; free physical = 248603 ; free virtual = 385766
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3377.301 ; gain = 628.875 ; free physical = 247652 ; free virtual = 385314
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3633.020 ; gain = 886.062 ; free physical = 248363 ; free virtual = 385528
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 3652.152 ; gain = 903.727 ; free physical = 247426 ; free virtual = 385082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3633.020 ; gain = 886.062 ; free physical = 248363 ; free virtual = 385528
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 3673.184 ; gain = 924.758 ; free physical = 247406 ; free virtual = 385062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3644.035 ; gain = 897.078 ; free physical = 248353 ; free virtual = 385518
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 3673.184 ; gain = 924.758 ; free physical = 247406 ; free virtual = 385062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -582,80 +590,91 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247426 ; free virtual = 385082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247426 ; free virtual = 385082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247427 ; free virtual = 385083
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247427 ; free virtual = 385083
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247427 ; free virtual = 385083
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247427 ; free virtual = 385083
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+----------------------------------+----------+
-|      |BlackBox name                     |Instances |
-+------+----------------------------------+----------+
-|1     |memory_system_ddr4_0_0            |         1|
-|2     |memory_system_axi_traffic_gen_0_0 |         1|
-|3     |memory_system_smartconnect_0_0    |         1|
-+------+----------------------------------+----------+
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |memory_system_ddr4_0_0              |         1|
+|2     |memory_system_util_vector_logic_0_0 |         1|
+|3     |memory_system_axi_traffic_gen_0_0   |         1|
+|4     |memory_system_smartconnect_0_0      |         1|
++------+------------------------------------+----------+
 
 Report Cell Usage: 
-+------+--------------------------------+------+
-|      |Cell                            |Count |
-+------+--------------------------------+------+
-|1     |memory_system_axi_traffic_gen_0 |     1|
-|2     |memory_system_ddr4_0            |     1|
-|3     |memory_system_smartconnect_0    |     1|
-+------+--------------------------------+------+
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |memory_system_axi_traffic_gen_0   |     1|
+|2     |memory_system_ddr4_0              |     1|
+|3     |memory_system_smartconnect_0      |     1|
+|4     |memory_system_util_vector_logic_0 |     1|
+|5     |CARRY8                            |     8|
+|6     |LUT1                              |     1|
+|7     |LUT3                              |     1|
+|8     |LUT5                              |     1|
+|9     |LUT6                              |    14|
+|10    |FDRE                              |    65|
++------+----------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247427 ; free virtual = 385083
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 3657.910 ; gain = 822.258 ; free physical = 248354 ; free virtual = 385519
-Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 3657.910 ; gain = 910.953 ; free physical = 248353 ; free virtual = 385518
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 3679.121 ; gain = 806.438 ; free physical = 247426 ; free virtual = 385082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 3679.121 ; gain = 930.695 ; free physical = 247426 ; free virtual = 385082
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3657.910 ; gain = 0.000 ; free physical = 248353 ; free virtual = 385518
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3679.121 ; gain = 0.000 ; free physical = 247717 ; free virtual = 385373
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3657.910 ; gain = 0.000 ; free physical = 248642 ; free virtual = 385806
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3679.121 ; gain = 0.000 ; free physical = 247713 ; free virtual = 385369
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 19c2d14e
+Synth Design complete | Checksum: 789767ef
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:00 . Memory (MB): peak = 3657.910 ; gain = 2105.348 ; free physical = 248641 ; free virtual = 385805
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2944.736; main = 2622.181; forked = 355.274
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4997.754; main = 3644.039; forked = 1353.715
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:55 . Memory (MB): peak = 3679.121 ; gain = 2119.586 ; free physical = 247712 ; free virtual = 385368
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2742.794; main = 2654.833; forked = 351.060
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4787.996; main = 3639.547; forked = 1347.777
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3679.121 ; gain = 0.000 ; free physical = 247712 ; free virtual = 385368
 INFO: [Common 17-1381] The checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/top_u250.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_u250_utilization_synth.rpt -pb top_u250_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 02:47:54 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 03:35:25 2025...

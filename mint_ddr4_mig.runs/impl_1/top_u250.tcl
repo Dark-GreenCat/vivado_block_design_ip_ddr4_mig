@@ -111,6 +111,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 12
+  set_param xicom.use_bs_reader 1
   set_param bd.open.in_stealth_mode 1
   set_param runs.launchOptions { -jobs 48  }
 OPTRACE "create in-memory project" START { }
@@ -198,6 +199,10 @@ set rc [catch {
   create_msg_db place_design.pb
 OPTRACE "read constraints: place_design" START { }
 OPTRACE "read constraints: place_design" END { }
+OPTRACE "read incremental checkpoint" START { }
+  read_checkpoint -auto_incremental  -incremental /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/utils_1/imports/impl_1/top_u250_routed.dcp
+  catch { report_incremental_reuse -file top_u250_incremental_reuse_pre_placed.rpt }
+OPTRACE "read incremental checkpoint" END { }
   if { [llength [get_debug_cores -quiet] ] > 0 }  { 
 OPTRACE "implement_debug_core" START { }
     implement_debug_core 

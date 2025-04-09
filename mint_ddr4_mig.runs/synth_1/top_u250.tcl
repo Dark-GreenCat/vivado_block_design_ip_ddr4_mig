@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 12
+set_param xicom.use_bs_reader 1
 set_param bd.open.in_stealth_mode 1
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
@@ -151,6 +153,8 @@ set_property used_in_implementation false [get_files /home/huy_k66/Documents/dma
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/utils_1/imports/synth_1/top_u250.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

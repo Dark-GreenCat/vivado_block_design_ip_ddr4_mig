@@ -132,7 +132,7 @@ verilog xil_defaultlib --include "/home/huy_k66/apps/tools/Vivado/2024.1/data/xi
 "../../../bd/memory_system/ip/memory_system_smartconnect_0_0/sim/memory_system_smartconnect_0_0.v" \
 "../../../bd/memory_system/sim/memory_system.v" \
 "../../../bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/sim/memory_system_axi_traffic_gen_0_0.v" \
-"../../../bd/memory_system/ip/memory_system_xlconstant_0_0/sim/memory_system_xlconstant_0_0.v" \
+"../../../bd/memory_system/ip/memory_system_util_vector_logic_0_0/sim/memory_system_util_vector_logic_0_0.v" \
 
 verilog xil_defaultlib "glbl.v"
 

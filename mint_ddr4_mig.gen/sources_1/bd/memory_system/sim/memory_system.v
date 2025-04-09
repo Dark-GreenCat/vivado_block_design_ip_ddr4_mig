@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-//Date        : Thu Apr 10 02:39:53 2025
+//Date        : Thu Apr 10 03:29:26 2025
 //Host        : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 //Command     : generate_target memory_system.bd
 //Design      : memory_system
@@ -26,8 +26,10 @@ module memory_system
     c0_ddr4_odt,
     c0_ddr4_par,
     c0_ddr4_reset_n,
+    c0_ddr4_ui_clk,
     c0_sys_clk_n,
-    c0_sys_clk_p);
+    c0_sys_clk_p,
+    sys_rst);
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddr4:1.0 c0_ddr4 " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME c0_ddr4, AXI_ARBITRATION_SCHEME RD_PRI_REG, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 17, CAS_WRITE_LATENCY 12, CS_ENABLED true, CUSTOM_PARTS no_file_loaded, DATA_MASK_ENABLED NONE, DATA_WIDTH 72, MEMORY_PART MTA18ASF2G72PZ-2G3, MEMORY_TYPE RDIMMs, MEM_ADDR_MAP ROW_COLUMN_BANK_INTLV, SLOT Single, TIMEPERIOD_PS 833" *) output c0_ddr4_act_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddr4:1.0 c0_ddr4 " *) output [16:0]c0_ddr4_adr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddr4:1.0 c0_ddr4 " *) output [1:0]c0_ddr4_ba;
@@ -42,13 +44,16 @@ module memory_system
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddr4:1.0 c0_ddr4 " *) output c0_ddr4_odt;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddr4:1.0 c0_ddr4 " *) output c0_ddr4_par;
   (* X_INTERFACE_INFO = "xilinx.com:interface:ddr4:1.0 c0_ddr4 " *) output c0_ddr4_reset_n;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.C0_DDR4_UI_CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.C0_DDR4_UI_CLK, CLK_DOMAIN memory_system_ddr4_0_0_c0_ddr4_ui_clk, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.00" *) output c0_ddr4_ui_clk;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 c0_sys " *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME c0_sys, CAN_DEBUG false, FREQ_HZ 300000000" *) input c0_sys_clk_n;
   (* X_INTERFACE_INFO = "xilinx.com:interface:diff_clock:1.0 c0_sys " *) input c0_sys_clk_p;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.SYS_RST RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.SYS_RST, INSERT_VIP 0, POLARITY ACTIVE_HIGH" *) input sys_rst;
 
   wire C0_SYS_CLK_0_1_CLK_N;
   wire C0_SYS_CLK_0_1_CLK_P;
-  wire DDR4_MIG_c0_ddr4_ui_clk;
-  wire [0:0]GND_dout;
+  wire DDR4_MIG_c0_ddr4_ui_clk1;
+  wire DDR4_MIG_c0_ddr4_ui_clk_sync_rst;
+  wire [0:0]NOT_GATE_Res;
   wire [31:0]axi_traffic_gen_0_M_AXI_LITE_CH1_AWADDR;
   wire [2:0]axi_traffic_gen_0_M_AXI_LITE_CH1_AWPROT;
   wire axi_traffic_gen_0_M_AXI_LITE_CH1_AWREADY;
@@ -101,6 +106,7 @@ module memory_system
   wire smartconnect_0_M01_AXI_WREADY;
   wire [63:0]smartconnect_0_M01_AXI_WSTRB;
   wire smartconnect_0_M01_AXI_WVALID;
+  wire sys_rst_0_1;
 
   assign C0_SYS_CLK_0_1_CLK_N = c0_sys_clk_n;
   assign C0_SYS_CLK_0_1_CLK_P = c0_sys_clk_p;
@@ -115,10 +121,12 @@ module memory_system
   assign c0_ddr4_odt = ddr4_0_C0_DDR4_ODT;
   assign c0_ddr4_par = ddr4_0_C0_DDR4_PAR;
   assign c0_ddr4_reset_n = ddr4_0_C0_DDR4_RESET_N;
+  assign c0_ddr4_ui_clk = DDR4_MIG_c0_ddr4_ui_clk1;
+  assign sys_rst_0_1 = sys_rst;
   memory_system_ddr4_0_0 DDR4_MIG
        (.c0_ddr4_act_n(ddr4_0_C0_DDR4_ACT_N),
         .c0_ddr4_adr(ddr4_0_C0_DDR4_ADR),
-        .c0_ddr4_aresetn(1'b0),
+        .c0_ddr4_aresetn(NOT_GATE_Res),
         .c0_ddr4_ba(ddr4_0_C0_DDR4_BA),
         .c0_ddr4_bg(ddr4_0_C0_DDR4_BG),
         .c0_ddr4_ck_c(ddr4_0_C0_DDR4_CK_C),
@@ -173,12 +181,14 @@ module memory_system
         .c0_ddr4_s_axi_wready(smartconnect_0_M01_AXI_WREADY),
         .c0_ddr4_s_axi_wstrb(smartconnect_0_M01_AXI_WSTRB),
         .c0_ddr4_s_axi_wvalid(smartconnect_0_M01_AXI_WVALID),
-        .c0_ddr4_ui_clk(DDR4_MIG_c0_ddr4_ui_clk),
+        .c0_ddr4_ui_clk(DDR4_MIG_c0_ddr4_ui_clk1),
+        .c0_ddr4_ui_clk_sync_rst(DDR4_MIG_c0_ddr4_ui_clk_sync_rst),
         .c0_sys_clk_n(C0_SYS_CLK_0_1_CLK_N),
         .c0_sys_clk_p(C0_SYS_CLK_0_1_CLK_P),
-        .sys_rst(GND_dout));
-  memory_system_xlconstant_0_0 GND
-       (.dout(GND_dout));
+        .sys_rst(sys_rst_0_1));
+  memory_system_util_vector_logic_0_0 NOT_GATE
+       (.Op1(DDR4_MIG_c0_ddr4_ui_clk_sync_rst),
+        .Res(NOT_GATE_Res));
   memory_system_axi_traffic_gen_0_0 axi_traffic_gen_0
        (.m_axi_lite_ch1_awaddr(axi_traffic_gen_0_M_AXI_LITE_CH1_AWADDR),
         .m_axi_lite_ch1_awprot(axi_traffic_gen_0_M_AXI_LITE_CH1_AWPROT),
@@ -191,7 +201,7 @@ module memory_system
         .m_axi_lite_ch1_wready(axi_traffic_gen_0_M_AXI_LITE_CH1_WREADY),
         .m_axi_lite_ch1_wstrb(axi_traffic_gen_0_M_AXI_LITE_CH1_WSTRB),
         .m_axi_lite_ch1_wvalid(axi_traffic_gen_0_M_AXI_LITE_CH1_WVALID),
-        .s_axi_aclk(DDR4_MIG_c0_ddr4_ui_clk),
+        .s_axi_aclk(DDR4_MIG_c0_ddr4_ui_clk1),
         .s_axi_aresetn(1'b0));
   memory_system_smartconnect_0_0 smartconnect_0
        (.M00_AXI_awaddr(smartconnect_0_M00_AXI_AWADDR),
@@ -232,5 +242,5 @@ module memory_system
         .S00_AXI_wready(axi_traffic_gen_0_M_AXI_LITE_CH1_WREADY),
         .S00_AXI_wstrb(axi_traffic_gen_0_M_AXI_LITE_CH1_WSTRB),
         .S00_AXI_wvalid(axi_traffic_gen_0_M_AXI_LITE_CH1_WVALID),
-        .aclk(DDR4_MIG_c0_ddr4_ui_clk));
+        .aclk(DDR4_MIG_c0_ddr4_ui_clk1));
 endmodule

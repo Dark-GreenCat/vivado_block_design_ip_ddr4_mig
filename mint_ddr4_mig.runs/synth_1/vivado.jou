@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Apr 10 02:46:36 2025
-# Process ID: 16905
+# Start of session at: Thu Apr 10 03:34:12 2025
+# Process ID: 28661
 # Current directory: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1
 # Command line: vivado -log top_u250.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_u250.tcl
 # Log file: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/top_u250.vds
@@ -13,12 +13,12 @@
 # Platform          :CentOS
 # Operating System  :CentOS Linux release 7.9.2009 (Core)
 # Processor Detail  :AMD EPYC 7402 24-Core Processor
-# CPU Frequency     :2800.000 MHz
+# CPU Frequency     :1500.000 MHz
 # CPU Physical cores:48
 # CPU Logical cores :48
 # Host memory       :405447 MB
 # Swap memory       :115209 MB
 # Total Virtual     :520656 MB
-# Available Virtual :406960 MB
+# Available Virtual :406448 MB
 #-----------------------------------------------------------
 source top_u250.tcl -notrace

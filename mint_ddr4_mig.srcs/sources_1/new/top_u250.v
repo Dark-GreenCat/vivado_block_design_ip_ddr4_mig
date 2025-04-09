@@ -26,6 +26,18 @@ module top_u250 (
   assign c0_sys_clk_n = SYSCLK0_300_N;
   assign c0_sys_clk_p = SYSCLK0_300_P;
 
+  wire c0_ddr4_ui_clk;
+  reg sys_rst = 1'b1;
+  reg [63:0] clk_counter = 1'b0;
+
+  always @(posedge c0_ddr4_ui_clk) begin
+    clk_counter <= clk_counter + 1;
+
+    if (clk_counter == 10) begin
+      sys_rst <= 1'b0;
+    end
+  end
+
   memory_system_wrapper memory_system_i (
     .c0_ddr4_act_n(c0_ddr4_act_n),
     .c0_ddr4_adr(c0_ddr4_adr),
@@ -42,6 +54,8 @@ module top_u250 (
     .c0_ddr4_par(c0_ddr4_parity),
     .c0_ddr4_reset_n(c0_ddr4_reset_n),
     .c0_sys_clk_n(c0_sys_clk_n),
-    .c0_sys_clk_p(c0_sys_clk_p)
+    .c0_sys_clk_p(c0_sys_clk_p),
+    .c0_ddr4_ui_clk(c0_ddr4_ui_clk),
+    .sys_rst(sys_rst)
   );
 endmodule

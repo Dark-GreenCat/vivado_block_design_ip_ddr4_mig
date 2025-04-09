@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x7144CC9CD294B8AA",
+      "boundary_crc": "0xF59F396B0837FE1A",
       "device": "xcu250-figd2104-2L-e",
       "gen_directory": "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system",
       "name": "memory_system",
@@ -14,7 +14,7 @@
       "DDR4_MIG": "",
       "smartconnect_0": "",
       "axi_traffic_gen_0": "",
-      "GND": ""
+      "NOT_GATE": ""
     },
     "interface_ports": {
       "c0_sys": {
@@ -171,6 +171,47 @@
           "RESET_N": {
             "physical_name": "c0_ddr4_reset_n",
             "direction": "O"
+          }
+        }
+      }
+    },
+    "ports": {
+      "c0_ddr4_ui_clk": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "memory_system_ddr4_0_0_c0_ddr4_ui_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "300000000",
+            "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.00",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "sys_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
           }
         }
       }
@@ -388,15 +429,18 @@
           }
         }
       },
-      "GND": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "ip_revision": "9",
-        "xci_name": "memory_system_xlconstant_0_0",
-        "xci_path": "ip/memory_system_xlconstant_0_0/memory_system_xlconstant_0_0.xci",
-        "inst_hier_path": "GND",
+      "NOT_GATE": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "ip_revision": "4",
+        "xci_name": "memory_system_util_vector_logic_0_0",
+        "xci_path": "ip/memory_system_util_vector_logic_0_0/memory_system_util_vector_logic_0_0.xci",
+        "inst_hier_path": "NOT_GATE",
         "parameters": {
-          "CONST_VAL": {
-            "value": "0"
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
           }
         }
       }
@@ -434,16 +478,29 @@
       }
     },
     "nets": {
-      "DDR4_MIG_c0_ddr4_ui_clk": {
+      "DDR4_MIG_c0_ddr4_ui_clk1": {
         "ports": [
           "DDR4_MIG/c0_ddr4_ui_clk",
+          "c0_ddr4_ui_clk",
           "smartconnect_0/aclk",
           "axi_traffic_gen_0/s_axi_aclk"
         ]
       },
-      "GND_dout": {
+      "DDR4_MIG_c0_ddr4_ui_clk_sync_rst": {
         "ports": [
-          "GND/dout",
+          "DDR4_MIG/c0_ddr4_ui_clk_sync_rst",
+          "NOT_GATE/Op1"
+        ]
+      },
+      "NOT_GATE_Res": {
+        "ports": [
+          "NOT_GATE/Res",
+          "DDR4_MIG/c0_ddr4_aresetn"
+        ]
+      },
+      "sys_rst_0_1": {
+        "ports": [
+          "sys_rst",
           "DDR4_MIG/sys_rst"
         ]
       }

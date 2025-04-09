@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Thu Apr 10 03:03:36 2025
+| Date         : Thu Apr 10 03:46:40 2025
 | Host         : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command      : report_drc -file top_u250_drc_routed.rpt -pb top_u250_drc_routed.pb -rpx top_u250_drc_routed.rpx
 | Design       : top_u250
@@ -59,9 +59,9 @@ memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_d
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1],
+memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[2].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1],
-memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[2].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1],
