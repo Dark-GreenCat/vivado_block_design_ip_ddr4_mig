@@ -18,4 +18,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==memory_syst
 # IP: bd/memory_system/ip/memory_system_util_vector_logic_0_0/memory_system_util_vector_logic_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==memory_system_util_vector_logic_0_0 || ORIG_REF_NAME==memory_system_util_vector_logic_0_0} -quiet] -quiet
 
+# IP: bd/memory_system/ip/memory_system_axi_cdma_0_0/memory_system_axi_cdma_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==memory_system_axi_cdma_0_0 || ORIG_REF_NAME==memory_system_axi_cdma_0_0} -quiet] -quiet
+
 # XDC: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/memory_system_ooc.xdc

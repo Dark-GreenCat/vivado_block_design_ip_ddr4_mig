@@ -14,8 +14,8 @@
       <Properties Property="SLR.COUNT" value="4"/>
     </Object>
     <Object name="xcu250_0_1" gui_info="">
-      <Properties Property="FULL_PROBES.FILE" value=""/>
-      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/top_u250.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/top_u250.ltx"/>
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/top_u250.bit"/>
       <Properties Property="SLR.COUNT" value="4"/>
     </Object>

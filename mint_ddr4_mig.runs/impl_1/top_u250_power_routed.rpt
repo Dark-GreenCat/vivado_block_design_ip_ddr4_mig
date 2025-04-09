@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date             : Thu Apr 10 03:47:20 2025
+| Date             : Thu Apr 10 04:41:58 2025
 | Host             : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command          : report_power -file top_u250_power_routed.rpt -pb top_u250_power_summary_routed.pb -rpx top_u250_power_routed.rpx
 | Design           : top_u250
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+---------------+
-| Total On-Chip Power (W)  | 4.490         |
+| Total On-Chip Power (W)  | 4.774         |
 | Design Power Budget (W)  | 160.000       |
-| Power Budget Margin (W)  | 155.510 (MET) |
-| Dynamic (W)              | 1.517         |
-| Device Static (W)        | 2.973         |
+| Power Budget Margin (W)  | 155.226 (MET) |
+| Dynamic (W)              | 1.796         |
+| Device Static (W)        | 2.978         |
 | Effective TJA (C/W)      | 0.5           |
-| Max Ambient (C)          | 97.7          |
-| Junction Temperature (C) | 27.3          |
+| Max Ambient (C)          | 97.5          |
+| Junction Temperature (C) | 27.5          |
 | Confidence Level         | Low           |
 | Setting File             | ---           |
 | Simulation Activity File | ---           |
@@ -51,23 +51,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.203 |       13 |       --- |             --- |
-| CLB Logic                |     0.137 |    48264 |       --- |             --- |
-|   LUT as Distributed RAM |     0.087 |     1582 |    791040 |            0.20 |
-|   LUT as Logic           |     0.046 |    15842 |   1728000 |            0.92 |
-|   Register               |     0.003 |    22457 |   3456000 |            0.65 |
-|   CARRY8                 |    <0.001 |       71 |    216000 |            0.03 |
-|   LUT as Shift Register  |    <0.001 |       54 |    791040 |           <0.01 |
-|   Others                 |    <0.001 |     1270 |       --- |             --- |
+| Clocks                   |     0.247 |       13 |       --- |             --- |
+| CLB Logic                |     0.275 |    67455 |       --- |             --- |
+|   LUT as Distributed RAM |     0.185 |     2702 |    791040 |            0.34 |
+|   LUT as Logic           |     0.069 |    20424 |   1728000 |            1.18 |
+|   LUT as Shift Register  |     0.012 |      892 |    791040 |            0.11 |
+|   Register               |     0.009 |    32071 |   3456000 |            0.93 |
+|   CARRY8                 |    <0.001 |      104 |    216000 |            0.05 |
+|   Others                 |    <0.001 |     1433 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      457 |   1728000 |            0.03 |
-| Signals                  |     0.075 |    56736 |       --- |             --- |
+| Signals                  |     0.171 |    69156 |       --- |             --- |
 | Block RAM                |     0.019 |     25.5 |      2688 |            0.95 |
 | MMCM                     |     0.114 |        0 |       --- |             --- |
 | PLL                      |     0.178 |        3 |       --- |             --- |
 | DSPs                     |    <0.001 |        3 |     12288 |            0.02 |
 | I/O                      |     0.791 |      139 |       676 |           20.56 |
-| Static Power             |     2.973 |          |           |                 |
-| Total                    |     4.490 |          |           |                 |
+| Static Power             |     2.978 |          |           |                 |
+| Total                    |     4.774 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,10 +77,10 @@ Table of Contents
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint     |       0.850 |     1.692 |       0.519 |      1.173 |       NA    | Unspecified | NA         |
-| Vccint_io  |       0.850 |     0.565 |       0.423 |      0.142 |       NA    | Unspecified | NA         |
+| Vccint     |       0.850 |     2.027 |       0.846 |      1.181 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.850 |     0.565 |       0.423 |      0.143 |       NA    | Unspecified | NA         |
 | Vccbram    |       0.850 |     0.021 |       0.001 |      0.021 |       NA    | Unspecified | NA         |
-| Vccaux     |       1.800 |     1.043 |       0.158 |      0.884 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     1.042 |       0.158 |      0.884 |       NA    | Unspecified | NA         |
 | Vccaux_io  |       1.800 |     0.267 |       0.163 |      0.104 |       NA    | Unspecified | NA         |
 | Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25     |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -159,14 +159,16 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| top_u250                 |     1.517 |
+| top_u250                 |     1.796 |
 |   dbg_hub                |     0.003 |
 |     inst                 |     0.003 |
 |       BSCANID.u_xsdbm_id |     0.003 |
-|   memory_system_i        |     1.513 |
-|     memory_system_i      |     1.513 |
-|       DDR4_MIG           |     1.362 |
-|       smartconnect_0     |     0.151 |
+|   memory_system_i        |     1.792 |
+|     memory_system_i      |     1.792 |
+|       DDR4_MIG           |     1.430 |
+|       axi_cdma_0         |     0.025 |
+|       axi_traffic_gen_0  |     0.002 |
+|       smartconnect_0     |     0.335 |
 +--------------------------+-----------+
 
 

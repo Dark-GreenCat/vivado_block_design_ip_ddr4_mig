@@ -1,29 +1,32 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.900302",
-   "Default View_TopLeft":"-99,-102",
+   "Default View_ScaleFactor":"0.719212",
+   "Default View_TopLeft":"-99,-160",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0 TLS
 #  -string -flagsOSRD
-preplace port c0_sys -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
-preplace port c0_ddr4 -pg 1 -lvl 4 -x 1070 -y 140 -defaultsOSRD
-preplace port port-id_c0_ddr4_ui_clk -pg 1 -lvl 4 -x 1070 -y 220 -defaultsOSRD
-preplace port port-id_sys_rst -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
-preplace inst DDR4_MIG -pg 1 -lvl 3 -x 840 -y 210 -defaultsOSRD
-preplace inst smartconnect_0 -pg 1 -lvl 2 -x 480 -y 70 -defaultsOSRD
-preplace inst axi_traffic_gen_0 -pg 1 -lvl 1 -x 170 -y 80 -defaultsOSRD
-preplace inst NOT_GATE -pg 1 -lvl 2 -x 480 -y 230 -defaultsOSRD
-preplace netloc DDR4_MIG_c0_ddr4_ui_clk1 1 0 4 20 160 320 340 NJ 340 1050
-preplace netloc sys_rst_0_1 1 0 3 NJ 290 NJ 290 640J
-preplace netloc DDR4_MIG_c0_ddr4_ui_clk_sync_rst 1 1 3 330 350 NJ 350 1040
-preplace netloc NOT_GATE_Res 1 2 1 NJ 230
-preplace netloc C0_SYS_CLK_0_1 1 0 3 NJ 170 NJ 170 NJ
-preplace netloc ddr4_0_C0_DDR4 1 3 1 NJ 140
-preplace netloc smartconnect_0_M00_AXI 1 2 1 640 60n
-preplace netloc smartconnect_0_M01_AXI 1 2 1 630 80n
-preplace netloc axi_traffic_gen_0_M_AXI_LITE_CH1 1 1 1 NJ 60
-levelinfo -pg 1 0 170 480 840 1070
-pagesize -pg 1 -db -bbox -sgen -100 0 1230 360
+preplace port c0_sys -pg 1 -lvl 0 -x 0 -y 340 -defaultsOSRD
+preplace port c0_ddr4 -pg 1 -lvl 5 -x 1390 -y 310 -defaultsOSRD
+preplace port port-id_c0_ddr4_ui_clk -pg 1 -lvl 5 -x 1390 -y 390 -defaultsOSRD
+preplace port port-id_sys_rst -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace inst DDR4_MIG -pg 1 -lvl 4 -x 1160 -y 380 -defaultsOSRD
+preplace inst smartconnect_0 -pg 1 -lvl 3 -x 790 -y 410 -defaultsOSRD
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 1 -x 180 -y 80 -defaultsOSRD
+preplace inst NOT_GATE -pg 1 -lvl 1 -x 180 -y 280 -defaultsOSRD
+preplace inst axi_cdma_0 -pg 1 -lvl 2 -x 490 -y 250 -defaultsOSRD
+preplace netloc DDR4_MIG_c0_ddr4_ui_clk1 1 0 5 20 170 350 160 640 520 NJ 520 1370
+preplace netloc sys_rst_0_1 1 0 4 NJ 490 NJ 490 NJ 490 960J
+preplace netloc DDR4_MIG_c0_ddr4_ui_clk_sync_rst 1 0 5 30 510 NJ 510 NJ 510 NJ 510 1360
+preplace netloc NOT_GATE_Res 1 1 3 330 350 650J 330 940J
+preplace netloc DDR4_MIG_c0_init_calib_complete 1 0 5 30 160 330J 150 NJ 150 NJ 150 1360
+preplace netloc C0_SYS_CLK_0_1 1 0 4 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc ddr4_0_C0_DDR4 1 4 1 NJ 310
+preplace netloc smartconnect_0_M00_AXI 1 3 1 930 360n
+preplace netloc smartconnect_0_M01_AXI 1 3 1 950 380n
+preplace netloc axi_traffic_gen_0_M_AXI_LITE_CH1 1 1 1 340 60n
+preplace netloc axi_cdma_0_M_AXI 1 2 1 630 240n
+levelinfo -pg 1 0 180 490 790 1160 1390
+pagesize -pg 1 -db -bbox -sgen -100 0 1550 530
 "
 }
 

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Thu Apr 10 03:46:40 2025
+| Date         : Thu Apr 10 04:41:08 2025
 | Host         : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command      : report_drc -file top_u250_drc_routed.rpt -pb top_u250_drc_routed.pb -rpx top_u250_drc_routed.rpx
 | Design       : top_u250
@@ -51,7 +51,7 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-125 net(s) have no routable loads. The problem bus(es) and/or net(s) are memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu,
+110 net(s) have no routable loads. The problem bus(es) and/or net(s) are memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu,
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu,
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13],
@@ -66,7 +66,7 @@ memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1],
 memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1]
- (the first 15 of 123 listed nets/buses).
+ (the first 15 of 108 listed nets/buses).
 Related violations: <none>
 
 

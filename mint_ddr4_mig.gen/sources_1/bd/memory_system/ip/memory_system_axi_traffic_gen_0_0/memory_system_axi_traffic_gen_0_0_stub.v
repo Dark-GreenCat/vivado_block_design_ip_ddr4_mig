@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-// Date        : Thu Apr 10 02:38:06 2025
+// Date        : Thu Apr 10 04:12:39 2025
 // Host        : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 // Command     : write_verilog -force -mode synth_stub
 //               /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0_stub.v

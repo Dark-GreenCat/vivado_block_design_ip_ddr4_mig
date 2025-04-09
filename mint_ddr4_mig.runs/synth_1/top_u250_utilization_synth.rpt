@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Thu Apr 10 03:35:25 2025
+| Date         : Thu Apr 10 04:14:07 2025
 | Host         : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command      : report_utilization -file top_u250_utilization_synth.rpt -pb top_u250_utilization_synth.pb
 | Design       : top_u250
@@ -178,6 +178,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | memory_system_smartconnect_0_0      |    1 |
 | memory_system_ddr4_0_0              |    1 |
 | memory_system_axi_traffic_gen_0_0   |    1 |
+| memory_system_axi_cdma_0_0          |    1 |
 +-------------------------------------+------+
 
 

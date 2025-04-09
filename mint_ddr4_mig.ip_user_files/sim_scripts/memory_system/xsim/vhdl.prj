@@ -8,6 +8,7 @@ vhdl xil_defaultlib  \
 "../../../bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_7/sim/bd_021b_second_dlmb_cntlr_0.vhd" \
 "../../../bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_8/sim/bd_021b_second_ilmb_cntlr_0.vhd" \
 "../../../bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_10/sim/bd_021b_iomodule_0_0.vhd" \
+"../../../bd/memory_system/ip/memory_system_axi_cdma_0_0/sim/memory_system_axi_cdma_0_0.vhd" \
 
 # Do not sort compile order
 nosort

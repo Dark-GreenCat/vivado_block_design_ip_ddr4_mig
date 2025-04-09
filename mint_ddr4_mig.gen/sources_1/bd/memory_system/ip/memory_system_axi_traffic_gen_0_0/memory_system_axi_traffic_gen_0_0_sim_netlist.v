@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-// Date        : Thu Apr 10 02:38:07 2025
+// Date        : Thu Apr 10 04:12:40 2025
 // Host        : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 // Command     : write_verilog -force -mode funcsim
 //               /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0_sim_netlist.v
@@ -639,7 +639,7 @@ module memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg
   wire rom_eof_reg;
   wire s_axi_aclk;
 
-  memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1 xpm_memory_spram_inst
+  memory_system_axi_traffic_gen_0_0_xpm_memory_spram xpm_memory_spram_inst
        (.addra(addra),
         .douta(douta),
         .\gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] (\gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ),
@@ -649,7 +649,7 @@ module memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg
 endmodule
 
 (* ORIG_REF_NAME = "axi_traffic_gen_v3_0_17_systeminit_dmg" *) 
-module memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_0
+module memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0
    (douta,
     s_axi_aclk,
     \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ,
@@ -664,7 +664,7 @@ module memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_
   wire \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ;
   wire s_axi_aclk;
 
-  memory_system_axi_traffic_gen_0_0_xpm_memory_spram xpm_memory_spram_inst
+  memory_system_axi_traffic_gen_0_0_xpm_memory_spram__parameterized0 xpm_memory_spram_inst
        (.addra(addra),
         .douta(douta),
         .\gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] (\gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ),
@@ -3390,7 +3390,7 @@ module memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_top
         .p_1_in(p_1_in),
         .rom_eof_reg(static_mrdwr_n_37),
         .s_axi_aclk(s_axi_aclk));
-  memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_0 systeminit_dmg_data
+  memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0 systeminit_dmg_data
        (.addra(rom_data_ptr_ff),
         .douta(rom_data),
         .\gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] (static_mrdwr_n_0),
@@ -5722,7 +5722,7 @@ module memory_system_axi_traffic_gen_0_0_xpm_memory_base
   (* ram_slice_begin = "3" *) 
   (* ram_slice_end = "3" *) 
   RAM32X1S #(
-    .INIT(32'h00000000)) 
+    .INIT(32'h00000005)) 
     \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_3_3 
        (.A0(addra[0]),
         .A1(addra[1]),
@@ -5744,7 +5744,7 @@ module memory_system_axi_traffic_gen_0_0_xpm_memory_base
   (* ram_slice_begin = "4" *) 
   (* ram_slice_end = "4" *) 
   RAM32X1S #(
-    .INIT(32'h00000000)) 
+    .INIT(32'h00000001)) 
     \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_4_4 
        (.A0(addra[0]),
         .A1(addra[1]),
@@ -5766,7 +5766,7 @@ module memory_system_axi_traffic_gen_0_0_xpm_memory_base
   (* ram_slice_begin = "5" *) 
   (* ram_slice_end = "5" *) 
   RAM32X1S #(
-    .INIT(32'h00000000)) 
+    .INIT(32'h00000006)) 
     \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_5_5 
        (.A0(addra[0]),
         .A1(addra[1]),
@@ -5871,7 +5871,7 @@ endmodule
 (* BYTE_WRITE_WIDTH_A = "8" *) (* BYTE_WRITE_WIDTH_B = "32" *) (* CASCADE_HEIGHT = "0" *) 
 (* CLOCKING_MODE = "0" *) (* ECC_BIT_RANGE = "[7:0]" *) (* ECC_MODE = "0" *) 
 (* ECC_TYPE = "NONE" *) (* IGNORE_INIT_SYNTH = "0" *) (* MAX_NUM_CHAR = "0" *) 
-(* MEMORY_INIT_FILE = "memory_system_axi_traffic_gen_0_0_addr.mem" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
+(* MEMORY_INIT_FILE = "memory_system_axi_traffic_gen_0_0_data.mem" *) (* MEMORY_INIT_PARAM = "" *) (* MEMORY_OPTIMIZATION = "true" *) 
 (* MEMORY_PRIMITIVE = "1" *) (* MEMORY_SIZE = "512" *) (* MEMORY_TYPE = "0" *) 
 (* MESSAGE_CONTROL = "0" *) (* NUM_CHAR_LOC = "0" *) (* ORIG_REF_NAME = "xpm_memory_base" *) 
 (* P_ECC_MODE = "0" *) (* P_ENABLE_BYTE_WRITE_A = "1" *) (* P_ENABLE_BYTE_WRITE_B = "0" *) 
@@ -5892,7 +5892,7 @@ endmodule
 (* WRITE_DATA_WIDTH_B = "32" *) (* WRITE_MODE_A = "1" *) (* WRITE_MODE_B = "1" *) 
 (* WRITE_PROTECT = "1" *) (* XPM_MODULE = "TRUE" *) (* keep_hierarchy = "soft" *) 
 (* rsta_loop_iter = "32" *) (* rstb_loop_iter = "32" *) 
-module memory_system_axi_traffic_gen_0_0_xpm_memory_base__1
+module memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0
    (sleep,
     clka,
     rsta,
@@ -6323,7 +6323,7 @@ module memory_system_axi_traffic_gen_0_0_xpm_memory_base__1
   (* ram_slice_begin = "12" *) 
   (* ram_slice_end = "12" *) 
   RAM32X1S #(
-    .INIT(32'h00000000)) 
+    .INIT(32'h00000002)) 
     \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_12_12 
        (.A0(addra[0]),
         .A1(addra[1]),
@@ -6939,7 +6939,7 @@ module memory_system_axi_traffic_gen_0_0_xpm_memory_base__1
   (* ram_slice_begin = "9" *) 
   (* ram_slice_end = "9" *) 
   RAM32X1S #(
-    .INIT(32'h00000000)) 
+    .INIT(32'h00000004)) 
     \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_9_9 
        (.A0(addra[0]),
         .A1(addra[1]),
@@ -6954,128 +6954,6 @@ endmodule
 
 (* ORIG_REF_NAME = "xpm_memory_spram" *) 
 module memory_system_axi_traffic_gen_0_0_xpm_memory_spram
-   (douta,
-    s_axi_aclk,
-    \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ,
-    addra);
-  output [31:0]douta;
-  input s_axi_aclk;
-  input \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ;
-  input [3:0]addra;
-
-  wire [3:0]addra;
-  wire [31:0]douta;
-  wire \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ;
-  wire s_axi_aclk;
-  wire NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED;
-  wire NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED;
-  wire NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED;
-  wire NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED;
-  wire [31:0]NLW_xpm_memory_base_inst_doutb_UNCONNECTED;
-
-  (* ADDR_WIDTH_A = "4" *) 
-  (* ADDR_WIDTH_B = "4" *) 
-  (* AUTO_SLEEP_TIME = "0" *) 
-  (* BYTE_WRITE_WIDTH_A = "8" *) 
-  (* BYTE_WRITE_WIDTH_B = "32" *) 
-  (* CASCADE_HEIGHT = "0" *) 
-  (* CLOCKING_MODE = "0" *) 
-  (* ECC_BIT_RANGE = "[7:0]" *) 
-  (* ECC_MODE = "0" *) 
-  (* ECC_TYPE = "NONE" *) 
-  (* IGNORE_INIT_SYNTH = "0" *) 
-  (* KEEP_HIERARCHY = "soft" *) 
-  (* MAX_NUM_CHAR = "0" *) 
-  (* MEMORY_INIT_FILE = "memory_system_axi_traffic_gen_0_0_addr.mem" *) 
-  (* MEMORY_INIT_PARAM = "" *) 
-  (* MEMORY_OPTIMIZATION = "true" *) 
-  (* MEMORY_PRIMITIVE = "1" *) 
-  (* MEMORY_SIZE = "512" *) 
-  (* MEMORY_TYPE = "0" *) 
-  (* MESSAGE_CONTROL = "0" *) 
-  (* NUM_CHAR_LOC = "0" *) 
-  (* P_ECC_MODE = "no_ecc" *) 
-  (* P_ENABLE_BYTE_WRITE_A = "1" *) 
-  (* P_ENABLE_BYTE_WRITE_B = "0" *) 
-  (* P_MAX_DEPTH_DATA = "16" *) 
-  (* P_MEMORY_OPT = "yes" *) 
-  (* P_MEMORY_PRIMITIVE = "distributed" *) 
-  (* P_MIN_WIDTH_DATA = "32" *) 
-  (* P_MIN_WIDTH_DATA_A = "32" *) 
-  (* P_MIN_WIDTH_DATA_B = "32" *) 
-  (* P_MIN_WIDTH_DATA_ECC = "32" *) 
-  (* P_MIN_WIDTH_DATA_LDW = "4" *) 
-  (* P_MIN_WIDTH_DATA_SHFT = "32" *) 
-  (* P_NUM_COLS_WRITE_A = "4" *) 
-  (* P_NUM_COLS_WRITE_B = "1" *) 
-  (* P_NUM_ROWS_READ_A = "1" *) 
-  (* P_NUM_ROWS_READ_B = "1" *) 
-  (* P_NUM_ROWS_WRITE_A = "1" *) 
-  (* P_NUM_ROWS_WRITE_B = "1" *) 
-  (* P_SDP_WRITE_MODE = "yes" *) 
-  (* P_WIDTH_ADDR_LSB_READ_A = "0" *) 
-  (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
-  (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
-  (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) 
-  (* P_WIDTH_ADDR_READ_A = "4" *) 
-  (* P_WIDTH_ADDR_READ_B = "4" *) 
-  (* P_WIDTH_ADDR_WRITE_A = "4" *) 
-  (* P_WIDTH_ADDR_WRITE_B = "4" *) 
-  (* P_WIDTH_COL_WRITE_A = "8" *) 
-  (* P_WIDTH_COL_WRITE_B = "32" *) 
-  (* RAM_DECOMP = "auto" *) 
-  (* READ_DATA_WIDTH_A = "32" *) 
-  (* READ_DATA_WIDTH_B = "32" *) 
-  (* READ_LATENCY_A = "1" *) 
-  (* READ_LATENCY_B = "1" *) 
-  (* READ_RESET_VALUE_A = "0" *) 
-  (* READ_RESET_VALUE_B = "0" *) 
-  (* RST_MODE_A = "SYNC" *) 
-  (* RST_MODE_B = "SYNC" *) 
-  (* SIM_ASSERT_CHK = "0" *) 
-  (* USE_EMBEDDED_CONSTRAINT = "0" *) 
-  (* USE_MEM_INIT = "1" *) 
-  (* USE_MEM_INIT_MMI = "0" *) 
-  (* VERSION = "0" *) 
-  (* WAKEUP_TIME = "0" *) 
-  (* WRITE_DATA_WIDTH_A = "32" *) 
-  (* WRITE_DATA_WIDTH_B = "32" *) 
-  (* WRITE_MODE_A = "1" *) 
-  (* WRITE_MODE_B = "1" *) 
-  (* WRITE_PROTECT = "1" *) 
-  (* XPM_MODULE = "TRUE" *) 
-  (* rsta_loop_iter = "32" *) 
-  (* rstb_loop_iter = "32" *) 
-  memory_system_axi_traffic_gen_0_0_xpm_memory_base xpm_memory_base_inst
-       (.addra(addra),
-        .addrb({1'b0,1'b0,1'b0,1'b0}),
-        .clka(s_axi_aclk),
-        .clkb(1'b0),
-        .dbiterra(NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED),
-        .dbiterrb(NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED),
-        .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .dinb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .douta(douta),
-        .doutb(NLW_xpm_memory_base_inst_doutb_UNCONNECTED[31:0]),
-        .ena(1'b1),
-        .enb(1'b0),
-        .injectdbiterra(1'b0),
-        .injectdbiterrb(1'b0),
-        .injectsbiterra(1'b0),
-        .injectsbiterrb(1'b0),
-        .regcea(1'b1),
-        .regceb(1'b0),
-        .rsta(\gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ),
-        .rstb(1'b0),
-        .sbiterra(NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED),
-        .sbiterrb(NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED),
-        .sleep(1'b0),
-        .wea({1'b0,1'b0,1'b0,1'b0}),
-        .web(1'b0));
-endmodule
-
-(* ORIG_REF_NAME = "xpm_memory_spram" *) 
-module memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1
    (douta,
     p_1_in,
     s_axi_aclk,
@@ -7259,7 +7137,129 @@ module memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1
   (* XPM_MODULE = "TRUE" *) 
   (* rsta_loop_iter = "32" *) 
   (* rstb_loop_iter = "32" *) 
-  memory_system_axi_traffic_gen_0_0_xpm_memory_base__1 xpm_memory_base_inst
+  memory_system_axi_traffic_gen_0_0_xpm_memory_base xpm_memory_base_inst
+       (.addra(addra),
+        .addrb({1'b0,1'b0,1'b0,1'b0}),
+        .clka(s_axi_aclk),
+        .clkb(1'b0),
+        .dbiterra(NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED),
+        .dbiterrb(NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED),
+        .dina({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .dinb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .douta(douta),
+        .doutb(NLW_xpm_memory_base_inst_doutb_UNCONNECTED[31:0]),
+        .ena(1'b1),
+        .enb(1'b0),
+        .injectdbiterra(1'b0),
+        .injectdbiterrb(1'b0),
+        .injectsbiterra(1'b0),
+        .injectsbiterrb(1'b0),
+        .regcea(1'b1),
+        .regceb(1'b0),
+        .rsta(\gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ),
+        .rstb(1'b0),
+        .sbiterra(NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED),
+        .sbiterrb(NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED),
+        .sleep(1'b0),
+        .wea({1'b0,1'b0,1'b0,1'b0}),
+        .web(1'b0));
+endmodule
+
+(* ORIG_REF_NAME = "xpm_memory_spram" *) 
+module memory_system_axi_traffic_gen_0_0_xpm_memory_spram__parameterized0
+   (douta,
+    s_axi_aclk,
+    \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ,
+    addra);
+  output [31:0]douta;
+  input s_axi_aclk;
+  input \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ;
+  input [3:0]addra;
+
+  wire [3:0]addra;
+  wire [31:0]douta;
+  wire \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31] ;
+  wire s_axi_aclk;
+  wire NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED;
+  wire NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED;
+  wire NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED;
+  wire NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED;
+  wire [31:0]NLW_xpm_memory_base_inst_doutb_UNCONNECTED;
+
+  (* ADDR_WIDTH_A = "4" *) 
+  (* ADDR_WIDTH_B = "4" *) 
+  (* AUTO_SLEEP_TIME = "0" *) 
+  (* BYTE_WRITE_WIDTH_A = "8" *) 
+  (* BYTE_WRITE_WIDTH_B = "32" *) 
+  (* CASCADE_HEIGHT = "0" *) 
+  (* CLOCKING_MODE = "0" *) 
+  (* ECC_BIT_RANGE = "[7:0]" *) 
+  (* ECC_MODE = "0" *) 
+  (* ECC_TYPE = "NONE" *) 
+  (* IGNORE_INIT_SYNTH = "0" *) 
+  (* KEEP_HIERARCHY = "soft" *) 
+  (* MAX_NUM_CHAR = "0" *) 
+  (* MEMORY_INIT_FILE = "memory_system_axi_traffic_gen_0_0_data.mem" *) 
+  (* MEMORY_INIT_PARAM = "" *) 
+  (* MEMORY_OPTIMIZATION = "true" *) 
+  (* MEMORY_PRIMITIVE = "1" *) 
+  (* MEMORY_SIZE = "512" *) 
+  (* MEMORY_TYPE = "0" *) 
+  (* MESSAGE_CONTROL = "0" *) 
+  (* NUM_CHAR_LOC = "0" *) 
+  (* P_ECC_MODE = "no_ecc" *) 
+  (* P_ENABLE_BYTE_WRITE_A = "1" *) 
+  (* P_ENABLE_BYTE_WRITE_B = "0" *) 
+  (* P_MAX_DEPTH_DATA = "16" *) 
+  (* P_MEMORY_OPT = "yes" *) 
+  (* P_MEMORY_PRIMITIVE = "distributed" *) 
+  (* P_MIN_WIDTH_DATA = "32" *) 
+  (* P_MIN_WIDTH_DATA_A = "32" *) 
+  (* P_MIN_WIDTH_DATA_B = "32" *) 
+  (* P_MIN_WIDTH_DATA_ECC = "32" *) 
+  (* P_MIN_WIDTH_DATA_LDW = "4" *) 
+  (* P_MIN_WIDTH_DATA_SHFT = "32" *) 
+  (* P_NUM_COLS_WRITE_A = "4" *) 
+  (* P_NUM_COLS_WRITE_B = "1" *) 
+  (* P_NUM_ROWS_READ_A = "1" *) 
+  (* P_NUM_ROWS_READ_B = "1" *) 
+  (* P_NUM_ROWS_WRITE_A = "1" *) 
+  (* P_NUM_ROWS_WRITE_B = "1" *) 
+  (* P_SDP_WRITE_MODE = "yes" *) 
+  (* P_WIDTH_ADDR_LSB_READ_A = "0" *) 
+  (* P_WIDTH_ADDR_LSB_READ_B = "0" *) 
+  (* P_WIDTH_ADDR_LSB_WRITE_A = "0" *) 
+  (* P_WIDTH_ADDR_LSB_WRITE_B = "0" *) 
+  (* P_WIDTH_ADDR_READ_A = "4" *) 
+  (* P_WIDTH_ADDR_READ_B = "4" *) 
+  (* P_WIDTH_ADDR_WRITE_A = "4" *) 
+  (* P_WIDTH_ADDR_WRITE_B = "4" *) 
+  (* P_WIDTH_COL_WRITE_A = "8" *) 
+  (* P_WIDTH_COL_WRITE_B = "32" *) 
+  (* RAM_DECOMP = "auto" *) 
+  (* READ_DATA_WIDTH_A = "32" *) 
+  (* READ_DATA_WIDTH_B = "32" *) 
+  (* READ_LATENCY_A = "1" *) 
+  (* READ_LATENCY_B = "1" *) 
+  (* READ_RESET_VALUE_A = "0" *) 
+  (* READ_RESET_VALUE_B = "0" *) 
+  (* RST_MODE_A = "SYNC" *) 
+  (* RST_MODE_B = "SYNC" *) 
+  (* SIM_ASSERT_CHK = "0" *) 
+  (* USE_EMBEDDED_CONSTRAINT = "0" *) 
+  (* USE_MEM_INIT = "1" *) 
+  (* USE_MEM_INIT_MMI = "0" *) 
+  (* VERSION = "0" *) 
+  (* WAKEUP_TIME = "0" *) 
+  (* WRITE_DATA_WIDTH_A = "32" *) 
+  (* WRITE_DATA_WIDTH_B = "32" *) 
+  (* WRITE_MODE_A = "1" *) 
+  (* WRITE_MODE_B = "1" *) 
+  (* WRITE_PROTECT = "1" *) 
+  (* XPM_MODULE = "TRUE" *) 
+  (* rsta_loop_iter = "32" *) 
+  (* rstb_loop_iter = "32" *) 
+  memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0 xpm_memory_base_inst
        (.addra(addra),
         .addrb({1'b0,1'b0,1'b0,1'b0}),
         .clka(s_axi_aclk),

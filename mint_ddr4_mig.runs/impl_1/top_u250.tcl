@@ -125,7 +125,7 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.xpr [current_project]
   set_property ip_output_repo /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_FIFO XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/synth_1/top_u250.dcp
@@ -304,7 +304,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
-  set_property XPM_LIBRARIES {XPM_FIFO XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi top_u250.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

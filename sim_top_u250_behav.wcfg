@@ -6,22 +6,24 @@
       <db_ref path="sim_top_u250_behav.wdb" id="1">
          <top_modules>
             <top_module name="arch_package" />
+            <top_module name="axi_cdma_pkg" />
             <top_module name="glbl" />
+            <top_module name="lib_pkg" />
             <top_module name="proj_package" />
             <top_module name="sim_top_u250" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="53.300001 us"></ZoomEndTime>
-      <Cursor1Time time="13.150000 us"></Cursor1Time>
+      <ZoomStartTime time="20,712.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="22,860.001 ns"></ZoomEndTime>
+      <Cursor1Time time="22,002.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="205"></NameColumnWidth>
-      <ValueColumnWidth column_width="298"></ValueColumnWidth>
+      <ValueColumnWidth column_width="290"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
+   <WVObjectSize size="14" />
    <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/c0_ddr4_ui_clk">
       <obj_property name="ElementShortName">c0_ddr4_ui_clk</obj_property>
       <obj_property name="ObjectShortName">c0_ddr4_ui_clk</obj_property>
@@ -56,5 +58,30 @@
    <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/c0_ddr4_aresetn">
       <obj_property name="ElementShortName">c0_ddr4_aresetn</obj_property>
       <obj_property name="ObjectShortName">c0_ddr4_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider301" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_traffic_gen_0/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider303" type="divider">
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/S_AXI_LITE">
+      <obj_property name="ElementShortName">S_AXI_LITE</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_LITE</obj_property>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/M_AXI">
+      <obj_property name="children_use_element_short_name">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank 1=#D399FF 2=pink</obj_property>
+      <obj_property name="EnumTransactionValueTable">0=blank;1=Read;2=Write;3=Read/Write</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">turquoise</obj_property>
+      <obj_property name="Render_Data">/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/M_AXI.readWriteSummary</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">36</obj_property>
+      <obj_property name="ElementShortName">M_AXI</obj_property>
+      <obj_property name="ObjectShortName">M_AXI</obj_property>
    </wvobject>
 </wave_config>

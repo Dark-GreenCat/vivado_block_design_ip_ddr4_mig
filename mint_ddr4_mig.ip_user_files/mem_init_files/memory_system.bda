@@ -191,14 +191,32 @@
             "V3": {
                 "VT": "AC",
                 "BA": "0x00000000",
-                "HA": "0xFFFFFFFF",
-                "BP": "C0_DDR4_MEMORY_MAP_BASEADDR",
-                "HP": "C0_DDR4_MEMORY_MAP_HIGHADDR",
+                "HA": "0x0000FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
                 "MA": "Reg1",
                 "MX": "/axi_traffic_gen_0",
                 "MI": "M_AXI_LITE_CH1",
-                "MS": "SEG_DDR4_MIG_C0_DDR4_ADDRESS_BLOCK",
+                "MS": "SEG_axi_cdma_0_Reg",
                 "MV": "xilinx.com:ip:axi_traffic_gen:3.0",
+                "SX": "/axi_cdma_0",
+                "SI": "S_AXI_LITE",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:axi_cdma:4.1",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V4": {
+                "VT": "AC",
+                "BA": "0x000000000",
+                "HA": "0x3FFFFFFFF",
+                "BP": "C0_DDR4_MEMORY_MAP_BASEADDR",
+                "HP": "C0_DDR4_MEMORY_MAP_HIGHADDR",
+                "MA": "Data",
+                "MX": "/axi_cdma_0",
+                "MI": "M_AXI",
+                "MS": "SEG_DDR4_MIG_C0_DDR4_ADDRESS_BLOCK",
+                "MV": "xilinx.com:ip:axi_cdma:4.1",
                 "SX": "/DDR4_MIG",
                 "SI": "C0_DDR4_S_AXI",
                 "MM": "C0_DDR4_MEMORY_MAP",
@@ -206,6 +224,25 @@
                 "SV": "xilinx.com:ip:ddr4:2.2",
                 "TM": "both",
                 "TU": "memory"
+            },
+            "V5": {
+                "VT": "ACE",
+                "BA": "0x000000000",
+                "HA": "0x000000000",
+                "BP": "C0_DDR4_MEMORY_MAP_CTRL_BASEADDR",
+                "HP": "C0_DDR4_MEMORY_MAP_CTRL_HIGHADDR",
+                "MA": "Data",
+                "MX": "/axi_cdma_0",
+                "MI": "M_AXI",
+                "MS": "SEG_DDR4_MIG_C0_REG",
+                "MV": "xilinx.com:ip:axi_cdma:4.1",
+                "SX": "/DDR4_MIG",
+                "SI": "C0_DDR4_S_AXI_CTRL",
+                "MM": "C0_DDR4_MEMORY_MAP_CTRL",
+                "SS": "C0_REG",
+                "SV": "xilinx.com:ip:ddr4:2.2",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -219,6 +256,16 @@
             },
             {
                 "src": "V3",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V4",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V5",
                 "trg": "V2",
                 "EH": "2"
             }

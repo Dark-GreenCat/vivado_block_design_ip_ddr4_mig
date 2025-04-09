@@ -14,7 +14,8 @@
       "DDR4_MIG": "",
       "smartconnect_0": "",
       "axi_traffic_gen_0": "",
-      "NOT_GATE": ""
+      "NOT_GATE": "",
+      "axi_cdma_0": ""
     },
     "interface_ports": {
       "c0_sys": {
@@ -308,10 +309,10 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "parameters": {
               "NUM_READ_OUTSTANDING": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_WRITE_OUTSTANDING": {
-                "value": "1"
+                "value": "2"
               }
             },
             "bridges": [
@@ -328,13 +329,13 @@
                 "value": "1"
               },
               "NUM_READ_OUTSTANDING": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_READ_THREADS": {
                 "value": "1"
               },
               "NUM_WRITE_OUTSTANDING": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_WRITE_THREADS": {
                 "value": "1"
@@ -356,16 +357,16 @@
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "parameters": {
               "MAX_BURST_LENGTH": {
-                "value": "1"
+                "value": "8"
               },
               "NUM_READ_OUTSTANDING": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_READ_THREADS": {
                 "value": "1"
               },
               "NUM_WRITE_OUTSTANDING": {
-                "value": "1"
+                "value": "2"
               },
               "NUM_WRITE_THREADS": {
                 "value": "1"
@@ -412,11 +413,6 @@
               "minimum": "0x00000000",
               "maximum": "0xFFFFFFFF",
               "width": "32"
-            },
-            "parameters": {
-              "master_id": {
-                "value": "1"
-              }
             }
           }
         },
@@ -443,6 +439,52 @@
             "value": "1"
           }
         }
+      },
+      "axi_cdma_0": {
+        "vlnv": "xilinx.com:ip:axi_cdma:4.1",
+        "ip_revision": "31",
+        "xci_name": "memory_system_axi_cdma_0_0",
+        "xci_path": "ip/memory_system_axi_cdma_0_0/memory_system_axi_cdma_0_0.xci",
+        "inst_hier_path": "axi_cdma_0",
+        "parameters": {
+          "C_ADDR_WIDTH": {
+            "value": "34"
+          },
+          "C_INCLUDE_SG": {
+            "value": "0"
+          },
+          "C_M_AXI_DATA_WIDTH": {
+            "value": "512"
+          },
+          "C_M_AXI_MAX_BURST_LEN": {
+            "value": "8"
+          }
+        },
+        "interface_ports": {
+          "M_AXI": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data",
+            "base_address": {
+              "minimum": "0x00000000",
+              "maximum": "0x0003FFFFFFFF",
+              "width": "34"
+            },
+            "parameters": {
+              "master_id": {
+                "value": "2"
+              }
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data": {
+              "range": "16G",
+              "width": "34"
+            }
+          }
+        }
       }
     },
     "interface_nets": {
@@ -452,10 +494,16 @@
           "DDR4_MIG/C0_SYS_CLK"
         ]
       },
+      "axi_cdma_0_M_AXI": {
+        "interface_ports": [
+          "axi_cdma_0/M_AXI",
+          "smartconnect_0/S00_AXI"
+        ]
+      },
       "axi_traffic_gen_0_M_AXI_LITE_CH1": {
         "interface_ports": [
           "axi_traffic_gen_0/M_AXI_LITE_CH1",
-          "smartconnect_0/S00_AXI"
+          "axi_cdma_0/S_AXI_LITE"
         ]
       },
       "ddr4_0_C0_DDR4": {
@@ -483,7 +531,9 @@
           "DDR4_MIG/c0_ddr4_ui_clk",
           "c0_ddr4_ui_clk",
           "smartconnect_0/aclk",
-          "axi_traffic_gen_0/s_axi_aclk"
+          "axi_traffic_gen_0/s_axi_aclk",
+          "axi_cdma_0/m_axi_aclk",
+          "axi_cdma_0/s_axi_lite_aclk"
         ]
       },
       "DDR4_MIG_c0_ddr4_ui_clk_sync_rst": {
@@ -492,10 +542,17 @@
           "NOT_GATE/Op1"
         ]
       },
+      "DDR4_MIG_c0_init_calib_complete": {
+        "ports": [
+          "DDR4_MIG/c0_init_calib_complete",
+          "axi_traffic_gen_0/s_axi_aresetn"
+        ]
+      },
       "NOT_GATE_Res": {
         "ports": [
           "NOT_GATE/Res",
-          "DDR4_MIG/c0_ddr4_aresetn"
+          "DDR4_MIG/c0_ddr4_aresetn",
+          "axi_cdma_0/s_axi_lite_aresetn"
         ]
       },
       "sys_rst_0_1": {
@@ -510,12 +567,33 @@
         "address_spaces": {
           "Reg1": {
             "segments": {
+              "SEG_axi_cdma_0_Reg": {
+                "address_block": "/axi_cdma_0/S_AXI_LITE/Reg",
+                "offset": "0x00000000",
+                "range": "64K"
+              }
+            }
+          }
+        }
+      },
+      "/axi_cdma_0": {
+        "address_spaces": {
+          "Data": {
+            "segments": {
               "SEG_DDR4_MIG_C0_DDR4_ADDRESS_BLOCK": {
                 "address_block": "/DDR4_MIG/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK",
-                "offset": "0x00000000",
-                "range": "4G",
+                "offset": "0x000000000",
+                "range": "16G",
                 "offset_base_param": "C0_DDR4_MEMORY_MAP_BASEADDR",
                 "offset_high_param": "C0_DDR4_MEMORY_MAP_HIGHADDR"
+              },
+              "SEG_DDR4_MIG_C0_REG": {
+                "address_block": "/DDR4_MIG/C0_DDR4_MEMORY_MAP_CTRL/C0_REG",
+                "offset": "0x000000000",
+                "range": "1",
+                "is_excluded": "TRUE",
+                "offset_base_param": "C0_DDR4_MEMORY_MAP_CTRL_BASEADDR",
+                "offset_high_param": "C0_DDR4_MEMORY_MAP_CTRL_HIGHADDR"
               }
             }
           }

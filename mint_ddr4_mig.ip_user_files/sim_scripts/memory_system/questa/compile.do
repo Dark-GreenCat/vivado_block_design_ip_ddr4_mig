@@ -20,6 +20,13 @@ vlib questa_lib/msim/dist_mem_gen_v8_0_15
 vlib questa_lib/msim/lib_bmg_v1_0_17
 vlib questa_lib/msim/axi_traffic_gen_v3_0_17
 vlib questa_lib/msim/util_vector_logic_v2_0_4
+vlib questa_lib/msim/lib_pkg_v1_0_4
+vlib questa_lib/msim/lib_srl_fifo_v1_0_4
+vlib questa_lib/msim/fifo_generator_v13_2_10
+vlib questa_lib/msim/lib_fifo_v1_0_19
+vlib questa_lib/msim/axi_datamover_v5_1_33
+vlib questa_lib/msim/axi_sg_v4_1_18
+vlib questa_lib/msim/axi_cdma_v4_1_31
 
 vmap xilinx_vip questa_lib/msim/xilinx_vip
 vmap xpm questa_lib/msim/xpm
@@ -40,6 +47,13 @@ vmap dist_mem_gen_v8_0_15 questa_lib/msim/dist_mem_gen_v8_0_15
 vmap lib_bmg_v1_0_17 questa_lib/msim/lib_bmg_v1_0_17
 vmap axi_traffic_gen_v3_0_17 questa_lib/msim/axi_traffic_gen_v3_0_17
 vmap util_vector_logic_v2_0_4 questa_lib/msim/util_vector_logic_v2_0_4
+vmap lib_pkg_v1_0_4 questa_lib/msim/lib_pkg_v1_0_4
+vmap lib_srl_fifo_v1_0_4 questa_lib/msim/lib_srl_fifo_v1_0_4
+vmap fifo_generator_v13_2_10 questa_lib/msim/fifo_generator_v13_2_10
+vmap lib_fifo_v1_0_19 questa_lib/msim/lib_fifo_v1_0_19
+vmap axi_datamover_v5_1_33 questa_lib/msim/axi_datamover_v5_1_33
+vmap axi_sg_v4_1_18 questa_lib/msim/axi_sg_v4_1_18
+vmap axi_cdma_v4_1_31 questa_lib/msim/axi_cdma_v4_1_31
 
 vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -53,9 +67,9 @@ vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/hdl/rst_vip_if.sv" \
 
 vlog -work xpm -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
-"/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 
 vcom -work xpm -64 -93  \
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd" \
@@ -251,29 +265,35 @@ vlog -work smartconnect_v1_0 -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartcon
 "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/sc_node_v1_0_vl_rfs.sv" \
 
 vlog -work xil_defaultlib -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_ee24_sawn_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_ee24_swn_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_ee24_sbn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_ee24_sarn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_ee24_srn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_ee24_sawn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_ee24_swn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_ee24_sbn_0.sv" \
 
 vlog -work smartconnect_v1_0 -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/7f4f/hdl/sc_sc2axi_v1_0_vl_rfs.sv" \
 
 vlog -work xil_defaultlib -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_ee24_m00s2a_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_ee24_m00awn_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_ee24_m00wn_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_ee24_m00bn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_ee24_m00s2a_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_ee24_m00arn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_ee24_m00rn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_ee24_m00awn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_ee24_m00wn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_ee24_m00bn_0.sv" \
 
 vlog -work smartconnect_v1_0 -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/1f04/hdl/sc_exit_v1_0_vl_rfs.sv" \
 
 vlog -work xil_defaultlib -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_ee24_m00e_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_ee24_m01s2a_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_ee24_m01awn_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_ee24_m01wn_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_ee24_m01bn_0.sv" \
-"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_ee24_m01e_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_ee24_m00e_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_ee24_m01s2a_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_ee24_m01arn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_ee24_m01rn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_ee24_m01awn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_ee24_m01wn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_ee24_m01bn_0.sv" \
+"../../../bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_ee24_m01e_0.sv" \
 
 vlog -work axi_infrastructure_v1_1_0 -64 -incr -mfcu  "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
@@ -311,6 +331,36 @@ vlog -work util_vector_logic_v2_0_4 -64 -incr -mfcu  "+incdir+../../../bd/memory
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/memory_system/ip/memory_system_util_vector_logic_0_0/sim/memory_system_util_vector_logic_0_0.v" \
+
+vcom -work lib_pkg_v1_0_4 -64 -93  \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/8c68/hdl/lib_pkg_v1_0_rfs.vhd" \
+
+vcom -work lib_srl_fifo_v1_0_4 -64 -93  \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/1e5a/hdl/lib_srl_fifo_v1_0_rfs.vhd" \
+
+vlog -work fifo_generator_v13_2_10 -64 -incr -mfcu  "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/1443/simulation/fifo_generator_vlog_beh.v" \
+
+vcom -work fifo_generator_v13_2_10 -64 -93  \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/1443/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+vlog -work fifo_generator_v13_2_10 -64 -incr -mfcu  "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/1443/hdl/fifo_generator_v13_2_rfs.v" \
+
+vcom -work lib_fifo_v1_0_19 -64 -93  \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/0a12/hdl/lib_fifo_v1_0_rfs.vhd" \
+
+vcom -work axi_datamover_v5_1_33 -64 -93  \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/bf20/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+
+vcom -work axi_sg_v4_1_18 -64 -93  \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/6f54/hdl/axi_sg_v4_1_rfs.vhd" \
+
+vcom -work axi_cdma_v4_1_31 -64 -93  \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/0b3d/hdl/axi_cdma_v4_1_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93  \
+"../../../bd/memory_system/ip/memory_system_axi_cdma_0_0/sim/memory_system_axi_cdma_0_0.vhd" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

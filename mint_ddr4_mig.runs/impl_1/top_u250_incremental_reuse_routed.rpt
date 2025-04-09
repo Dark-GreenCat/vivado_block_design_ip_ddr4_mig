@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Thu Apr 10 03:47:02 2025
+| Date         : Thu Apr 10 04:41:38 2025
 | Host         : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 | Command      : report_incremental_reuse -file top_u250_incremental_reuse_routed.rpt
 | Design       : top_u250
@@ -45,9 +45,9 @@ Table of Contents
 +-------+------------------------------+------------------------------------+----------------------------+--------------------+--------+
 |  Type | Matched % (of Initial Total) | Initial Reuse % (of Initial Total) | Current Reuse % (of Total) | Fixed % (of Total) |  Total |
 +-------+------------------------------+------------------------------------+----------------------------+--------------------+--------+
-| Cells |                        99.80 |                              99.80 |                      99.51 |               0.95 |  47579 |
-| Nets  |                        99.78 |                              99.74 |                      99.01 |               0.00 |  34796 |
-| Pins  |                            - |                              99.82 |                      98.12 |                  - | 187842 |
+| Cells |                        71.04 |                              71.03 |                      58.98 |               0.68 |  66607 |
+| Nets  |                        78.40 |                              71.11 |                      49.43 |               0.00 |  47259 |
+| Pins  |                            - |                              69.10 |                      48.78 |                  - | 269656 |
 | Ports |                       100.00 |                             100.00 |                     100.00 |             100.00 |    139 |
 +-------+------------------------------+------------------------------------+----------------------------+--------------------+--------+
 
@@ -81,12 +81,12 @@ Table of Contents
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
-| synth_design    |         N/A |         N/A |       00:01 |     < 1 min |       00:01 |     < 1 min |
-| opt_design      |             |             |       00:05 |       00:01 |       00:06 |       00:02 |
-| read_checkpoint |             |             |             |       00:01 |             |       00:01 |
-| place_design    |       0.581 |       0.186 |       00:05 |       00:03 |       00:14 |       00:09 |
-| phys_opt_design |       0.581 |       0.186 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
-| route_design    |       0.186 |       0.186 |       00:01 |       00:02 |       00:06 |       00:05 |
+| synth_design    |         N/A |         N/A |     < 1 min |     < 1 min |     < 1 min |       00:01 |
+| opt_design      |             |             |       00:01 |       00:01 |       00:02 |       00:02 |
+| read_checkpoint |             |             |       00:01 |       00:01 |       00:01 |       00:02 |
+| place_design    |       0.186 |       0.203 |       00:03 |       00:05 |       00:09 |       00:14 |
+| phys_opt_design |       0.186 |       0.203 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| route_design    |       0.186 |       0.011 |       00:02 |       00:14 |       00:05 |       00:33 |
 +-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 
@@ -99,8 +99,8 @@ Table of Contents
 +-------------------------+--------+------------+
 | iphys_opt_design replay | Reused | Not Reused |
 +-------------------------+--------+------------+
-| equ_drivers_opt         |     17 |          0 |
 | fanout_opt              |      1 |          0 |
+| equ_drivers_opt         |     15 |          2 |
 +-------------------------+--------+------------+
 
 
@@ -135,6 +135,7 @@ Table of Contents
 --------------
 synth_design-define default::[not_specified] -verilog_define default::[not_specified] -vhdl_define default::[not_specified] -top  top_u250 -part  xcu250-figd2104-2L-e 
 opt_design
+read_checkpoint -directive RuntimeOptimized  -incremental -auto_incremental /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/utils_1/imports/impl_1/top_u250_routed.dcp
 place_design
 phys_opt_design
 route_design
@@ -151,15 +152,16 @@ route_design
 7. Non Reuse Information
 ------------------------
 
-+-------------------------------+------+
-|              Type             |   %  |
-+-------------------------------+------+
-| Non-Reused Cells              | 0.48 |
-|   New                         | 0.19 |
-|   Discarded to improve timing | 0.29 |
-| Partially reused nets         | 0.00 |
-| Non-Reused nets               | 0.98 |
-| Non-Reused Ports              | 0.00 |
-+-------------------------------+------+
++------------------------------------------------------+-------+
+|                         Type                         |   %   |
++------------------------------------------------------+-------+
+| Non-Reused Cells                                     | 41.01 |
+|   New                                                | 28.75 |
+|   Discarded illegal placement due to netlist changes |  0.04 |
+|   Discarded to improve timing                        | 12.21 |
+| Partially reused nets                                |  5.90 |
+| Non-Reused nets                                      | 44.65 |
+| Non-Reused Ports                                     |  0.00 |
++------------------------------------------------------+-------+
 
 

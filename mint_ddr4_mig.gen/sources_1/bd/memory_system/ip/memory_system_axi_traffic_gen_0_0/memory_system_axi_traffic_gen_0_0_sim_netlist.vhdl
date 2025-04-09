@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
--- Date        : Thu Apr 10 02:38:07 2025
+-- Date        : Thu Apr 10 04:12:40 2025
 -- Host        : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0_sim_netlist.vhdl
@@ -5015,7 +5015,7 @@ GND: unisim.vcomponents.GND
     );
 \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_3_3\: unisim.vcomponents.RAM32X1S
     generic map(
-      INIT => X"00000000"
+      INIT => X"00000005"
     )
         port map (
       A0 => addra(0),
@@ -5030,7 +5030,7 @@ GND: unisim.vcomponents.GND
     );
 \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_4_4\: unisim.vcomponents.RAM32X1S
     generic map(
-      INIT => X"00000000"
+      INIT => X"00000001"
     )
         port map (
       A0 => addra(0),
@@ -5045,7 +5045,7 @@ GND: unisim.vcomponents.GND
     );
 \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_5_5\: unisim.vcomponents.RAM32X1S
     generic map(
-      INIT => X"00000000"
+      INIT => X"00000006"
     )
         port map (
       A0 => addra(0),
@@ -5123,7 +5123,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ is
+entity \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ is
   port (
     sleep : in STD_LOGIC;
     clka : in STD_LOGIC;
@@ -5152,156 +5152,156 @@ entity \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ is
     dbiterrb : out STD_LOGIC
   );
   attribute ADDR_WIDTH_A : integer;
-  attribute ADDR_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute ADDR_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute ADDR_WIDTH_B : integer;
-  attribute ADDR_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute ADDR_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute AUTO_SLEEP_TIME : integer;
-  attribute AUTO_SLEEP_TIME of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute AUTO_SLEEP_TIME of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute BYTE_WRITE_WIDTH_A : integer;
-  attribute BYTE_WRITE_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 8;
+  attribute BYTE_WRITE_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 8;
   attribute BYTE_WRITE_WIDTH_B : integer;
-  attribute BYTE_WRITE_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute BYTE_WRITE_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute CASCADE_HEIGHT : integer;
-  attribute CASCADE_HEIGHT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute CASCADE_HEIGHT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute CLOCKING_MODE : integer;
-  attribute CLOCKING_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute CLOCKING_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute ECC_BIT_RANGE : string;
-  attribute ECC_BIT_RANGE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "[7:0]";
+  attribute ECC_BIT_RANGE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "[7:0]";
   attribute ECC_MODE : integer;
-  attribute ECC_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute ECC_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute ECC_TYPE : string;
-  attribute ECC_TYPE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "NONE";
+  attribute ECC_TYPE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "NONE";
   attribute IGNORE_INIT_SYNTH : integer;
-  attribute IGNORE_INIT_SYNTH of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute IGNORE_INIT_SYNTH of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute MAX_NUM_CHAR : integer;
-  attribute MAX_NUM_CHAR of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute MAX_NUM_CHAR of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute MEMORY_INIT_FILE : string;
-  attribute MEMORY_INIT_FILE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "memory_system_axi_traffic_gen_0_0_addr.mem";
+  attribute MEMORY_INIT_FILE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "memory_system_axi_traffic_gen_0_0_data.mem";
   attribute MEMORY_INIT_PARAM : string;
-  attribute MEMORY_INIT_PARAM of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "";
+  attribute MEMORY_INIT_PARAM of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "";
   attribute MEMORY_OPTIMIZATION : string;
-  attribute MEMORY_OPTIMIZATION of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "true";
+  attribute MEMORY_OPTIMIZATION of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "true";
   attribute MEMORY_PRIMITIVE : integer;
-  attribute MEMORY_PRIMITIVE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute MEMORY_PRIMITIVE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute MEMORY_SIZE : integer;
-  attribute MEMORY_SIZE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 512;
+  attribute MEMORY_SIZE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 512;
   attribute MEMORY_TYPE : integer;
-  attribute MEMORY_TYPE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute MEMORY_TYPE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute MESSAGE_CONTROL : integer;
-  attribute MESSAGE_CONTROL of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute MESSAGE_CONTROL of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute NUM_CHAR_LOC : integer;
-  attribute NUM_CHAR_LOC of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute NUM_CHAR_LOC of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "xpm_memory_base";
+  attribute ORIG_REF_NAME of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "xpm_memory_base";
   attribute P_ECC_MODE : integer;
-  attribute P_ECC_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute P_ECC_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_ENABLE_BYTE_WRITE_A : integer;
-  attribute P_ENABLE_BYTE_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute P_ENABLE_BYTE_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_ENABLE_BYTE_WRITE_B : integer;
-  attribute P_ENABLE_BYTE_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute P_ENABLE_BYTE_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_MAX_DEPTH_DATA : integer;
-  attribute P_MAX_DEPTH_DATA of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 16;
+  attribute P_MAX_DEPTH_DATA of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 16;
   attribute P_MEMORY_OPT : string;
-  attribute P_MEMORY_OPT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "yes";
+  attribute P_MEMORY_OPT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "yes";
   attribute P_MEMORY_PRIMITIVE : integer;
-  attribute P_MEMORY_PRIMITIVE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute P_MEMORY_PRIMITIVE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_MIN_WIDTH_DATA : integer;
-  attribute P_MIN_WIDTH_DATA of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute P_MIN_WIDTH_DATA of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute P_MIN_WIDTH_DATA_A : integer;
-  attribute P_MIN_WIDTH_DATA_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute P_MIN_WIDTH_DATA_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute P_MIN_WIDTH_DATA_B : integer;
-  attribute P_MIN_WIDTH_DATA_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute P_MIN_WIDTH_DATA_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute P_MIN_WIDTH_DATA_ECC : integer;
-  attribute P_MIN_WIDTH_DATA_ECC of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute P_MIN_WIDTH_DATA_ECC of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute P_MIN_WIDTH_DATA_LDW : integer;
-  attribute P_MIN_WIDTH_DATA_LDW of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute P_MIN_WIDTH_DATA_LDW of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_MIN_WIDTH_DATA_SHFT : integer;
-  attribute P_MIN_WIDTH_DATA_SHFT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute P_MIN_WIDTH_DATA_SHFT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute P_NUM_COLS_WRITE_A : integer;
-  attribute P_NUM_COLS_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute P_NUM_COLS_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_NUM_COLS_WRITE_B : integer;
-  attribute P_NUM_COLS_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute P_NUM_COLS_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_READ_A : integer;
-  attribute P_NUM_ROWS_READ_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute P_NUM_ROWS_READ_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_READ_B : integer;
-  attribute P_NUM_ROWS_READ_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute P_NUM_ROWS_READ_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_WRITE_A : integer;
-  attribute P_NUM_ROWS_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute P_NUM_ROWS_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_NUM_ROWS_WRITE_B : integer;
-  attribute P_NUM_ROWS_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute P_NUM_ROWS_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute P_SDP_WRITE_MODE : string;
-  attribute P_SDP_WRITE_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "yes";
+  attribute P_SDP_WRITE_MODE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "yes";
   attribute P_WIDTH_ADDR_LSB_READ_A : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_READ_B : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_LSB_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute P_WIDTH_ADDR_READ_A : integer;
-  attribute P_WIDTH_ADDR_READ_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute P_WIDTH_ADDR_READ_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_ADDR_READ_B : integer;
-  attribute P_WIDTH_ADDR_READ_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute P_WIDTH_ADDR_READ_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_ADDR_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute P_WIDTH_ADDR_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_ADDR_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 4;
+  attribute P_WIDTH_ADDR_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 4;
   attribute P_WIDTH_COL_WRITE_A : integer;
-  attribute P_WIDTH_COL_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 8;
+  attribute P_WIDTH_COL_WRITE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 8;
   attribute P_WIDTH_COL_WRITE_B : integer;
-  attribute P_WIDTH_COL_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute P_WIDTH_COL_WRITE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute RAM_DECOMP : string;
-  attribute RAM_DECOMP of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "auto";
+  attribute RAM_DECOMP of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "auto";
   attribute READ_DATA_WIDTH_A : integer;
-  attribute READ_DATA_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute READ_DATA_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute READ_DATA_WIDTH_B : integer;
-  attribute READ_DATA_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute READ_DATA_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute READ_LATENCY_A : integer;
-  attribute READ_LATENCY_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute READ_LATENCY_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute READ_LATENCY_B : integer;
-  attribute READ_LATENCY_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute READ_LATENCY_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute READ_RESET_VALUE_A : string;
-  attribute READ_RESET_VALUE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "0";
+  attribute READ_RESET_VALUE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "0";
   attribute READ_RESET_VALUE_B : string;
-  attribute READ_RESET_VALUE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "0";
+  attribute READ_RESET_VALUE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "0";
   attribute RST_MODE_A : string;
-  attribute RST_MODE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "SYNC";
+  attribute RST_MODE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "SYNC";
   attribute RST_MODE_B : string;
-  attribute RST_MODE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "SYNC";
+  attribute RST_MODE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "SYNC";
   attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute SIM_ASSERT_CHK of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute USE_EMBEDDED_CONSTRAINT : integer;
-  attribute USE_EMBEDDED_CONSTRAINT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute USE_EMBEDDED_CONSTRAINT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute USE_MEM_INIT : integer;
-  attribute USE_MEM_INIT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute USE_MEM_INIT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute USE_MEM_INIT_MMI : integer;
-  attribute USE_MEM_INIT_MMI of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute USE_MEM_INIT_MMI of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute VERSION : integer;
-  attribute VERSION of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute VERSION of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 0;
+  attribute WAKEUP_TIME of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 0;
   attribute WRITE_DATA_WIDTH_A : integer;
-  attribute WRITE_DATA_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute WRITE_DATA_WIDTH_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute WRITE_DATA_WIDTH_B : integer;
-  attribute WRITE_DATA_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute WRITE_DATA_WIDTH_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute WRITE_MODE_A : integer;
-  attribute WRITE_MODE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute WRITE_MODE_A of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute WRITE_MODE_B : integer;
-  attribute WRITE_MODE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute WRITE_MODE_B of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute WRITE_PROTECT : integer;
-  attribute WRITE_PROTECT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 1;
+  attribute WRITE_PROTECT of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 1;
   attribute XPM_MODULE : string;
-  attribute XPM_MODULE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "TRUE";
+  attribute XPM_MODULE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "TRUE";
   attribute keep_hierarchy : string;
-  attribute keep_hierarchy of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is "soft";
+  attribute keep_hierarchy of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is "soft";
   attribute rsta_loop_iter : integer;
-  attribute rsta_loop_iter of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
+  attribute rsta_loop_iter of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
   attribute rstb_loop_iter : integer;
-  attribute rstb_loop_iter of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ : entity is 32;
-end \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\;
+  attribute rstb_loop_iter of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ : entity is 32;
+end \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\;
 
-architecture STRUCTURE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\ is
+architecture STRUCTURE of \memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\ is
   signal \<const0>\ : STD_LOGIC;
   signal \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg0\ : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute RTL_RAM_BITS : integer;
@@ -6074,7 +6074,7 @@ GND: unisim.vcomponents.GND
     );
 \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_12_12\: unisim.vcomponents.RAM32X1S
     generic map(
-      INIT => X"00000000"
+      INIT => X"00000002"
     )
         port map (
       A0 => addra(0),
@@ -6494,7 +6494,7 @@ GND: unisim.vcomponents.GND
     );
 \gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg_0_15_9_9\: unisim.vcomponents.RAM32X1S
     generic map(
-      INIT => X"00000000"
+      INIT => X"00000004"
     )
         port map (
       A0 => addra(0),
@@ -6515,203 +6515,6 @@ use UNISIM.VCOMPONENTS.ALL;
 entity memory_system_axi_traffic_gen_0_0_xpm_memory_spram is
   port (
     douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    s_axi_aclk : in STD_LOGIC;
-    \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31]\ : in STD_LOGIC;
-    addra : in STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of memory_system_axi_traffic_gen_0_0_xpm_memory_spram : entity is "xpm_memory_spram";
-end memory_system_axi_traffic_gen_0_0_xpm_memory_spram;
-
-architecture STRUCTURE of memory_system_axi_traffic_gen_0_0_xpm_memory_spram is
-  signal NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED : STD_LOGIC;
-  signal NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED : STD_LOGIC;
-  signal NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED : STD_LOGIC;
-  signal NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED : STD_LOGIC;
-  signal NLW_xpm_memory_base_inst_doutb_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
-  attribute ADDR_WIDTH_A : integer;
-  attribute ADDR_WIDTH_A of xpm_memory_base_inst : label is 4;
-  attribute ADDR_WIDTH_B : integer;
-  attribute ADDR_WIDTH_B of xpm_memory_base_inst : label is 4;
-  attribute AUTO_SLEEP_TIME : integer;
-  attribute AUTO_SLEEP_TIME of xpm_memory_base_inst : label is 0;
-  attribute BYTE_WRITE_WIDTH_A : integer;
-  attribute BYTE_WRITE_WIDTH_A of xpm_memory_base_inst : label is 8;
-  attribute BYTE_WRITE_WIDTH_B : integer;
-  attribute BYTE_WRITE_WIDTH_B of xpm_memory_base_inst : label is 32;
-  attribute CASCADE_HEIGHT : integer;
-  attribute CASCADE_HEIGHT of xpm_memory_base_inst : label is 0;
-  attribute CLOCKING_MODE : integer;
-  attribute CLOCKING_MODE of xpm_memory_base_inst : label is 0;
-  attribute ECC_BIT_RANGE : string;
-  attribute ECC_BIT_RANGE of xpm_memory_base_inst : label is "[7:0]";
-  attribute ECC_MODE : integer;
-  attribute ECC_MODE of xpm_memory_base_inst : label is 0;
-  attribute ECC_TYPE : string;
-  attribute ECC_TYPE of xpm_memory_base_inst : label is "NONE";
-  attribute IGNORE_INIT_SYNTH : integer;
-  attribute IGNORE_INIT_SYNTH of xpm_memory_base_inst : label is 0;
-  attribute KEEP_HIERARCHY : string;
-  attribute KEEP_HIERARCHY of xpm_memory_base_inst : label is "soft";
-  attribute MAX_NUM_CHAR : integer;
-  attribute MAX_NUM_CHAR of xpm_memory_base_inst : label is 0;
-  attribute MEMORY_INIT_FILE : string;
-  attribute MEMORY_INIT_FILE of xpm_memory_base_inst : label is "memory_system_axi_traffic_gen_0_0_addr.mem";
-  attribute MEMORY_INIT_PARAM : string;
-  attribute MEMORY_INIT_PARAM of xpm_memory_base_inst : label is "";
-  attribute MEMORY_OPTIMIZATION : string;
-  attribute MEMORY_OPTIMIZATION of xpm_memory_base_inst : label is "true";
-  attribute MEMORY_PRIMITIVE : integer;
-  attribute MEMORY_PRIMITIVE of xpm_memory_base_inst : label is 1;
-  attribute MEMORY_SIZE : integer;
-  attribute MEMORY_SIZE of xpm_memory_base_inst : label is 512;
-  attribute MEMORY_TYPE : integer;
-  attribute MEMORY_TYPE of xpm_memory_base_inst : label is 0;
-  attribute MESSAGE_CONTROL : integer;
-  attribute MESSAGE_CONTROL of xpm_memory_base_inst : label is 0;
-  attribute NUM_CHAR_LOC : integer;
-  attribute NUM_CHAR_LOC of xpm_memory_base_inst : label is 0;
-  attribute P_ECC_MODE : string;
-  attribute P_ECC_MODE of xpm_memory_base_inst : label is "no_ecc";
-  attribute P_ENABLE_BYTE_WRITE_A : integer;
-  attribute P_ENABLE_BYTE_WRITE_A of xpm_memory_base_inst : label is 1;
-  attribute P_ENABLE_BYTE_WRITE_B : integer;
-  attribute P_ENABLE_BYTE_WRITE_B of xpm_memory_base_inst : label is 0;
-  attribute P_MAX_DEPTH_DATA : integer;
-  attribute P_MAX_DEPTH_DATA of xpm_memory_base_inst : label is 16;
-  attribute P_MEMORY_OPT : string;
-  attribute P_MEMORY_OPT of xpm_memory_base_inst : label is "yes";
-  attribute P_MEMORY_PRIMITIVE : string;
-  attribute P_MEMORY_PRIMITIVE of xpm_memory_base_inst : label is "distributed";
-  attribute P_MIN_WIDTH_DATA : integer;
-  attribute P_MIN_WIDTH_DATA of xpm_memory_base_inst : label is 32;
-  attribute P_MIN_WIDTH_DATA_A : integer;
-  attribute P_MIN_WIDTH_DATA_A of xpm_memory_base_inst : label is 32;
-  attribute P_MIN_WIDTH_DATA_B : integer;
-  attribute P_MIN_WIDTH_DATA_B of xpm_memory_base_inst : label is 32;
-  attribute P_MIN_WIDTH_DATA_ECC : integer;
-  attribute P_MIN_WIDTH_DATA_ECC of xpm_memory_base_inst : label is 32;
-  attribute P_MIN_WIDTH_DATA_LDW : integer;
-  attribute P_MIN_WIDTH_DATA_LDW of xpm_memory_base_inst : label is 4;
-  attribute P_MIN_WIDTH_DATA_SHFT : integer;
-  attribute P_MIN_WIDTH_DATA_SHFT of xpm_memory_base_inst : label is 32;
-  attribute P_NUM_COLS_WRITE_A : integer;
-  attribute P_NUM_COLS_WRITE_A of xpm_memory_base_inst : label is 4;
-  attribute P_NUM_COLS_WRITE_B : integer;
-  attribute P_NUM_COLS_WRITE_B of xpm_memory_base_inst : label is 1;
-  attribute P_NUM_ROWS_READ_A : integer;
-  attribute P_NUM_ROWS_READ_A of xpm_memory_base_inst : label is 1;
-  attribute P_NUM_ROWS_READ_B : integer;
-  attribute P_NUM_ROWS_READ_B of xpm_memory_base_inst : label is 1;
-  attribute P_NUM_ROWS_WRITE_A : integer;
-  attribute P_NUM_ROWS_WRITE_A of xpm_memory_base_inst : label is 1;
-  attribute P_NUM_ROWS_WRITE_B : integer;
-  attribute P_NUM_ROWS_WRITE_B of xpm_memory_base_inst : label is 1;
-  attribute P_SDP_WRITE_MODE : string;
-  attribute P_SDP_WRITE_MODE of xpm_memory_base_inst : label is "yes";
-  attribute P_WIDTH_ADDR_LSB_READ_A : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_A of xpm_memory_base_inst : label is 0;
-  attribute P_WIDTH_ADDR_LSB_READ_B : integer;
-  attribute P_WIDTH_ADDR_LSB_READ_B of xpm_memory_base_inst : label is 0;
-  attribute P_WIDTH_ADDR_LSB_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_A of xpm_memory_base_inst : label is 0;
-  attribute P_WIDTH_ADDR_LSB_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_LSB_WRITE_B of xpm_memory_base_inst : label is 0;
-  attribute P_WIDTH_ADDR_READ_A : integer;
-  attribute P_WIDTH_ADDR_READ_A of xpm_memory_base_inst : label is 4;
-  attribute P_WIDTH_ADDR_READ_B : integer;
-  attribute P_WIDTH_ADDR_READ_B of xpm_memory_base_inst : label is 4;
-  attribute P_WIDTH_ADDR_WRITE_A : integer;
-  attribute P_WIDTH_ADDR_WRITE_A of xpm_memory_base_inst : label is 4;
-  attribute P_WIDTH_ADDR_WRITE_B : integer;
-  attribute P_WIDTH_ADDR_WRITE_B of xpm_memory_base_inst : label is 4;
-  attribute P_WIDTH_COL_WRITE_A : integer;
-  attribute P_WIDTH_COL_WRITE_A of xpm_memory_base_inst : label is 8;
-  attribute P_WIDTH_COL_WRITE_B : integer;
-  attribute P_WIDTH_COL_WRITE_B of xpm_memory_base_inst : label is 32;
-  attribute RAM_DECOMP : string;
-  attribute RAM_DECOMP of xpm_memory_base_inst : label is "auto";
-  attribute READ_DATA_WIDTH_A : integer;
-  attribute READ_DATA_WIDTH_A of xpm_memory_base_inst : label is 32;
-  attribute READ_DATA_WIDTH_B : integer;
-  attribute READ_DATA_WIDTH_B of xpm_memory_base_inst : label is 32;
-  attribute READ_LATENCY_A : integer;
-  attribute READ_LATENCY_A of xpm_memory_base_inst : label is 1;
-  attribute READ_LATENCY_B : integer;
-  attribute READ_LATENCY_B of xpm_memory_base_inst : label is 1;
-  attribute READ_RESET_VALUE_A : string;
-  attribute READ_RESET_VALUE_A of xpm_memory_base_inst : label is "0";
-  attribute READ_RESET_VALUE_B : string;
-  attribute READ_RESET_VALUE_B of xpm_memory_base_inst : label is "0";
-  attribute RST_MODE_A : string;
-  attribute RST_MODE_A of xpm_memory_base_inst : label is "SYNC";
-  attribute RST_MODE_B : string;
-  attribute RST_MODE_B of xpm_memory_base_inst : label is "SYNC";
-  attribute SIM_ASSERT_CHK : integer;
-  attribute SIM_ASSERT_CHK of xpm_memory_base_inst : label is 0;
-  attribute USE_EMBEDDED_CONSTRAINT : integer;
-  attribute USE_EMBEDDED_CONSTRAINT of xpm_memory_base_inst : label is 0;
-  attribute USE_MEM_INIT : integer;
-  attribute USE_MEM_INIT of xpm_memory_base_inst : label is 1;
-  attribute USE_MEM_INIT_MMI : integer;
-  attribute USE_MEM_INIT_MMI of xpm_memory_base_inst : label is 0;
-  attribute VERSION : integer;
-  attribute VERSION of xpm_memory_base_inst : label is 0;
-  attribute WAKEUP_TIME : integer;
-  attribute WAKEUP_TIME of xpm_memory_base_inst : label is 0;
-  attribute WRITE_DATA_WIDTH_A : integer;
-  attribute WRITE_DATA_WIDTH_A of xpm_memory_base_inst : label is 32;
-  attribute WRITE_DATA_WIDTH_B : integer;
-  attribute WRITE_DATA_WIDTH_B of xpm_memory_base_inst : label is 32;
-  attribute WRITE_MODE_A : integer;
-  attribute WRITE_MODE_A of xpm_memory_base_inst : label is 1;
-  attribute WRITE_MODE_B : integer;
-  attribute WRITE_MODE_B of xpm_memory_base_inst : label is 1;
-  attribute WRITE_PROTECT : integer;
-  attribute WRITE_PROTECT of xpm_memory_base_inst : label is 1;
-  attribute XPM_MODULE : string;
-  attribute XPM_MODULE of xpm_memory_base_inst : label is "TRUE";
-  attribute rsta_loop_iter : integer;
-  attribute rsta_loop_iter of xpm_memory_base_inst : label is 32;
-  attribute rstb_loop_iter : integer;
-  attribute rstb_loop_iter of xpm_memory_base_inst : label is 32;
-begin
-xpm_memory_base_inst: entity work.memory_system_axi_traffic_gen_0_0_xpm_memory_base
-     port map (
-      addra(3 downto 0) => addra(3 downto 0),
-      addrb(3 downto 0) => B"0000",
-      clka => s_axi_aclk,
-      clkb => '0',
-      dbiterra => NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED,
-      dbiterrb => NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED,
-      dina(31 downto 0) => B"00000000000000000000000000000000",
-      dinb(31 downto 0) => B"00000000000000000000000000000000",
-      douta(31 downto 0) => douta(31 downto 0),
-      doutb(31 downto 0) => NLW_xpm_memory_base_inst_doutb_UNCONNECTED(31 downto 0),
-      ena => '1',
-      enb => '0',
-      injectdbiterra => '0',
-      injectdbiterrb => '0',
-      injectsbiterra => '0',
-      injectsbiterrb => '0',
-      regcea => '1',
-      regceb => '0',
-      rsta => \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31]\,
-      rstb => '0',
-      sbiterra => NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED,
-      sbiterrb => NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED,
-      sleep => '0',
-      wea(3 downto 0) => B"0000",
-      web(0) => '0'
-    );
-end STRUCTURE;
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1 is
-  port (
-    douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
     p_1_in : out STD_LOGIC;
     s_axi_aclk : in STD_LOGIC;
     \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31]\ : in STD_LOGIC;
@@ -6719,10 +6522,10 @@ entity memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1 is
     rom_eof_reg : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1 : entity is "xpm_memory_spram";
-end memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1;
+  attribute ORIG_REF_NAME of memory_system_axi_traffic_gen_0_0_xpm_memory_spram : entity is "xpm_memory_spram";
+end memory_system_axi_traffic_gen_0_0_xpm_memory_spram;
 
-architecture STRUCTURE of memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1 is
+architecture STRUCTURE of memory_system_axi_traffic_gen_0_0_xpm_memory_spram is
   signal \awaddr_m[31]_i_10_n_0\ : STD_LOGIC;
   signal \awaddr_m[31]_i_11_n_0\ : STD_LOGIC;
   signal \awaddr_m[31]_i_12_n_0\ : STD_LOGIC;
@@ -6989,7 +6792,7 @@ begin
       I3 => \^douta\(22),
       O => \awaddr_m[31]_i_9_n_0\
     );
-xpm_memory_base_inst: entity work.\memory_system_axi_traffic_gen_0_0_xpm_memory_base__1\
+xpm_memory_base_inst: entity work.memory_system_axi_traffic_gen_0_0_xpm_memory_base
      port map (
       addra(3 downto 0) => addra(3 downto 0),
       addrb(3 downto 0) => B"0000",
@@ -7000,6 +6803,203 @@ xpm_memory_base_inst: entity work.\memory_system_axi_traffic_gen_0_0_xpm_memory_
       dina(31 downto 0) => B"00000000000000000000000000000000",
       dinb(31 downto 0) => B"00000000000000000000000000000000",
       douta(31 downto 0) => \^douta\(31 downto 0),
+      doutb(31 downto 0) => NLW_xpm_memory_base_inst_doutb_UNCONNECTED(31 downto 0),
+      ena => '1',
+      enb => '0',
+      injectdbiterra => '0',
+      injectdbiterrb => '0',
+      injectsbiterra => '0',
+      injectsbiterrb => '0',
+      regcea => '1',
+      regceb => '0',
+      rsta => \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31]\,
+      rstb => '0',
+      sbiterra => NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED,
+      sbiterrb => NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED,
+      sleep => '0',
+      wea(3 downto 0) => B"0000",
+      web(0) => '0'
+    );
+end STRUCTURE;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library UNISIM;
+use UNISIM.VCOMPONENTS.ALL;
+entity \memory_system_axi_traffic_gen_0_0_xpm_memory_spram__parameterized0\ is
+  port (
+    douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axi_aclk : in STD_LOGIC;
+    \gen_rd_a.gen_rd_a_synth_template.gen_rf_narrow_reg.douta_reg_reg[31]\ : in STD_LOGIC;
+    addra : in STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of \memory_system_axi_traffic_gen_0_0_xpm_memory_spram__parameterized0\ : entity is "xpm_memory_spram";
+end \memory_system_axi_traffic_gen_0_0_xpm_memory_spram__parameterized0\;
+
+architecture STRUCTURE of \memory_system_axi_traffic_gen_0_0_xpm_memory_spram__parameterized0\ is
+  signal NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED : STD_LOGIC;
+  signal NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED : STD_LOGIC;
+  signal NLW_xpm_memory_base_inst_sbiterra_UNCONNECTED : STD_LOGIC;
+  signal NLW_xpm_memory_base_inst_sbiterrb_UNCONNECTED : STD_LOGIC;
+  signal NLW_xpm_memory_base_inst_doutb_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute ADDR_WIDTH_A : integer;
+  attribute ADDR_WIDTH_A of xpm_memory_base_inst : label is 4;
+  attribute ADDR_WIDTH_B : integer;
+  attribute ADDR_WIDTH_B of xpm_memory_base_inst : label is 4;
+  attribute AUTO_SLEEP_TIME : integer;
+  attribute AUTO_SLEEP_TIME of xpm_memory_base_inst : label is 0;
+  attribute BYTE_WRITE_WIDTH_A : integer;
+  attribute BYTE_WRITE_WIDTH_A of xpm_memory_base_inst : label is 8;
+  attribute BYTE_WRITE_WIDTH_B : integer;
+  attribute BYTE_WRITE_WIDTH_B of xpm_memory_base_inst : label is 32;
+  attribute CASCADE_HEIGHT : integer;
+  attribute CASCADE_HEIGHT of xpm_memory_base_inst : label is 0;
+  attribute CLOCKING_MODE : integer;
+  attribute CLOCKING_MODE of xpm_memory_base_inst : label is 0;
+  attribute ECC_BIT_RANGE : string;
+  attribute ECC_BIT_RANGE of xpm_memory_base_inst : label is "[7:0]";
+  attribute ECC_MODE : integer;
+  attribute ECC_MODE of xpm_memory_base_inst : label is 0;
+  attribute ECC_TYPE : string;
+  attribute ECC_TYPE of xpm_memory_base_inst : label is "NONE";
+  attribute IGNORE_INIT_SYNTH : integer;
+  attribute IGNORE_INIT_SYNTH of xpm_memory_base_inst : label is 0;
+  attribute KEEP_HIERARCHY : string;
+  attribute KEEP_HIERARCHY of xpm_memory_base_inst : label is "soft";
+  attribute MAX_NUM_CHAR : integer;
+  attribute MAX_NUM_CHAR of xpm_memory_base_inst : label is 0;
+  attribute MEMORY_INIT_FILE : string;
+  attribute MEMORY_INIT_FILE of xpm_memory_base_inst : label is "memory_system_axi_traffic_gen_0_0_data.mem";
+  attribute MEMORY_INIT_PARAM : string;
+  attribute MEMORY_INIT_PARAM of xpm_memory_base_inst : label is "";
+  attribute MEMORY_OPTIMIZATION : string;
+  attribute MEMORY_OPTIMIZATION of xpm_memory_base_inst : label is "true";
+  attribute MEMORY_PRIMITIVE : integer;
+  attribute MEMORY_PRIMITIVE of xpm_memory_base_inst : label is 1;
+  attribute MEMORY_SIZE : integer;
+  attribute MEMORY_SIZE of xpm_memory_base_inst : label is 512;
+  attribute MEMORY_TYPE : integer;
+  attribute MEMORY_TYPE of xpm_memory_base_inst : label is 0;
+  attribute MESSAGE_CONTROL : integer;
+  attribute MESSAGE_CONTROL of xpm_memory_base_inst : label is 0;
+  attribute NUM_CHAR_LOC : integer;
+  attribute NUM_CHAR_LOC of xpm_memory_base_inst : label is 0;
+  attribute P_ECC_MODE : string;
+  attribute P_ECC_MODE of xpm_memory_base_inst : label is "no_ecc";
+  attribute P_ENABLE_BYTE_WRITE_A : integer;
+  attribute P_ENABLE_BYTE_WRITE_A of xpm_memory_base_inst : label is 1;
+  attribute P_ENABLE_BYTE_WRITE_B : integer;
+  attribute P_ENABLE_BYTE_WRITE_B of xpm_memory_base_inst : label is 0;
+  attribute P_MAX_DEPTH_DATA : integer;
+  attribute P_MAX_DEPTH_DATA of xpm_memory_base_inst : label is 16;
+  attribute P_MEMORY_OPT : string;
+  attribute P_MEMORY_OPT of xpm_memory_base_inst : label is "yes";
+  attribute P_MEMORY_PRIMITIVE : string;
+  attribute P_MEMORY_PRIMITIVE of xpm_memory_base_inst : label is "distributed";
+  attribute P_MIN_WIDTH_DATA : integer;
+  attribute P_MIN_WIDTH_DATA of xpm_memory_base_inst : label is 32;
+  attribute P_MIN_WIDTH_DATA_A : integer;
+  attribute P_MIN_WIDTH_DATA_A of xpm_memory_base_inst : label is 32;
+  attribute P_MIN_WIDTH_DATA_B : integer;
+  attribute P_MIN_WIDTH_DATA_B of xpm_memory_base_inst : label is 32;
+  attribute P_MIN_WIDTH_DATA_ECC : integer;
+  attribute P_MIN_WIDTH_DATA_ECC of xpm_memory_base_inst : label is 32;
+  attribute P_MIN_WIDTH_DATA_LDW : integer;
+  attribute P_MIN_WIDTH_DATA_LDW of xpm_memory_base_inst : label is 4;
+  attribute P_MIN_WIDTH_DATA_SHFT : integer;
+  attribute P_MIN_WIDTH_DATA_SHFT of xpm_memory_base_inst : label is 32;
+  attribute P_NUM_COLS_WRITE_A : integer;
+  attribute P_NUM_COLS_WRITE_A of xpm_memory_base_inst : label is 4;
+  attribute P_NUM_COLS_WRITE_B : integer;
+  attribute P_NUM_COLS_WRITE_B of xpm_memory_base_inst : label is 1;
+  attribute P_NUM_ROWS_READ_A : integer;
+  attribute P_NUM_ROWS_READ_A of xpm_memory_base_inst : label is 1;
+  attribute P_NUM_ROWS_READ_B : integer;
+  attribute P_NUM_ROWS_READ_B of xpm_memory_base_inst : label is 1;
+  attribute P_NUM_ROWS_WRITE_A : integer;
+  attribute P_NUM_ROWS_WRITE_A of xpm_memory_base_inst : label is 1;
+  attribute P_NUM_ROWS_WRITE_B : integer;
+  attribute P_NUM_ROWS_WRITE_B of xpm_memory_base_inst : label is 1;
+  attribute P_SDP_WRITE_MODE : string;
+  attribute P_SDP_WRITE_MODE of xpm_memory_base_inst : label is "yes";
+  attribute P_WIDTH_ADDR_LSB_READ_A : integer;
+  attribute P_WIDTH_ADDR_LSB_READ_A of xpm_memory_base_inst : label is 0;
+  attribute P_WIDTH_ADDR_LSB_READ_B : integer;
+  attribute P_WIDTH_ADDR_LSB_READ_B of xpm_memory_base_inst : label is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_A : integer;
+  attribute P_WIDTH_ADDR_LSB_WRITE_A of xpm_memory_base_inst : label is 0;
+  attribute P_WIDTH_ADDR_LSB_WRITE_B : integer;
+  attribute P_WIDTH_ADDR_LSB_WRITE_B of xpm_memory_base_inst : label is 0;
+  attribute P_WIDTH_ADDR_READ_A : integer;
+  attribute P_WIDTH_ADDR_READ_A of xpm_memory_base_inst : label is 4;
+  attribute P_WIDTH_ADDR_READ_B : integer;
+  attribute P_WIDTH_ADDR_READ_B of xpm_memory_base_inst : label is 4;
+  attribute P_WIDTH_ADDR_WRITE_A : integer;
+  attribute P_WIDTH_ADDR_WRITE_A of xpm_memory_base_inst : label is 4;
+  attribute P_WIDTH_ADDR_WRITE_B : integer;
+  attribute P_WIDTH_ADDR_WRITE_B of xpm_memory_base_inst : label is 4;
+  attribute P_WIDTH_COL_WRITE_A : integer;
+  attribute P_WIDTH_COL_WRITE_A of xpm_memory_base_inst : label is 8;
+  attribute P_WIDTH_COL_WRITE_B : integer;
+  attribute P_WIDTH_COL_WRITE_B of xpm_memory_base_inst : label is 32;
+  attribute RAM_DECOMP : string;
+  attribute RAM_DECOMP of xpm_memory_base_inst : label is "auto";
+  attribute READ_DATA_WIDTH_A : integer;
+  attribute READ_DATA_WIDTH_A of xpm_memory_base_inst : label is 32;
+  attribute READ_DATA_WIDTH_B : integer;
+  attribute READ_DATA_WIDTH_B of xpm_memory_base_inst : label is 32;
+  attribute READ_LATENCY_A : integer;
+  attribute READ_LATENCY_A of xpm_memory_base_inst : label is 1;
+  attribute READ_LATENCY_B : integer;
+  attribute READ_LATENCY_B of xpm_memory_base_inst : label is 1;
+  attribute READ_RESET_VALUE_A : string;
+  attribute READ_RESET_VALUE_A of xpm_memory_base_inst : label is "0";
+  attribute READ_RESET_VALUE_B : string;
+  attribute READ_RESET_VALUE_B of xpm_memory_base_inst : label is "0";
+  attribute RST_MODE_A : string;
+  attribute RST_MODE_A of xpm_memory_base_inst : label is "SYNC";
+  attribute RST_MODE_B : string;
+  attribute RST_MODE_B of xpm_memory_base_inst : label is "SYNC";
+  attribute SIM_ASSERT_CHK : integer;
+  attribute SIM_ASSERT_CHK of xpm_memory_base_inst : label is 0;
+  attribute USE_EMBEDDED_CONSTRAINT : integer;
+  attribute USE_EMBEDDED_CONSTRAINT of xpm_memory_base_inst : label is 0;
+  attribute USE_MEM_INIT : integer;
+  attribute USE_MEM_INIT of xpm_memory_base_inst : label is 1;
+  attribute USE_MEM_INIT_MMI : integer;
+  attribute USE_MEM_INIT_MMI of xpm_memory_base_inst : label is 0;
+  attribute VERSION : integer;
+  attribute VERSION of xpm_memory_base_inst : label is 0;
+  attribute WAKEUP_TIME : integer;
+  attribute WAKEUP_TIME of xpm_memory_base_inst : label is 0;
+  attribute WRITE_DATA_WIDTH_A : integer;
+  attribute WRITE_DATA_WIDTH_A of xpm_memory_base_inst : label is 32;
+  attribute WRITE_DATA_WIDTH_B : integer;
+  attribute WRITE_DATA_WIDTH_B of xpm_memory_base_inst : label is 32;
+  attribute WRITE_MODE_A : integer;
+  attribute WRITE_MODE_A of xpm_memory_base_inst : label is 1;
+  attribute WRITE_MODE_B : integer;
+  attribute WRITE_MODE_B of xpm_memory_base_inst : label is 1;
+  attribute WRITE_PROTECT : integer;
+  attribute WRITE_PROTECT of xpm_memory_base_inst : label is 1;
+  attribute XPM_MODULE : string;
+  attribute XPM_MODULE of xpm_memory_base_inst : label is "TRUE";
+  attribute rsta_loop_iter : integer;
+  attribute rsta_loop_iter of xpm_memory_base_inst : label is 32;
+  attribute rstb_loop_iter : integer;
+  attribute rstb_loop_iter of xpm_memory_base_inst : label is 32;
+begin
+xpm_memory_base_inst: entity work.\memory_system_axi_traffic_gen_0_0_xpm_memory_base__parameterized0\
+     port map (
+      addra(3 downto 0) => addra(3 downto 0),
+      addrb(3 downto 0) => B"0000",
+      clka => s_axi_aclk,
+      clkb => '0',
+      dbiterra => NLW_xpm_memory_base_inst_dbiterra_UNCONNECTED,
+      dbiterrb => NLW_xpm_memory_base_inst_dbiterrb_UNCONNECTED,
+      dina(31 downto 0) => B"00000000000000000000000000000000",
+      dinb(31 downto 0) => B"00000000000000000000000000000000",
+      douta(31 downto 0) => douta(31 downto 0),
       doutb(31 downto 0) => NLW_xpm_memory_base_inst_doutb_UNCONNECTED(31 downto 0),
       ena => '1',
       enb => '0',
@@ -7037,7 +7037,7 @@ end memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg;
 
 architecture STRUCTURE of memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg is
 begin
-xpm_memory_spram_inst: entity work.memory_system_axi_traffic_gen_0_0_xpm_memory_spram_1
+xpm_memory_spram_inst: entity work.memory_system_axi_traffic_gen_0_0_xpm_memory_spram
      port map (
       addra(3 downto 0) => addra(3 downto 0),
       douta(31 downto 0) => douta(31 downto 0),
@@ -7051,7 +7051,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_0 is
+entity \memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0\ is
   port (
     douta : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_aclk : in STD_LOGIC;
@@ -7059,12 +7059,12 @@ entity memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_
     addra : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_0 : entity is "axi_traffic_gen_v3_0_17_systeminit_dmg";
-end memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_0;
+  attribute ORIG_REF_NAME of \memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0\ : entity is "axi_traffic_gen_v3_0_17_systeminit_dmg";
+end \memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0\;
 
-architecture STRUCTURE of memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_0 is
+architecture STRUCTURE of \memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0\ is
 begin
-xpm_memory_spram_inst: entity work.memory_system_axi_traffic_gen_0_0_xpm_memory_spram
+xpm_memory_spram_inst: entity work.\memory_system_axi_traffic_gen_0_0_xpm_memory_spram__parameterized0\
      port map (
       addra(3 downto 0) => addra(3 downto 0),
       douta(31 downto 0) => douta(31 downto 0),
@@ -7133,7 +7133,7 @@ systeminit_dmg_addr: entity work.memory_system_axi_traffic_gen_0_0_axi_traffic_g
       rom_eof_reg => static_mrdwr_n_37,
       s_axi_aclk => s_axi_aclk
     );
-systeminit_dmg_data: entity work.memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg_0
+systeminit_dmg_data: entity work.\memory_system_axi_traffic_gen_0_0_axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0\
      port map (
       addra(3 downto 0) => rom_data_ptr_ff(3 downto 0),
       douta(31 downto 0) => rom_data(31 downto 0),

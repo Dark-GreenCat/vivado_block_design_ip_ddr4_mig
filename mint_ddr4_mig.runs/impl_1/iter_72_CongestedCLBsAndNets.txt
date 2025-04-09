@@ -1,0 +1,15 @@
+List of CLB Tiles
+CLEL_L_X84Y147
+CLEL_R_X84Y147
+CLEL_R_X81Y113
+CLEM_X79Y133
+CLEL_R_X79Y133
+CLEM_X78Y138
+CLEL_R_X78Y138
+
+List of Congested Nets
+memory_system_i/memory_system_i/axi_traffic_gen_0/inst/ATG_MODE_SYSTEM_INIT_TEST.systeminit_top/static_mrdwr/new_trn_addr_reg_n_0_[3]
+memory_system_i/memory_system_i/axi_traffic_gen_0/inst/ATG_MODE_SYSTEM_INIT_TEST.systeminit_top/static_mrdwr/cur_trn_addr[5]
+memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_ddr_cal_addr_decode/D[396]
+memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_mc/u_ddr_mc_ecc/u_ddr_mc_ecc_dec_fix/not_strict_mode.rd_buf.rd_buffer_ram[27].RAM32M0_i_15_n_0
+
