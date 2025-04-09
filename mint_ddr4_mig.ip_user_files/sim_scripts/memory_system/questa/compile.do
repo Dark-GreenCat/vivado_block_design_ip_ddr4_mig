@@ -51,7 +51,9 @@ vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/hdl/rst_vip_if.sv" \
 
 vlog -work xpm -64 -incr -mfcu  -sv -L axi_vip_v1_1_17 -L smartconnect_v1_0 -L xilinx_vip "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+"/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 
 vcom -work xpm -64 -93  \
 "/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_VCOMP.vhd" \
@@ -301,6 +303,7 @@ vlog -work axi_traffic_gen_v3_0_17 -64 -incr -mfcu  "+incdir+../../../bd/memory_
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" "+incdir+../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" "+incdir+/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/sim/memory_system_axi_traffic_gen_0_0.v" \
+"../../../bd/memory_system/ip/memory_system_xlconstant_0_0/sim/memory_system_xlconstant_0_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

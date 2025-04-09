@@ -1,0 +1,504 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Apr 10 02:36:44 2025
+# Process ID: 47188
+# Current directory: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1
+# Command line: vivado -log memory_system_axi_traffic_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source memory_system_axi_traffic_gen_0_0.tcl
+# Log file: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1/memory_system_axi_traffic_gen_0_0.vds
+# Journal file: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1/vivado.jou
+# Running On        :edabk
+# Platform          :CentOS
+# Operating System  :CentOS Linux release 7.9.2009 (Core)
+# Processor Detail  :AMD EPYC 7402 24-Core Processor
+# CPU Frequency     :1500.000 MHz
+# CPU Physical cores:48
+# CPU Logical cores :48
+# Host memory       :405447 MB
+# Swap memory       :115209 MB
+# Total Virtual     :520656 MB
+# Available Virtual :406990 MB
+#-----------------------------------------------------------
+source memory_system_axi_traffic_gen_0_0.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1507.113 ; gain = 2.016 ; free physical = 250183 ; free virtual = 387165
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: memory_system_axi_traffic_gen_0_0
+Command: synth_design -top memory_system_axi_traffic_gen_0_0 -part xcu250-figd2104-2L-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 47767
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3132.086 ; gain = 413.641 ; free physical = 244455 ; free virtual = 381397
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10929] literal value 'hff truncated to fit in 7 bits [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:1615]
+WARNING: [Synth 8-11065] parameter 'bmg_xpm_sel' becomes localparam in 'axi_traffic_gen_v3_0_17_systeminit_dmg' with formal parameter declaration list [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:13936]
+INFO: [Synth 8-6157] synthesizing module 'memory_system_axi_traffic_gen_0_0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/synth/memory_system_axi_traffic_gen_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_17_top' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15401]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_top' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:14975]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_dmg' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:13921]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_spram' [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8732]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-3876] $readmem data file 'memory_system_axi_traffic_gen_0_0_addr.mem' is read successfully [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1155]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_spram' (0#1) [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8732]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_dmg' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:13921]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:13921]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_spram__parameterized0' [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8732]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-3876] $readmem data file 'memory_system_axi_traffic_gen_0_0_data.mem' is read successfully [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:1155]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_spram__parameterized0' (0#1) [/home/huy_k66/apps/tools/Vivado/2024.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8732]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_dmg__parameterized0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:13921]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_17_static_cmdgen' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:9903]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_17_static_cmdgen' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:9903]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_mrdwr' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:14148]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_mrdwr' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:14148]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_17_systeminit_top' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:14975]
+INFO: [Synth 8-6157] synthesizing module 'axi_traffic_gen_v3_0_17_asynch_rst_ff' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_17_asynch_rst_ff' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:53]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-6155] done synthesizing module 'axi_traffic_gen_v3_0_17_top' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15401]
+INFO: [Synth 8-6155] done synthesizing module 'memory_system_axi_traffic_gen_0_0' (0#1) [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/synth/memory_system_axi_traffic_gen_0_0.v:53]
+WARNING: [Synth 8-3848] Net cmd_out_mr in module/entity axi_traffic_gen_v3_0_17_static_cmdgen does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:9923]
+WARNING: [Synth 8-6014] Unused sequential element cur_trn_status_reg was removed.  [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:14588]
+WARNING: [Synth 8-6014] Unused sequential element cur_rom_ptr_reg was removed.  [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:14784]
+WARNING: [Synth 8-3848] Net rom_ctrl in module/entity axi_traffic_gen_v3_0_17_systeminit_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15115]
+WARNING: [Synth 8-3848] Net rom_mask in module/entity axi_traffic_gen_v3_0_17_systeminit_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15114]
+WARNING: [Synth 8-3848] Net s_axi_awready in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15505]
+WARNING: [Synth 8-3848] Net s_axi_wready in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15510]
+WARNING: [Synth 8-3848] Net s_axi_bid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15511]
+WARNING: [Synth 8-3848] Net s_axi_bresp in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15512]
+WARNING: [Synth 8-3848] Net s_axi_bvalid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15513]
+WARNING: [Synth 8-3848] Net s_axi_arready in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15527]
+WARNING: [Synth 8-3848] Net s_axi_rid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15528]
+WARNING: [Synth 8-3848] Net s_axi_rlast in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15529]
+WARNING: [Synth 8-3848] Net s_axi_rdata in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15530]
+WARNING: [Synth 8-3848] Net s_axi_rresp in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15531]
+WARNING: [Synth 8-3848] Net s_axi_rvalid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15532]
+WARNING: [Synth 8-3848] Net m_axi_awid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15537]
+WARNING: [Synth 8-3848] Net m_axi_awaddr in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15538]
+WARNING: [Synth 8-3848] Net m_axi_awlen in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15539]
+WARNING: [Synth 8-3848] Net m_axi_awsize in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15540]
+WARNING: [Synth 8-3848] Net m_axi_awburst in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15541]
+WARNING: [Synth 8-3848] Net m_axi_awlock in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15542]
+WARNING: [Synth 8-3848] Net m_axi_awcache in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15543]
+WARNING: [Synth 8-3848] Net m_axi_awprot in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15544]
+WARNING: [Synth 8-3848] Net m_axi_awqos in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15545]
+WARNING: [Synth 8-3848] Net m_axi_awuser in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15546]
+WARNING: [Synth 8-3848] Net m_axi_awvalid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15547]
+WARNING: [Synth 8-3848] Net m_axi_wlast in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15549]
+WARNING: [Synth 8-3848] Net m_axi_wdata in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15550]
+WARNING: [Synth 8-3848] Net m_axi_wstrb in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15551]
+WARNING: [Synth 8-3848] Net m_axi_wvalid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15552]
+WARNING: [Synth 8-3848] Net m_axi_bready in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15557]
+WARNING: [Synth 8-3848] Net m_axi_arid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15559]
+WARNING: [Synth 8-3848] Net m_axi_araddr in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15560]
+WARNING: [Synth 8-3848] Net m_axi_arlen in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15561]
+WARNING: [Synth 8-3848] Net m_axi_arsize in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15562]
+WARNING: [Synth 8-3848] Net m_axi_arburst in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15563]
+WARNING: [Synth 8-3848] Net m_axi_arlock in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15564]
+WARNING: [Synth 8-3848] Net m_axi_arcache in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15565]
+WARNING: [Synth 8-3848] Net m_axi_arprot in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15566]
+WARNING: [Synth 8-3848] Net m_axi_arqos in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15567]
+WARNING: [Synth 8-3848] Net m_axi_aruser in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15568]
+WARNING: [Synth 8-3848] Net m_axi_arvalid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15569]
+WARNING: [Synth 8-3848] Net m_axi_rready in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15576]
+WARNING: [Synth 8-3848] Net m_axis_1_tvalid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15580]
+WARNING: [Synth 8-3848] Net m_axis_1_tlast in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15581]
+WARNING: [Synth 8-3848] Net m_axis_1_tdata in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15582]
+WARNING: [Synth 8-3848] Net m_axis_1_tstrb in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15583]
+WARNING: [Synth 8-3848] Net m_axis_1_tkeep in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15584]
+WARNING: [Synth 8-3848] Net m_axis_1_tuser in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15585]
+WARNING: [Synth 8-3848] Net m_axis_1_tid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15586]
+WARNING: [Synth 8-3848] Net m_axis_1_tdest in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15587]
+WARNING: [Synth 8-3848] Net s_axis_1_tready in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15588]
+WARNING: [Synth 8-3848] Net axis_err_count in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15597]
+WARNING: [Synth 8-3848] Net s_axis_2_tready in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15599]
+WARNING: [Synth 8-3848] Net m_axis_2_tvalid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15610]
+WARNING: [Synth 8-3848] Net m_axis_2_tlast in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15611]
+WARNING: [Synth 8-3848] Net m_axis_2_tdata in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15612]
+WARNING: [Synth 8-3848] Net m_axis_2_tstrb in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15613]
+WARNING: [Synth 8-3848] Net m_axis_2_tkeep in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15614]
+WARNING: [Synth 8-3848] Net m_axis_2_tuser in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15615]
+WARNING: [Synth 8-3848] Net m_axis_2_tid in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15616]
+WARNING: [Synth 8-3848] Net m_axis_2_tdest in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15617]
+WARNING: [Synth 8-3848] Net err_out in module/entity axi_traffic_gen_v3_0_17_top does not have driver. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/axi_traffic_gen_v3_0_rfs.v:15621]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_bresp_m[1] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_bresp_m[0] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[31] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[30] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[29] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[28] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[27] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[26] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[25] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[24] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[23] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[22] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[21] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[20] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[19] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[18] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[17] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[16] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[15] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[14] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[13] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[12] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[11] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[10] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[9] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[8] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[7] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[6] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[5] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[4] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[3] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[2] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[1] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rdata_m[0] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rresp_m[1] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1_rresp_m[0] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_awready_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_wready_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_bresp_m[1] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_bresp_m[0] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_bvalid_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_arready_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[31] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[30] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[29] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[28] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[27] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[26] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[25] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[24] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[23] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[22] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[21] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[20] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[19] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[18] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[17] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[16] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[15] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[14] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[13] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[12] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[11] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[10] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[9] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[8] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[7] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[6] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[5] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[4] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[3] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[2] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[1] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rdata_m[0] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rvalid_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rresp_m[1] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch2_rresp_m[0] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_awready_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_wready_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_bresp_m[1] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_bresp_m[0] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_bvalid_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_arready_m in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[31] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[30] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[29] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[28] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[27] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[26] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[25] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[24] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[23] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[22] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[21] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[20] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch3_rdata_m[19] in module axi_traffic_gen_v3_0_17_systeminit_mrdwr is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3312.027 ; gain = 593.582 ; free physical = 243829 ; free virtual = 380772
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3312.027 ; gain = 593.582 ; free physical = 243827 ; free virtual = 380770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3312.027 ; gain = 593.582 ; free physical = 243827 ; free virtual = 380770
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3312.027 ; gain = 0.000 ; free physical = 243814 ; free virtual = 380765
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3424.762 ; gain = 0.000 ; free physical = 243270 ; free virtual = 380224
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3424.762 ; gain = 0.000 ; free physical = 243269 ; free virtual = 380224
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  FDR => FDRE: 12 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3424.766 ; gain = 0.004 ; free physical = 243267 ; free virtual = 380221
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 3424.766 ; gain = 706.320 ; free physical = 242992 ; free virtual = 379948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 3432.770 ; gain = 714.324 ; free physical = 242988 ; free virtual = 379944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 3432.770 ; gain = 714.324 ; free physical = 242981 ; free virtual = 379937
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 3432.773 ; gain = 714.328 ; free physical = 242943 ; free virtual = 379900
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 11    
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (cdc_start_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_start_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_start_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_start_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_start_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_start_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_stop_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_stop_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_stop_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_stop_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_stop_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+INFO: [Synth 8-3332] Sequential element (cdc_stop_sync/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_traffic_gen_v3_0_17_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 3432.773 ; gain = 714.328 ; free physical = 242793 ; free virtual = 379753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------------------------------------------------------------------------------------------------+--------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                    | RTL Object                                       | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------+--------------------------------------------------+----------------+----------------------+----------------+
+|inst/\ATG_MODE_SYSTEM_INIT_TEST.systeminit_top/systeminit_dmg_addr/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg | User Attribute | 16 x 32              | RAM16X1S x 32  | 
+|inst/\ATG_MODE_SYSTEM_INIT_TEST.systeminit_top/systeminit_dmg_data/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg | User Attribute | 16 x 32              | RAM16X1S x 32  | 
++---------------------------------------------------------------------------------------------------------------+--------------------------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 3611.879 ; gain = 893.434 ; free physical = 241968 ; free virtual = 378943
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3635.906 ; gain = 917.461 ; free physical = 241922 ; free virtual = 378897
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------------------------------------------------------------------------------------------------------+--------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                    | RTL Object                                       | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------+--------------------------------------------------+----------------+----------------------+----------------+
+|inst/\ATG_MODE_SYSTEM_INIT_TEST.systeminit_top/systeminit_dmg_addr/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg | User Attribute | 16 x 32              | RAM16X1S x 32  | 
+|inst/\ATG_MODE_SYSTEM_INIT_TEST.systeminit_top/systeminit_dmg_data/xpm_memory_spram_inst/xpm_memory_base_inst  | gen_wr_a.gen_byte_narrow.for_mem_cols[1].mem_reg | User Attribute | 16 x 32              | RAM16X1S x 32  | 
++---------------------------------------------------------------------------------------------------------------+--------------------------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 3643.914 ; gain = 925.469 ; free physical = 241920 ; free virtual = 378895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241897 ; free virtual = 378903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241897 ; free virtual = 378903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241897 ; free virtual = 378903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241897 ; free virtual = 378903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241897 ; free virtual = 378903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241897 ; free virtual = 378903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    10|
+|2     |LUT1     |     5|
+|3     |LUT2     |     4|
+|4     |LUT3     |    43|
+|5     |LUT4     |    26|
+|6     |LUT5     |    18|
+|7     |LUT6     |    17|
+|8     |RAM16X1S |    64|
+|9     |FDPE     |     4|
+|10    |FDRE     |   297|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241897 ; free virtual = 378903
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1014 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 3646.883 ; gain = 815.699 ; free physical = 241925 ; free virtual = 378903
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 3646.883 ; gain = 928.438 ; free physical = 241925 ; free virtual = 378903
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3646.883 ; gain = 0.000 ; free physical = 242047 ; free virtual = 379026
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3663.332 ; gain = 0.000 ; free physical = 242206 ; free virtual = 379190
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+
+Synth Design complete | Checksum: a840c8cb
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 171 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:05 . Memory (MB): peak = 3663.332 ; gain = 2110.801 ; free physical = 242206 ; free virtual = 379191
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2659.009; main = 2519.870; forked = 318.619
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4822.094; main = 3663.336; forked = 1349.746
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3687.344 ; gain = 0.000 ; free physical = 242207 ; free virtual = 379191
+INFO: [Common 17-1381] The checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1/memory_system_axi_traffic_gen_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP memory_system_axi_traffic_gen_0_0, cache-ID = 8fcef044265a619e
+INFO: [Coretcl 2-1174] Renamed 13 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3687.352 ; gain = 0.000 ; free physical = 242135 ; free virtual = 379122
+INFO: [Common 17-1381] The checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/memory_system_axi_traffic_gen_0_0_synth_1/memory_system_axi_traffic_gen_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file memory_system_axi_traffic_gen_0_0_utilization_synth.rpt -pb memory_system_axi_traffic_gen_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 02:38:07 2025...

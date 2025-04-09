@@ -13,7 +13,8 @@
     "design_tree": {
       "DDR4_MIG": "",
       "smartconnect_0": "",
-      "axi_traffic_gen_0": ""
+      "axi_traffic_gen_0": "",
+      "GND": ""
     },
     "interface_ports": {
       "c0_sys": {
@@ -386,6 +387,18 @@
             }
           }
         }
+      },
+      "GND": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "memory_system_xlconstant_0_0",
+        "xci_path": "ip/memory_system_xlconstant_0_0/memory_system_xlconstant_0_0.xci",
+        "inst_hier_path": "GND",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -428,9 +441,9 @@
           "axi_traffic_gen_0/s_axi_aclk"
         ]
       },
-      "DDR4_MIG_c0_ddr4_ui_clk_sync_rst": {
+      "GND_dout": {
         "ports": [
-          "DDR4_MIG/c0_ddr4_ui_clk_sync_rst",
+          "GND/dout",
           "DDR4_MIG/sys_rst"
         ]
       }

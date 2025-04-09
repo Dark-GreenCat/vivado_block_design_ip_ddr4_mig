@@ -1,0 +1,294 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_6/sim/bd_021b_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_021b_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_9/sim/bd_021b_second_lmb_bram_I_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_021b_second_lmb_bram_I_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/sim/bd_021b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_021b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_0/sim/memory_system_ddr4_0_0_microblaze_mcs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0_microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/phy/memory_system_ddr4_0_0_phy_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0_phy_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_xiphy_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_bitslice_behav
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_fifo_sv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_xiphy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_iob_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_iob
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_xiphy_tristate_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_xiphy_riuor_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_xiphy_control_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_xiphy_byte_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_phy_v2_2_4_xiphy_bitslice_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/ip_top/memory_system_ddr4_0_0_phy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0_phy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_wtr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_wtr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ref.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ref
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_rd_wr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_rd_wr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_periodic.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_periodic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_group.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_group
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_merge_enc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ecc_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_fi_xor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ecc_fi_xor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_dec_fix.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_buf.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ecc_buf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ecc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_c.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_cmd_mux_c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_ap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_cmd_mux_ap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_arb_p
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_mux_p.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_arb_mux_p
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_c.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_arb_c
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_a.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_arb_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_act_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_act_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_act_rank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc_act_rank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_mc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui_wr_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_ui_wr_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui_rd_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_ui_rd_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui_cmd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_ui_cmd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_ui
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_ar_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_ar_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_aw_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_aw_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_b_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_b_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_cmd_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_cmd_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_cmd_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_cmd_translator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_cmd_translator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_incr_cmd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_incr_cmd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_r_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_r_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_w_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_w_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_wr_cmd_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_wr_cmd_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_wrap_cmd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_wrap_cmd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_a_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_a_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_register_slice.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axic_register_slice.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_carry_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_latch_and.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_latch_or.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_or.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_carry_or
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_command_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_command_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_comparator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_comparator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_comparator_sel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_comparator_sel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_comparator_sel_static.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_r_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_r_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_w_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_w_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_ctrl_addr_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_ctrl_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg_bank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_ctrl_reg_bank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_ctrl_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_ctrl_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_axi_ctrl_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/clocking/ddr4_v2_2_infrastructure.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_infrastructure
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_xsdb_bram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_write.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_write
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_wr_byte
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_wr_bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_read.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_read
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_rd_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_rd_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_pi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_pi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_mc_odt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_debug_microblaze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_cplx_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_cplx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_cplx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_config_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_config_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_addr_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal_xsdb_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_chipscope_xsdb_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_dp_AB9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_cfg_mem_mod
+INFO: [VRFC 10-311] analyzing module ddr4_v2_2_23_bram_tdp
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top/memory_system_ddr4_0_0_ddr4.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top/memory_system_ddr4_0_0_ddr4_mem_intfc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0_ddr4_mem_intfc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/memory_system_ddr4_0_0_ddr4_cal_riu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0_ddr4_cal_riu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top/memory_system_ddr4_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/tb/memory_system_ddr4_0_0_microblaze_mcs_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_ddr4_0_0_microblaze_mcs
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'memory_system_ddr4_0_0_microblaze_mcs' [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/tb/memory_system_ddr4_0_0_microblaze_mcs_0.sv:79]
+INFO: [VRFC 10-311] analyzing module microblaze_mcs
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/sim/bd_ee24.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24
+INFO: [VRFC 10-311] analyzing module clk_map_imp_19XWIMC
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_PVBB8F
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_3M8PMB
+INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_KJZDY7
+INFO: [VRFC 10-311] analyzing module m01_nodes_imp_13YM2MD
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_1PMBZ4S
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_1KIFIIU
+INFO: [VRFC 10-311] analyzing module switchboards_imp_18HRTSI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_ee24_arsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_arsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_ee24_rsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_rsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_ee24_awsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_awsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_ee24_wsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_wsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_ee24_bsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_bsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_ee24_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_ee24_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_ee24_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_ee24_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_ee24_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_ee24_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_ee24_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_ee24_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_ee24_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_ee24_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_ee24_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_ee24_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m00e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_ee24_m01s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m01s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_ee24_m01awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m01awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_ee24_m01wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m01wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_ee24_m01bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m01bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_ee24_m01e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_ee24_m01e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/sim/memory_system_smartconnect_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_smartconnect_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/sim/memory_system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/sim/memory_system_axi_traffic_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_axi_traffic_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_xlconstant_0_0/sim/memory_system_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/hdl/memory_system_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory_system_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sources_1/new/top_u250.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_u250
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/arch_package.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_bi_delay.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bi_delay_ddr4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_db_delay_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_db_delay_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_dimm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_dimm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_dir_detect.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dir_detect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/proj_package.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateTable
+INFO: [VRFC 10-311] analyzing module ddr4_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_rank.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_rank
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_rcd_model.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_rcd_model
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_rdimm_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr4_rdimm_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/imports/imports/interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/sim_1/new/sim_top_u250.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module short
+INFO: [VRFC 10-311] analyzing module sim_top_u250
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

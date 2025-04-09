@@ -1,0 +1,1476 @@
+
+*** Running vivado
+    with args -log top_u250.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_u250.tcl -notrace
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Apr 10 02:48:07 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_u250.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1306]}  -suppress '. The existing rule will be replaced.
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {[BD 41-1271]}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1507.113 ; gain = 2.020 ; free physical = 250668 ; free virtual = 387830
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/huy_k66/apps/tools/Vivado/2024.1/data/ip'.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Command: link_design -top top_u250 -part xcu250-figd2104-2L-e
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: [Project 1-454] Reading design checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/memory_system_ddr4_0_0.dcp' for cell 'memory_system_i/memory_system_i/DDR4_MIG'
+INFO: [Project 1-454] Reading design checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/memory_system_axi_traffic_gen_0_0.dcp' for cell 'memory_system_i/memory_system_i/axi_traffic_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/memory_system_smartconnect_0_0.dcp' for cell 'memory_system_i/memory_system_i/smartconnect_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.87 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2870.262 ; gain = 0.000 ; free physical = 249181 ; free virtual = 386342
+INFO: [Netlist 29-17] Analyzing 1202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: memory_system_i/memory_system_i/DDR4_MIG UUID: 92a9d3a2-2001-5e85-9402-b57a395b70d5 
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc:184]
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/bd_ee24_swn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:1]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:2]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:3]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:4]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:5]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:6]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:8]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc:10]
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/smartconnect.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:174]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:178]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:181]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc:184]
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/bd_ee24_m01bn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_b_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc:66]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc:66]
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/bd_ee24_m01wn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_18/bd_ee24_m01awn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_18/bd_ee24_m01awn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_15/bd_ee24_m00bn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_15/bd_ee24_m00bn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_14/bd_ee24_m00wn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_14/bd_ee24_m00wn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_13/bd_ee24_m00awn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_13/bd_ee24_m00awn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_11/bd_ee24_sbn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_11/bd_ee24_sbn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_0/bd_021b_microblaze_I_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_0/bd_021b_microblaze_I_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/microblaze_I/U0'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_9/bd_ee24_sawn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_9/bd_ee24_sawn_0_clocks.xdc] for cell 'memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/par/memory_system_ddr4_0_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst'
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3422.785 ; gain = 27.746 ; free physical = 248825 ; free virtual = 385988
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/par/memory_system_ddr4_0_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_0/memory_system_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_0/memory_system_ddr4_0_0_microblaze_mcs_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_10/bd_021b_iomodule_0_0_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_10/bd_021b_iomodule_0_0_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/iomodule_0/U0'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_3/bd_021b_dlmb_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_3/bd_021b_dlmb_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/dlmb/U0'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_2/bd_021b_ilmb_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_2/bd_021b_ilmb_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/ilmb/U0'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_1/bd_021b_rst_0_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_1/bd_021b_rst_0_0.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_1/bd_021b_rst_0_0_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_1/bd_021b_rst_0_0_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/mcs0/inst/rst_0/U0'
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK1_300_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK2_300_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:170]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:171]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:171]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSCLK3_300_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:172]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:176]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_CLOCK_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:177]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:177]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_REFCLK_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:193]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:193]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK0_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_CLOCK_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:196]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:196]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_RESETL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODPRSL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_INTL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:207]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:207]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_LPMODE'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:208]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:208]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_MODSELL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:209]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[0]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_FS[1]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:217]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:217]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP0_REFCLK_RESET'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:218]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MGT_SI570_CLOCK1_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:226]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:226]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_N'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:227]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:227]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_CLOCK_P'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:228]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:228]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_RESETL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:237]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:237]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODPRSL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:238]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:238]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_INTL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:239]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:239]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_LPMODE'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:240]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:240]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_MODSELL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:241]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:241]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[0]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:250]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:250]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_FS[1]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:251]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:251]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'QSFP1_REFCLK_RESET'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:252]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:252]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PCIE_PERST'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:257]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:257]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SDA'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:263]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:263]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SYSMON_SCL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_MAIN_RESETN'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SCL'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:272]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:272]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'I2C_FPGA_SDA'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_RX'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'USB_UART_TX'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:281]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:281]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_TXD_MSP'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'FPGA_RXD_MSP'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DDR4_RESET_GATE'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[0]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:299]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:299]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[1]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:300]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:300]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[2]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:301]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:301]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GPIO_MSP[3]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:302]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:302]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[0]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:306]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:306]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[1]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:307]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:307]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[2]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:308]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:308]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_DP[3]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:309]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:309]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MSP_RSTn'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:323]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:323]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW_SET1_FPGA'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:324]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:324]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED0_FPGA'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:325]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:325]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED1_FPGA'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:326]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:326]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'STATUS_LED2_FPGA'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:327]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:327]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[34]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:334]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:334]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[35]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:335]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:335]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[8]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:336]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:336]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[8]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:337]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:337]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[33]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:338]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:338]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[32]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:339]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:339]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[39]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:340]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:340]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[38]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:341]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:341]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[36]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:342]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:342]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[37]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:343]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:343]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[9]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:344]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:344]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[9]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:345]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:345]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[57]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:346]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:346]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[56]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:347]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:347]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[14]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:348]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:348]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[14]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:349]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:349]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[59]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:350]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:350]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[58]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:351]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:351]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[61]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:352]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:352]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[62]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:353]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:353]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[60]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:354]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:354]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[63]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:355]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:355]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[15]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:356]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:356]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[15]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:357]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:357]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[9]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:358]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:358]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[8]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:359]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:359]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[2]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:360]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:360]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[2]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:361]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:361]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[11]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:362]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:362]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[10]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:363]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:363]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[13]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:364]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:364]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[12]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:365]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:365]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[15]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:366]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:366]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[14]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:367]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:367]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[3]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:368]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:368]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[3]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:369]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:369]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[1]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:370]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:370]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[0]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:371]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:371]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_c[0]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:372]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:372]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dqs_t[0]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:373]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:373]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[3]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:374]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:374]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c3_ddr4_dq[2]'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:375]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:375]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:375]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc:375]
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.srcs/constrs_1/imports/Downloads/alveo-u250-xdc.xdc]
+Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/memory_system_ddr4_0_0_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PART_PIN', because the property does not exist for objects of type 'pin'. [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/memory_system_ddr4_0_0_board.xdc:271]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/memory_system_ddr4_0_0_board.xdc] for cell 'memory_system_i/memory_system_i/DDR4_MIG/inst'
+INFO: [Project 1-1714] 36 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'top_u250'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Project 1-1687] 285 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4073.832 ; gain = 0.000 ; free physical = 248406 ; free virtual = 385572
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 586 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+  IOBUFDS => IOBUFDS (DIFFINBUF, IBUFCTRL, INV, OBUFT(x2)): 18 instances
+  IOBUFE3 => IOBUFE3 (IBUFCTRL, INBUF, OBUFT_DCIEN): 72 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 31 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUF(x2)): 1 instance 
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 292 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 99 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 5 instances
+
+21 Infos, 207 Warnings, 101 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:07 . Memory (MB): peak = 4073.832 ; gain = 2520.301 ; free physical = 248406 ; free virtual = 385572
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4073.832 ; gain = 0.000 ; free physical = 248420 ; free virtual = 385586
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1bc208dfb
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4073.832 ; gain = 0.000 ; free physical = 248394 ; free virtual = 385560
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize MIG Cores
+INFO: [IP_Flow 19-5647] Added synthesis output to IP cache for IP memory_system_ddr4_0_0_phy, cache-ID = 10db52280b7c3795
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4379.246 ; gain = 0.000 ; free physical = 248029 ; free virtual = 385236
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4379.246 ; gain = 0.000 ; free physical = 248063 ; free virtual = 385241
+Phase 1.1.1 Generate And Synthesize MIG Cores | Checksum: 1bf198dfb
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:02:13 . Memory (MB): peak = 4379.246 ; gain = 98.555 ; free physical = 248063 ; free virtual = 385241
+
+Phase 1.1.2 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4379.246 ; gain = 0.000 ; free physical = 248022 ; free virtual = 385212
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 4379.246 ; gain = 0.000 ; free physical = 248017 ; free virtual = 385207
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4379.246 ; gain = 0.000 ; free physical = 248017 ; free virtual = 385206
+Phase 1.1.2 Generate And Synthesize Debug Cores | Checksum: 13a933071
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:04:45 . Memory (MB): peak = 4379.246 ; gain = 98.555 ; free physical = 248017 ; free virtual = 385206
+Phase 1.1 Core Generation And Design Setup | Checksum: 13a933071
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:04:45 . Memory (MB): peak = 4379.246 ; gain = 98.555 ; free physical = 248017 ; free virtual = 385206
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 13a933071
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:04:45 . Memory (MB): peak = 4379.246 ; gain = 98.555 ; free physical = 248017 ; free virtual = 385206
+Phase 1 Initialization | Checksum: 13a933071
+
+Time (s): cpu = 00:04:36 ; elapsed = 00:04:45 . Memory (MB): peak = 4379.246 ; gain = 98.555 ; free physical = 248017 ; free virtual = 385206
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 13a933071
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:04:46 . Memory (MB): peak = 4382.246 ; gain = 101.555 ; free physical = 248015 ; free virtual = 385205
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 13a933071
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:04:46 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247997 ; free virtual = 385186
+Phase 2 Timer Update And Timing Data Collection | Checksum: 13a933071
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:04:46 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247997 ; free virtual = 385186
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 46 inverters resulting in an inversion of 399 pins
+INFO: [Opt 31-138] Pushed 30 inverter(s) to 1382 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1c887c7b8
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:04:48 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247995 ; free virtual = 385185
+Retarget | Checksum: 1c887c7b8
+INFO: [Opt 31-389] Phase Retarget created 282 cells and removed 524 cells
+INFO: [Opt 31-1021] In phase Retarget, 105 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1b5d3a50b
+
+Time (s): cpu = 00:04:45 ; elapsed = 00:04:49 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247997 ; free virtual = 385186
+Constant propagation | Checksum: 1b5d3a50b
+INFO: [Opt 31-389] Phase Constant propagation created 285 cells and removed 2750 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 94 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 11a2ca711
+
+Time (s): cpu = 00:04:49 ; elapsed = 00:04:54 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247998 ; free virtual = 385188
+Sweep | Checksum: 11a2ca711
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 6753 cells
+INFO: [Opt 31-1021] In phase Sweep, 2027 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 133c59872
+
+Time (s): cpu = 00:04:51 ; elapsed = 00:04:55 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247997 ; free virtual = 385186
+BUFG optimization | Checksum: 133c59872
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 2 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 133c59872
+
+Time (s): cpu = 00:04:51 ; elapsed = 00:04:55 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247997 ; free virtual = 385186
+Shift Register Optimization | Checksum: 133c59872
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 1 pins
+Phase 8 Post Processing Netlist | Checksum: 1565ff5dd
+
+Time (s): cpu = 00:04:52 ; elapsed = 00:04:55 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247997 ; free virtual = 385186
+Post Processing Netlist | Checksum: 1565ff5dd
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 188 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2442fb908
+
+Time (s): cpu = 00:04:53 ; elapsed = 00:04:56 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247996 ; free virtual = 385186
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 4406.246 ; gain = 0.000 ; free physical = 247996 ; free virtual = 385186
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2442fb908
+
+Time (s): cpu = 00:04:53 ; elapsed = 00:04:56 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247996 ; free virtual = 385186
+Phase 9 Finalization | Checksum: 2442fb908
+
+Time (s): cpu = 00:04:53 ; elapsed = 00:04:56 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247996 ; free virtual = 385186
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             282  |             524  |                                            105  |
+|  Constant propagation         |             285  |            2750  |                                             94  |
+|  Sweep                        |               0  |            6753  |                                           2027  |
+|  BUFG optimization            |               1  |               2  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                            188  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 2442fb908
+
+Time (s): cpu = 00:04:53 ; elapsed = 00:04:56 . Memory (MB): peak = 4406.246 ; gain = 125.555 ; free physical = 247994 ; free virtual = 385184
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Power 33-23] Power model is not available for xiphy_riu_or
+INFO: [Power 33-23] Power model is not available for genVref.u_hpio_vref
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 26 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 52
+Ending PowerOpt Patch Enables Task | Checksum: 2442fb908
+
+Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.46 . Memory (MB): peak = 4827.953 ; gain = 0.000 ; free physical = 247740 ; free virtual = 384930
+Ending Power Optimization Task | Checksum: 2442fb908
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:15 . Memory (MB): peak = 4827.953 ; gain = 421.707 ; free physical = 247740 ; free virtual = 384930
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 2442fb908
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4827.953 ; gain = 0.000 ; free physical = 247740 ; free virtual = 384930
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4827.953 ; gain = 0.000 ; free physical = 247740 ; free virtual = 384930
+Ending Netlist Obfuscation Task | Checksum: 2442fb908
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4827.953 ; gain = 0.000 ; free physical = 247740 ; free virtual = 384930
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 243 Warnings, 101 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:05:47 ; elapsed = 00:05:21 . Memory (MB): peak = 4827.953 ; gain = 754.121 ; free physical = 247740 ; free virtual = 384930
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_u250_drc_opted.rpt -pb top_u250_drc_opted.pb -rpx top_u250_drc_opted.rpx
+Command: report_drc -file top_u250_drc_opted.rpt -pb top_u250_drc_opted.pb -rpx top_u250_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/impl_1/top_u250_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.13 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247716 ; free virtual = 384914
+Wrote PlaceDB: Time (s): cpu = 00:00:00.62 ; elapsed = 00:00:00.14 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247716 ; free virtual = 384914
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247716 ; free virtual = 384914
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.21 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247709 ; free virtual = 384913
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247709 ; free virtual = 384913
+Wrote Device Cache: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247707 ; free virtual = 384913
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.38 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247707 ; free virtual = 384913
+INFO: [Common 17-1381] The checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/impl_1/top_u250_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247720 ; free virtual = 384923
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247608 ; free virtual = 384810
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a087d975
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247603 ; free virtual = 384806
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4851.125 ; gain = 0.000 ; free physical = 247553 ; free virtual = 384756
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_VDISTR
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_VROUTE
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_HDISTR
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_HROUTE
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_BUFG
+WARNING: [Device 21-9073] RSS factor Speedmodel not found for intent code NODE_GLOBAL_LEAF
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 124b9fb25
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:33 . Memory (MB): peak = 5413.898 ; gain = 562.773 ; free physical = 247062 ; free virtual = 384270
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 124ea811a
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:49 . Memory (MB): peak = 5822.730 ; gain = 971.605 ; free physical = 246642 ; free virtual = 383851
+
+Phase 1.4 Constrain Clocks/Macros
+MIG CONSTR ADDED 1
+MIG Constraint : added 1
+Phase 1.4 Constrain Clocks/Macros | Checksum: 124ea811a
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:50 . Memory (MB): peak = 5822.730 ; gain = 971.605 ; free physical = 246642 ; free virtual = 383850
+Phase 1 Placer Initialization | Checksum: 124ea811a
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:50 . Memory (MB): peak = 5822.730 ; gain = 971.605 ; free physical = 246642 ; free virtual = 383850
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 191f6ffb1
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:00 . Memory (MB): peak = 5822.730 ; gain = 971.605 ; free physical = 246636 ; free virtual = 383848
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 191f6ffb1
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:07 . Memory (MB): peak = 5822.730 ; gain = 971.605 ; free physical = 246616 ; free virtual = 383828
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 191f6ffb1
+
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:20 . Memory (MB): peak = 6231.008 ; gain = 1379.883 ; free physical = 246181 ; free virtual = 383394
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 13a6a3843
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:21 . Memory (MB): peak = 6263.020 ; gain = 1411.895 ; free physical = 246253 ; free virtual = 383466
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 13a6a3843
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:22 . Memory (MB): peak = 6263.020 ; gain = 1411.895 ; free physical = 246253 ; free virtual = 383466
+Phase 2.1.1 Partition Driven Placement | Checksum: 13a6a3843
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:22 . Memory (MB): peak = 6263.020 ; gain = 1411.895 ; free physical = 246253 ; free virtual = 383466
+Phase 2.1 Floorplanning | Checksum: 193970e40
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:22 . Memory (MB): peak = 6263.020 ; gain = 1411.895 ; free physical = 246253 ; free virtual = 383466
+
+Phase 2.2 Physical Synthesis After Floorplan
+INFO: [Physopt 32-46] Identified 2 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6263.020 ; gain = 0.000 ; free physical = 246253 ; free virtual = 383466
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                         |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+|  PSIP Post Floorplan SLR Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis After Floorplan | Checksum: 193970e40
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:22 . Memory (MB): peak = 6263.020 ; gain = 1411.895 ; free physical = 246253 ; free virtual = 383466
+
+Phase 2.3 Update Timing before SLR Path Opt
+Phase 2.3 Update Timing before SLR Path Opt | Checksum: 193970e40
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:01:23 . Memory (MB): peak = 6263.020 ; gain = 1411.895 ; free physical = 246253 ; free virtual = 383466
+
+Phase 2.4 Post-Processing in Floorplanning
+Phase 2.4 Post-Processing in Floorplanning | Checksum: 193970e40
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:01:23 . Memory (MB): peak = 6263.020 ; gain = 1411.895 ; free physical = 246253 ; free virtual = 383466
+
+Phase 2.5 Global Placement Core
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 211784b0c
+
+Time (s): cpu = 00:06:45 ; elapsed = 00:02:52 . Memory (MB): peak = 7071.160 ; gain = 2220.035 ; free physical = 245522 ; free virtual = 382740
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 1 LUTNM shape to break, 1567 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 1, total 1, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 689 nets or LUTs. Breaked 1 LUT, combined 688 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 21 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 16 nets.  Re-placed 86 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 16 nets or cells. Created 0 new cell, deleted 2 existing cells and moved 86 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.47 . Memory (MB): peak = 7071.160 ; gain = 0.000 ; free physical = 245523 ; free virtual = 382741
+INFO: [Physopt 32-1408] Pass 1. Identified 1 candidate net for high-fanout optimization.
+INFO: [Physopt 32-81] Processed net memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_ddr_cal_addr_decode/u_ddr_cal_cplx/cplx_cal. Replicated 6 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 6 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 6 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7071.160 ; gain = 0.000 ; free physical = 245523 ; free virtual = 382741
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7071.160 ; gain = 0.000 ; free physical = 245523 ; free virtual = 382741
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            1  |            688  |                   689  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              2  |                    16  |           0  |           1  |  00:00:04  |
+|  Very High Fanout                                 |            6  |              0  |                     1  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            7  |            690  |                   706  |           0  |          10  |  00:00:07  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 24c4114bc
+
+Time (s): cpu = 00:06:57 ; elapsed = 00:03:02 . Memory (MB): peak = 7071.160 ; gain = 2220.035 ; free physical = 245524 ; free virtual = 382742
+Phase 2.5 Global Placement Core | Checksum: 29b0f81ae
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:03:32 . Memory (MB): peak = 7071.160 ; gain = 2220.035 ; free physical = 245540 ; free virtual = 382760
+Phase 2 Global Placement | Checksum: 29b0f81ae
+
+Time (s): cpu = 00:08:33 ; elapsed = 00:03:32 . Memory (MB): peak = 7071.160 ; gain = 2220.035 ; free physical = 245540 ; free virtual = 382760
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2c7172b64
+
+Time (s): cpu = 00:09:21 ; elapsed = 00:03:48 . Memory (MB): peak = 7071.160 ; gain = 2220.035 ; free physical = 245545 ; free virtual = 382765
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2e836b1d3
+
+Time (s): cpu = 00:09:28 ; elapsed = 00:03:51 . Memory (MB): peak = 7071.160 ; gain = 2220.035 ; free physical = 245560 ; free virtual = 382780
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 3611e41e6
+
+Time (s): cpu = 00:10:28 ; elapsed = 00:04:10 . Memory (MB): peak = 7071.160 ; gain = 2220.035 ; free physical = 245558 ; free virtual = 382781
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 314f6eda3
+
+Time (s): cpu = 00:10:33 ; elapsed = 00:04:14 . Memory (MB): peak = 7109.898 ; gain = 2258.773 ; free physical = 245462 ; free virtual = 382684
+Phase 3.3.2 Slice Area Swap | Checksum: 30dad5565
+
+Time (s): cpu = 00:10:37 ; elapsed = 00:04:17 . Memory (MB): peak = 7109.898 ; gain = 2258.773 ; free physical = 245276 ; free virtual = 382499
+Phase 3.3 Small Shape DP | Checksum: 34cbb7e9f
+
+Time (s): cpu = 00:10:49 ; elapsed = 00:04:20 . Memory (MB): peak = 7109.898 ; gain = 2258.773 ; free physical = 244909 ; free virtual = 382132
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 2f1637c9b
+
+Time (s): cpu = 00:10:51 ; elapsed = 00:04:23 . Memory (MB): peak = 7109.898 ; gain = 2258.773 ; free physical = 244786 ; free virtual = 382008
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 239d07ac2
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:04:23 . Memory (MB): peak = 7109.898 ; gain = 2258.773 ; free physical = 245448 ; free virtual = 382670
+Phase 3 Detail Placement | Checksum: 239d07ac2
+
+Time (s): cpu = 00:10:52 ; elapsed = 00:04:24 . Memory (MB): peak = 7109.898 ; gain = 2258.773 ; free physical = 245467 ; free virtual = 382689
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 205f380f7
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.488 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 19966ce0f
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 7223.242 ; gain = 0.000 ; free physical = 245420 ; free virtual = 382644
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 23540cc6e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 7223.242 ; gain = 0.000 ; free physical = 245417 ; free virtual = 382642
+Phase 4.1.1.1 BUFG Insertion | Checksum: 205f380f7
+
+Time (s): cpu = 00:12:15 ; elapsed = 00:04:52 . Memory (MB): peak = 7223.242 ; gain = 2372.117 ; free physical = 245416 ; free virtual = 382641
+
+Phase 4.1.1.2 BUFG Replication
+INFO: [Place 46-63] BUFG replication identified 0 candidate nets: Replicated nets: 0, Replicated BUFGs: 0, Replicated BUFG Driver: 0, moved BUFGs: 0, Skipped due to Placement / Routing Conflict: 0, Skipped due to Timing: 0, Skipped due to constraints: 0
+Phase 4.1.1.2 BUFG Replication | Checksum: 205f380f7
+
+Time (s): cpu = 00:12:15 ; elapsed = 00:04:52 . Memory (MB): peak = 7223.242 ; gain = 2372.117 ; free physical = 245418 ; free virtual = 382643
+
+Phase 4.1.1.3 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.581. For the most accurate timing information please run report_timing.
+Phase 4.1.1.3 Post Placement Timing Optimization | Checksum: 180169f91
+
+Time (s): cpu = 00:12:22 ; elapsed = 00:04:58 . Memory (MB): peak = 7223.242 ; gain = 2372.117 ; free physical = 245419 ; free virtual = 382643
+
+Phase 4.1.1.4 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=0.581. For the most accurate timing information please run report_timing.
+Phase 4.1.1.4 Replication | Checksum: 180169f91
+
+Time (s): cpu = 00:12:23 ; elapsed = 00:04:59 . Memory (MB): peak = 7223.242 ; gain = 2372.117 ; free physical = 245418 ; free virtual = 382642
+
+Time (s): cpu = 00:12:23 ; elapsed = 00:04:59 . Memory (MB): peak = 7223.242 ; gain = 2372.117 ; free physical = 245418 ; free virtual = 382642
+Phase 4.1 Post Commit Optimization | Checksum: 180169f91
+
+Time (s): cpu = 00:12:23 ; elapsed = 00:04:59 . Memory (MB): peak = 7223.242 ; gain = 2372.117 ; free physical = 245417 ; free virtual = 382641
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245398 ; free virtual = 382628
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1a6875c04
+
+Time (s): cpu = 00:13:48 ; elapsed = 00:05:54 . Memory (MB): peak = 7287.270 ; gain = 2436.145 ; free physical = 245400 ; free virtual = 382630
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                2x2|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                4x4|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR0:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                2x2|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                4x4|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+SLR1:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+SLR2:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+SLR3:
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1a6875c04
+
+Time (s): cpu = 00:13:49 ; elapsed = 00:05:54 . Memory (MB): peak = 7287.270 ; gain = 2436.145 ; free physical = 245401 ; free virtual = 382630
+Phase 4.3 Placer Reporting | Checksum: 1a6875c04
+
+Time (s): cpu = 00:13:49 ; elapsed = 00:05:54 . Memory (MB): peak = 7287.270 ; gain = 2436.145 ; free physical = 245401 ; free virtual = 382630
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245401 ; free virtual = 382630
+
+Time (s): cpu = 00:13:49 ; elapsed = 00:05:54 . Memory (MB): peak = 7287.270 ; gain = 2436.145 ; free physical = 245401 ; free virtual = 382630
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1aec9e4b4
+
+Time (s): cpu = 00:13:49 ; elapsed = 00:05:55 . Memory (MB): peak = 7287.270 ; gain = 2436.145 ; free physical = 245399 ; free virtual = 382628
+Ending Placer Task | Checksum: 1a4e345fa
+
+Time (s): cpu = 00:13:49 ; elapsed = 00:05:55 . Memory (MB): peak = 7287.270 ; gain = 2436.145 ; free physical = 245402 ; free virtual = 382631
+118 Infos, 249 Warnings, 101 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:14:07 ; elapsed = 00:06:02 . Memory (MB): peak = 7287.270 ; gain = 2436.145 ; free physical = 245403 ; free virtual = 382633
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file top_u250_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.64 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245405 ; free virtual = 382634
+INFO: [Vivado 12-24828] Executing command : report_io -file top_u250_io_placed.rpt
+report_io: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245403 ; free virtual = 382633
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_u250_utilization_placed.rpt -pb top_u250_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.28 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245390 ; free virtual = 382632
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245360 ; free virtual = 382634
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245360 ; free virtual = 382634
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.18 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245359 ; free virtual = 382634
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.07 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245356 ; free virtual = 382633
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245354 ; free virtual = 382634
+Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245354 ; free virtual = 382634
+INFO: [Common 17-1381] The checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/impl_1/top_u250_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245388 ; free virtual = 382632
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245391 ; free virtual = 382636
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.569 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+129 Infos, 249 Warnings, 101 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:08 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245391 ; free virtual = 382636
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.25 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245377 ; free virtual = 382635
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245343 ; free virtual = 382631
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245343 ; free virtual = 382631
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.25 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245343 ; free virtual = 382632
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245339 ; free virtual = 382632
+Wrote Device Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245337 ; free virtual = 382631
+Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245337 ; free virtual = 382631
+INFO: [Common 17-1381] The checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/impl_1/top_u250_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 7287.270 ; gain = 0.000 ; free physical = 245382 ; free virtual = 382642
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 2d1511d0 ConstDB: 0 ShapeSum: b4e89912 RouteDB: c2e59b18
+Nodegraph reading from file.  Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7287.273 ; gain = 0.000 ; free physical = 244985 ; free virtual = 382245
+Post Restoration Checksum: NetGraph: 57da7f0 | NumContArr: 8cd60e98 | Constraints: 9b25b249 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 1f022636e
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 7287.273 ; gain = 0.000 ; free physical = 245380 ; free virtual = 382642
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1f022636e
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 7287.273 ; gain = 0.000 ; free physical = 245380 ; free virtual = 382642
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1f022636e
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:16 . Memory (MB): peak = 7287.273 ; gain = 0.000 ; free physical = 245380 ; free virtual = 382642
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 28347c5f5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:22 . Memory (MB): peak = 7422.289 ; gain = 135.016 ; free physical = 245133 ; free virtual = 382395
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1ff96693b
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:26 . Memory (MB): peak = 7422.289 ; gain = 135.016 ; free physical = 245131 ; free virtual = 382393
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.708  | TNS=0.000  | WHS=-0.229 | THS=-23.704|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 21651ea9a
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:34 . Memory (MB): peak = 7422.289 ; gain = 135.016 ; free physical = 245130 ; free virtual = 382391
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.708  | TNS=0.000  | WHS=-0.302 | THS=-15.675|
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 19ddbc6da
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:34 . Memory (MB): peak = 7422.289 ; gain = 135.016 ; free physical = 245130 ; free virtual = 382391
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.99305e-05 %
+  Global Horizontal Routing Utilization  = 0.000220778 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 50106
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 45296
+  Number of Partially Routed Nets     = 4810
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 1c6752cb3
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:38 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245075 ; free virtual = 382336
+
+Phase 3 Global Routing
+
+Phase 3.1 SLL Assignment
+Number SLLs per Column: 1440
+Estimated SLL Demand Per Column: 
+  SLR [2-3]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)  Demand:     0 Available: 23040 Utilization(%): 0.00
+  SLR [1-2]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)  Demand:     0 Available: 23040 Utilization(%): 0.00
+  SLR [0-1]        0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     1 (  0%)    50 (  3%)     1 (  0%)     1 (  0%)     1 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)     0 (  0%)  Demand:    54 Available: 23040 Utilization(%): 0.23
+Phase 3.1 SLL Assignment | Checksum: a0be194b
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:00:39 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245075 ; free virtual = 382337
+Phase 3 Global Routing | Checksum: a0be194b
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:00:39 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245075 ; free virtual = 382337
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 27ee8f09d
+
+Time (s): cpu = 00:02:29 ; elapsed = 00:00:47 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245071 ; free virtual = 382334
+Phase 4 Initial Routing | Checksum: 2377b1436
+
+Time (s): cpu = 00:02:31 ; elapsed = 00:00:48 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245072 ; free virtual = 382336
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 8291
+ Number of Nodes with overlaps = 712
+ Number of Nodes with overlaps = 78
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.185  | TNS=0.000  | WHS=-0.008 | THS=-0.043 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 1c577b0f6
+
+Time (s): cpu = 00:04:38 ; elapsed = 00:01:37 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245043 ; free virtual = 382309
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.185  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1bd1df2e8
+
+Time (s): cpu = 00:04:49 ; elapsed = 00:01:40 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245041 ; free virtual = 382307
+Phase 5 Rip-up And Reroute | Checksum: 1bd1df2e8
+
+Time (s): cpu = 00:04:49 ; elapsed = 00:01:40 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245041 ; free virtual = 382307
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.185  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.185  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Delay CleanUp | Checksum: 276e42320
+
+Time (s): cpu = 00:05:04 ; elapsed = 00:01:43 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245038 ; free virtual = 382304
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 276e42320
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:01:43 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245038 ; free virtual = 382304
+Phase 6 Delay and Skew Optimization | Checksum: 276e42320
+
+Time (s): cpu = 00:05:05 ; elapsed = 00:01:43 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245038 ; free virtual = 382304
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.185  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2e7006f95
+
+Time (s): cpu = 00:05:16 ; elapsed = 00:01:46 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245039 ; free virtual = 382305
+Phase 7 Post Hold Fix | Checksum: 2e7006f95
+
+Time (s): cpu = 00:05:16 ; elapsed = 00:01:46 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245039 ; free virtual = 382305
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.382148 %
+  Global Horizontal Routing Utilization  = 0.277817 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 2e7006f95
+
+Time (s): cpu = 00:05:21 ; elapsed = 00:01:47 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245038 ; free virtual = 382304
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2e7006f95
+
+Time (s): cpu = 00:05:21 ; elapsed = 00:01:47 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245037 ; free virtual = 382303
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2e7006f95
+
+Time (s): cpu = 00:05:25 ; elapsed = 00:01:50 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245039 ; free virtual = 382305
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 271189d1a
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:01:50 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245039 ; free virtual = 382305
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 271189d1a
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:01:50 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245038 ; free virtual = 382304
+
+Phase 13 Post Router Timing
+
+Phase 13.1 Update Timing
+Phase 13.1 Update Timing | Checksum: 271189d1a
+
+Time (s): cpu = 00:05:37 ; elapsed = 00:01:53 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245056 ; free virtual = 382322
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.185  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 13 Post Router Timing | Checksum: 271189d1a
+
+Time (s): cpu = 00:05:37 ; elapsed = 00:01:53 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245056 ; free virtual = 382322
+Total Elapsed time in route_design: 112.61 secs
+
+Phase 14 Post-Route Event Processing
+Phase 14 Post-Route Event Processing | Checksum: 16d52482d
+
+Time (s): cpu = 00:05:37 ; elapsed = 00:01:53 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245056 ; free virtual = 382322
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 16d52482d
+
+Time (s): cpu = 00:05:38 ; elapsed = 00:01:54 . Memory (MB): peak = 7505.805 ; gain = 218.531 ; free physical = 245055 ; free virtual = 382321
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+147 Infos, 249 Warnings, 101 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:52 ; elapsed = 00:01:58 . Memory (MB): peak = 7505.805 ; gain = 218.535 ; free physical = 245055 ; free virtual = 382321
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_u250_drc_routed.rpt -pb top_u250_drc_routed.pb -rpx top_u250_drc_routed.rpx
+Command: report_drc -file top_u250_drc_routed.rpt -pb top_u250_drc_routed.pb -rpx top_u250_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/impl_1/top_u250_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:25 ; elapsed = 00:00:06 . Memory (MB): peak = 7593.844 ; gain = 88.039 ; free physical = 245031 ; free virtual = 382299
+INFO: [Vivado 12-24828] Executing command : report_methodology -file top_u250_methodology_drc_routed.rpt -pb top_u250_methodology_drc_routed.pb -rpx top_u250_methodology_drc_routed.rpx
+Command: report_methodology -file top_u250_methodology_drc_routed.rpt -pb top_u250_methodology_drc_routed.pb -rpx top_u250_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/impl_1/top_u250_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:51 ; elapsed = 00:00:12 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 244495 ; free virtual = 381763
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file top_u250_timing_summary_routed.rpt -pb top_u250_timing_summary_routed.pb -rpx top_u250_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 245049 ; free virtual = 382323
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file top_u250_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file top_u250_bus_skew_routed.rpt -pb top_u250_bus_skew_routed.pb -rpx top_u250_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Temperature grade: E, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_route_status -file top_u250_route_status.rpt -pb top_u250_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file top_u250_power_routed.rpt -pb top_u250_power_summary_routed.pb -rpx top_u250_power_routed.rpx
+Command: report_power -file top_u250_power_routed.rpt -pb top_u250_power_summary_routed.pb -rpx top_u250_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+167 Infos, 251 Warnings, 101 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 245027 ; free virtual = 382317
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file top_u250_clock_utilization_routed.rpt
+WARNING: [Device 21-9320] Failed to find the Oracle tile group with name 'HSR_BOUNDARY_TOP'. This is required for Clock regions and Virtual grid.
+WARNING: [Device 21-2174] Failed to initialize Virtual grid.
+report_clock_utilization: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 245027 ; free virtual = 382317
+generate_parallel_reports: Time (s): cpu = 00:02:44 ; elapsed = 00:01:15 . Memory (MB): peak = 7593.844 ; gain = 88.039 ; free physical = 245027 ; free virtual = 382317
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.26 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 245016 ; free virtual = 382321
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 244987 ; free virtual = 382321
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 244987 ; free virtual = 382321
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.74 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 244980 ; free virtual = 382323
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 244974 ; free virtual = 382321
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 244972 ; free virtual = 382321
+Write Physdb Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 244972 ; free virtual = 382321
+INFO: [Common 17-1381] The checkpoint '/home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.runs/impl_1/top_u250_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 7593.844 ; gain = 0.000 ; free physical = 245006 ; free virtual = 382317
+WARNING: [Memdata 28-361] Design is having concatenated BRAM controllers(heterogenous memory), this configuration is not supported by Updatemem for current device part. Only the first BRAM controller will be added to .MMI and used by Updatemem to update the bitstream with new data.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[3].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[3].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[2].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[1].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the memory_system_i/memory_system_i/smartconnect_0/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force top_u250.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xcu250'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A5*A1)+(A5*(~A1)*(~A4))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A5*A1)+(A5*(~A1)*(~A4))+((~A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC RTSTAT-10] No routable loads: 125 net(s) have no routable loads. The problem bus(es) and/or net(s) are memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_CE_riu, memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_riu/LMB_UE_riu, memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[12], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[13], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[14], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_ddr_cal_top/u_ddr_cal/u_xsdb_arbiter/Q[15], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[0].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[0].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[0].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[0].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[1].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_low/SYNC[1].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_upp/SYNC[1].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_phy_rdy_low/SYNC[1].sync_reg[1], memory_system_i/memory_system_i/DDR4_MIG/inst/u_ddr4_mem_intfc/u_phy2clb_fixdly_rdy_upp/SYNC[2].sync_reg[1]... and (the first 15 of 123 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Generating merged BMM file for the design top 'top_u250'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/huy_k66/Documents/dma_vivado/20241/mint_ddr4_mig/mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/sw/calibration_0/Debug/calibration_ddr.elf 
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 173157280 bits.
+Bitstream compression saved 173157280 bits.
+Bitstream compression saved 157146208 bits.
+Bitstream compression saved 170223872 bits.
+Writing bitstream ./top_u250.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+191 Infos, 258 Warnings, 101 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:04 ; elapsed = 00:01:11 . Memory (MB): peak = 7614.133 ; gain = 20.289 ; free physical = 245001 ; free virtual = 382346
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 03:06:03 2025...

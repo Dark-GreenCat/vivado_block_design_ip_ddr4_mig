@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-//Date        : Thu Apr 10 01:51:08 2025
+//Date        : Thu Apr 10 02:39:52 2025
 //Host        : edabk running 64-bit CentOS Linux release 7.9.2009 (Core)
 //Command     : generate_target memory_system.bd
 //Design      : memory_system
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "memory_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=memory_system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=3,numReposBlks=3,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "memory_system.hwdef" *) 
+(* CORE_GENERATION_INFO = "memory_system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=memory_system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=4,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "memory_system.hwdef" *) 
 module memory_system
    (c0_ddr4_act_n,
     c0_ddr4_adr,
@@ -48,7 +48,7 @@ module memory_system
   wire C0_SYS_CLK_0_1_CLK_N;
   wire C0_SYS_CLK_0_1_CLK_P;
   wire DDR4_MIG_c0_ddr4_ui_clk;
-  wire DDR4_MIG_c0_ddr4_ui_clk_sync_rst;
+  wire [0:0]GND_dout;
   wire [31:0]axi_traffic_gen_0_M_AXI_LITE_CH1_AWADDR;
   wire [2:0]axi_traffic_gen_0_M_AXI_LITE_CH1_AWPROT;
   wire axi_traffic_gen_0_M_AXI_LITE_CH1_AWREADY;
@@ -174,10 +174,11 @@ module memory_system
         .c0_ddr4_s_axi_wstrb(smartconnect_0_M01_AXI_WSTRB),
         .c0_ddr4_s_axi_wvalid(smartconnect_0_M01_AXI_WVALID),
         .c0_ddr4_ui_clk(DDR4_MIG_c0_ddr4_ui_clk),
-        .c0_ddr4_ui_clk_sync_rst(DDR4_MIG_c0_ddr4_ui_clk_sync_rst),
         .c0_sys_clk_n(C0_SYS_CLK_0_1_CLK_N),
         .c0_sys_clk_p(C0_SYS_CLK_0_1_CLK_P),
-        .sys_rst(DDR4_MIG_c0_ddr4_ui_clk_sync_rst));
+        .sys_rst(GND_dout));
+  memory_system_xlconstant_0_0 GND
+       (.dout(GND_dout));
   memory_system_axi_traffic_gen_0_0 axi_traffic_gen_0
        (.m_axi_lite_ch1_awaddr(axi_traffic_gen_0_M_AXI_LITE_CH1_AWADDR),
         .m_axi_lite_ch1_awprot(axi_traffic_gen_0_M_AXI_LITE_CH1_AWPROT),

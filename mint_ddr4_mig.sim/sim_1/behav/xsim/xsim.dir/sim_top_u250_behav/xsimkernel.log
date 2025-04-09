@@ -1,0 +1,4 @@
+Running: xsim.dir/sim_top_u250_behav/xsimk -simmode gui -wdb sim_top_u250_behav.wdb -simrunnum 0 -socket 51183
+Design successfully loaded
+Design Loading Memory Usage: 71836 KB (Peak: 71836 KB)
+Design Loading CPU Usage: 240 ms

@@ -1,0 +1,158 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/cal" --include "../../../../mint_ddr4_mig.srcs/sim_1/imports/imports" --include "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_6/sim/bd_021b_lmb_bram_I_0.v" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/ip/ip_9/sim/bd_021b_second_lmb_bram_I_0.v" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/bd_0/sim/bd_021b.v" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_0/sim/memory_system_ddr4_0_0_microblaze_mcs.v" \
+
+sv xil_defaultlib  --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/cal" --include "../../../../mint_ddr4_mig.srcs/sim_1/imports/imports" --include "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/phy/memory_system_ddr4_0_0_phy_ddr4.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy_behav.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/phy/ddr4_phy_v2_2_xiphy.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob_byte.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/iob/ddr4_phy_v2_2_iob.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/clocking/ddr4_phy_v2_2_pll.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_tristate_wrapper.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_riuor_wrapper.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_control_wrapper.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_byte_wrapper.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/xiphy_files/ddr4_phy_v2_2_xiphy_bitslice_wrapper.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/ip_top/memory_system_ddr4_0_0_phy.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_wtr.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ref.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_rd_wr.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_periodic.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_group.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_merge_enc.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_gen.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_fi_xor.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_dec_fix.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc_buf.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ecc.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_ctl.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_c.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_cmd_mux_ap.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_p.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_mux_p.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_c.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_arb_a.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_act_timer.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc_act_rank.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/controller/ddr4_v2_2_mc.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui_wr_data.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui_rd_data.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui_cmd.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ui/ddr4_v2_2_ui.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_ar_channel.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_aw_channel.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_b_channel.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_cmd_arbiter.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_cmd_fsm.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_cmd_translator.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_fifo.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_incr_cmd.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_r_channel.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_w_channel.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_wr_cmd_fsm.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_wrap_cmd.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_a_upsizer.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_register_slice.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axi_upsizer.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_axic_register_slice.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_and.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_latch_and.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_latch_or.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_carry_or.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_command_fifo.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_comparator.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_comparator_sel.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_comparator_sel_static.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_r_upsizer.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi/ddr4_v2_2_w_upsizer.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_addr_decode.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_read.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg_bank.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_reg.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_top.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/axi_ctrl/ddr4_v2_2_axi_ctrl_write.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/clocking/ddr4_v2_2_infrastructure.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_xsdb_bram.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_write.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_wr_byte.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_wr_bit.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_sync.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_read.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_rd_en.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_pi.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_mc_odt.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_debug_microblaze.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_cplx_data.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_cplx.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_config_rom.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_addr_decode.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_top.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal_xsdb_arbiter.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_cal.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_chipscope_xsdb_slave.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/ddr4_v2_2_dp_AB9.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top/memory_system_ddr4_0_0_ddr4.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top/memory_system_ddr4_0_0_ddr4_mem_intfc.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal/memory_system_ddr4_0_0_ddr4_cal_riu.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top/memory_system_ddr4_0_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_ddr4_0_0/tb/memory_system_ddr4_0_0_microblaze_mcs_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/cal" --include "../../../../mint_ddr4_mig.srcs/sim_1/imports/imports" --include "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/sim/bd_ee24.v" \
+
+sv xil_defaultlib  --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/cal" --include "../../../../mint_ddr4_mig.srcs/sim_1/imports/imports" --include "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_ee24_arsw_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_ee24_rsw_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_ee24_awsw_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_ee24_wsw_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_ee24_bsw_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_ee24_s00mmu_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_ee24_s00tr_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_ee24_s00sic_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_ee24_s00a2s_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_ee24_sawn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_ee24_swn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_ee24_sbn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_ee24_m00s2a_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_ee24_m00awn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_ee24_m00wn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_ee24_m00bn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_ee24_m00e_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_ee24_m01s2a_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_ee24_m01awn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_ee24_m01wn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_ee24_m01bn_0.sv" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_ee24_m01e_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/cal" --include "../../../../mint_ddr4_mig.srcs/sim_1/imports/imports" --include "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_smartconnect_0_0/sim/memory_system_smartconnect_0_0.v" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/sim/memory_system.v" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_axi_traffic_gen_0_0/sim/memory_system_axi_traffic_gen_0_0.v" \
+"../../../../mint_ddr4_mig.ip_user_files/bd/memory_system/ip/memory_system_xlconstant_0_0/sim/memory_system_xlconstant_0_0.v" \
+"../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/hdl/memory_system_wrapper.v" \
+"../../../../mint_ddr4_mig.srcs/sources_1/new/top_u250.v" \
+
+sv xil_defaultlib  --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ip/memory_system_ddr4_0_0/rtl/cal" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/f0b6/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/c783/hdl/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/ec67/hdl" --include "../../../../mint_ddr4_mig.gen/sources_1/bd/memory_system/ipshared/56ae/hdl/src/verilog" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/ip_1/rtl/map" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/ip_top" --include "../../../../mint_ddr4_mig.gen/sources_1/ip/ddr4_4/rtl/cal" --include "../../../../mint_ddr4_mig.srcs/sim_1/imports/imports" --include "/home/huy_k66/apps/tools/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/arch_package.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_bi_delay.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_db_delay_model.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_dimm.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_dir_detect.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/proj_package.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_model.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_rank.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_rcd_model.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/ddr4_rdimm_wrapper.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/imports/imports/interface.sv" \
+"../../../../mint_ddr4_mig.srcs/sim_1/new/sim_top_u250.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
