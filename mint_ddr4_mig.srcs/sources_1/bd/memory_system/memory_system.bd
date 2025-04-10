@@ -15,7 +15,8 @@
       "smartconnect_0": "",
       "axi_traffic_gen_0": "",
       "NOT_GATE": "",
-      "axi_cdma_0": ""
+      "axi_cdma_0": "",
+      "ila_0": ""
     },
     "interface_ports": {
       "c0_sys": {
@@ -485,6 +486,42 @@
             }
           }
         }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "15",
+        "xci_name": "memory_system_ila_0_0",
+        "xci_path": "ip/memory_system_ila_0_0/memory_system_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "16384"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "25"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE11_WIDTH": {
+            "value": "64"
+          },
+          "C_PROBE14_WIDTH": {
+            "value": "34"
+          },
+          "C_PROBE17_WIDTH": {
+            "value": "64"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "34"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -526,6 +563,160 @@
       }
     },
     "nets": {
+      "CDMA_CONFIG_awaddr": {
+        "ports": [
+          "axi_traffic_gen_0/m_axi_lite_ch1_awaddr",
+          "ila_0/probe0",
+          "axi_cdma_0/s_axi_lite_awaddr"
+        ]
+      },
+      "CDMA_CONFIG_awready": {
+        "ports": [
+          "axi_cdma_0/s_axi_lite_awready",
+          "axi_traffic_gen_0/m_axi_lite_ch1_awready",
+          "ila_0/probe2"
+        ]
+      },
+      "CDMA_CONFIG_awvalid": {
+        "ports": [
+          "axi_traffic_gen_0/m_axi_lite_ch1_awvalid",
+          "ila_0/probe1",
+          "axi_cdma_0/s_axi_lite_awvalid"
+        ]
+      },
+      "CDMA_CONFIG_bready": {
+        "ports": [
+          "axi_traffic_gen_0/m_axi_lite_ch1_bready",
+          "ila_0/probe7",
+          "axi_cdma_0/s_axi_lite_bready"
+        ]
+      },
+      "CDMA_CONFIG_bvalid": {
+        "ports": [
+          "axi_cdma_0/s_axi_lite_bvalid",
+          "axi_traffic_gen_0/m_axi_lite_ch1_bvalid",
+          "ila_0/probe6"
+        ]
+      },
+      "CDMA_CONFIG_wdata": {
+        "ports": [
+          "axi_traffic_gen_0/m_axi_lite_ch1_wdata",
+          "ila_0/probe3",
+          "axi_cdma_0/s_axi_lite_wdata"
+        ]
+      },
+      "CDMA_CONFIG_wready": {
+        "ports": [
+          "axi_cdma_0/s_axi_lite_wready",
+          "axi_traffic_gen_0/m_axi_lite_ch1_wready",
+          "ila_0/probe5"
+        ]
+      },
+      "CDMA_CONFIG_wvalid": {
+        "ports": [
+          "axi_traffic_gen_0/m_axi_lite_ch1_wvalid",
+          "ila_0/probe4",
+          "axi_cdma_0/s_axi_lite_wvalid"
+        ]
+      },
+      "CDMA_DATA_araddr": {
+        "ports": [
+          "axi_cdma_0/m_axi_araddr",
+          "ila_0/probe8",
+          "smartconnect_0/S00_AXI_araddr"
+        ]
+      },
+      "CDMA_DATA_arready": {
+        "ports": [
+          "smartconnect_0/S00_AXI_arready",
+          "axi_cdma_0/m_axi_arready",
+          "ila_0/probe10"
+        ]
+      },
+      "CDMA_DATA_arvalid": {
+        "ports": [
+          "axi_cdma_0/m_axi_arvalid",
+          "ila_0/probe9",
+          "smartconnect_0/S00_AXI_arvalid"
+        ]
+      },
+      "CDMA_DATA_awaddr": {
+        "ports": [
+          "axi_cdma_0/m_axi_awaddr",
+          "ila_0/probe14",
+          "smartconnect_0/S00_AXI_awaddr"
+        ]
+      },
+      "CDMA_DATA_awready": {
+        "ports": [
+          "smartconnect_0/S00_AXI_awready",
+          "axi_cdma_0/m_axi_awready",
+          "ila_0/probe16"
+        ]
+      },
+      "CDMA_DATA_awvalid": {
+        "ports": [
+          "axi_cdma_0/m_axi_awvalid",
+          "ila_0/probe15",
+          "smartconnect_0/S00_AXI_awvalid"
+        ]
+      },
+      "CDMA_DATA_bready": {
+        "ports": [
+          "axi_cdma_0/m_axi_bready",
+          "ila_0/probe21",
+          "smartconnect_0/S00_AXI_bready"
+        ]
+      },
+      "CDMA_DATA_bvalid": {
+        "ports": [
+          "smartconnect_0/S00_AXI_bvalid",
+          "axi_cdma_0/m_axi_bvalid",
+          "ila_0/probe20"
+        ]
+      },
+      "CDMA_DATA_rdata": {
+        "ports": [
+          "smartconnect_0/S00_AXI_rdata",
+          "axi_cdma_0/m_axi_rdata",
+          "ila_0/probe11"
+        ]
+      },
+      "CDMA_DATA_rready": {
+        "ports": [
+          "axi_cdma_0/m_axi_rready",
+          "ila_0/probe13",
+          "smartconnect_0/S00_AXI_rready"
+        ]
+      },
+      "CDMA_DATA_rvalid": {
+        "ports": [
+          "smartconnect_0/S00_AXI_rvalid",
+          "axi_cdma_0/m_axi_rvalid",
+          "ila_0/probe12"
+        ]
+      },
+      "CDMA_DATA_wdata": {
+        "ports": [
+          "axi_cdma_0/m_axi_wdata",
+          "ila_0/probe17",
+          "smartconnect_0/S00_AXI_wdata"
+        ]
+      },
+      "CDMA_DATA_wready": {
+        "ports": [
+          "smartconnect_0/S00_AXI_wready",
+          "axi_cdma_0/m_axi_wready",
+          "ila_0/probe19"
+        ]
+      },
+      "CDMA_DATA_wvalid": {
+        "ports": [
+          "axi_cdma_0/m_axi_wvalid",
+          "ila_0/probe18",
+          "smartconnect_0/S00_AXI_wvalid"
+        ]
+      },
       "DDR4_MIG_c0_ddr4_ui_clk1": {
         "ports": [
           "DDR4_MIG/c0_ddr4_ui_clk",
@@ -533,19 +724,29 @@
           "smartconnect_0/aclk",
           "axi_traffic_gen_0/s_axi_aclk",
           "axi_cdma_0/m_axi_aclk",
-          "axi_cdma_0/s_axi_lite_aclk"
+          "axi_cdma_0/s_axi_lite_aclk",
+          "ila_0/clk"
         ]
       },
-      "DDR4_MIG_c0_ddr4_ui_clk_sync_rst": {
+      "DDR4_c0_ddr4_ui_clk_sync_rst": {
         "ports": [
           "DDR4_MIG/c0_ddr4_ui_clk_sync_rst",
-          "NOT_GATE/Op1"
+          "NOT_GATE/Op1",
+          "ila_0/probe23"
         ]
       },
-      "DDR4_MIG_c0_init_calib_complete": {
+      "DDR4_c0_init_calib_complete": {
         "ports": [
           "DDR4_MIG/c0_init_calib_complete",
-          "axi_traffic_gen_0/s_axi_aresetn"
+          "axi_traffic_gen_0/s_axi_aresetn",
+          "ila_0/probe24"
+        ]
+      },
+      "DDR4_sys_rst": {
+        "ports": [
+          "sys_rst",
+          "DDR4_MIG/sys_rst",
+          "ila_0/probe22"
         ]
       },
       "NOT_GATE_Res": {
@@ -553,12 +754,6 @@
           "NOT_GATE/Res",
           "DDR4_MIG/c0_ddr4_aresetn",
           "axi_cdma_0/s_axi_lite_aresetn"
-        ]
-      },
-      "sys_rst_0_1": {
-        "ports": [
-          "sys_rst",
-          "DDR4_MIG/sys_rst"
         ]
       }
     },

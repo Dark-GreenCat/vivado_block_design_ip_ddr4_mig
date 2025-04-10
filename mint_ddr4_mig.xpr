@@ -59,20 +59,20 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="au250"/>
-    <Option Name="WTXSimLaunchSim" Val="14"/>
+    <Option Name="WTXSimLaunchSim" Val="16"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="11"/>
-    <Option Name="WTModelSimExportSim" Val="11"/>
-    <Option Name="WTQuestaExportSim" Val="11"/>
+    <Option Name="WTXSimExportSim" Val="12"/>
+    <Option Name="WTModelSimExportSim" Val="12"/>
+    <Option Name="WTQuestaExportSim" Val="12"/>
     <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="11"/>
-    <Option Name="WTRivieraExportSim" Val="11"/>
-    <Option Name="WTActivehdlExportSim" Val="11"/>
+    <Option Name="WTVcsExportSim" Val="12"/>
+    <Option Name="WTRivieraExportSim" Val="12"/>
+    <Option Name="WTActivehdlExportSim" Val="12"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -105,12 +105,17 @@
         <CompFileExtendedInfo CompFileName="memory_system.bd" FileRelPathName="ip/memory_system_ddr4_0_0/memory_system_ddr4_0_0.xci">
           <Proxy FileSetName="memory_system_ddr4_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="memory_system.bd" FileRelPathName="ip/memory_system_ila_0_0/memory_system_ila_0_0.xci">
+          <Proxy FileSetName="memory_system_ila_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="memory_system.bd" FileRelPathName="ip/memory_system_util_vector_logic_0_0/memory_system_util_vector_logic_0_0.xci">
           <Proxy FileSetName="memory_system_util_vector_logic_0_0"/>
         </CompFileExtendedInfo>
       </File>
-      <File Path="$PGENDIR/sources_1/bd/memory_system/hdl/memory_system_wrapper.v">
+      <File Path="$PSRCDIR/sources_1/imports/hdl/memory_system_wrapper.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PGENDIR/sources_1/bd/memory_system/hdl/memory_system_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1744236527"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -527,6 +532,12 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="memory_system_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/memory_system_ila_0_0" RelGenDir="$PGENDIR/memory_system_ila_0_0">
+      <Config>
+        <Option Name="TopModule" Val="memory_system_ila_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -599,6 +610,18 @@
       <RQSFiles/>
     </Run>
     <Run Id="memory_system_axi_cdma_0_0_synth_1" Type="Ft3:Synth" SrcSet="memory_system_axi_cdma_0_0" Part="xcu250-figd2104-2L-e" ConstrsSet="memory_system_axi_cdma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/memory_system_axi_cdma_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/memory_system_axi_cdma_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/memory_system_axi_cdma_0_0_synth_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="memory_system_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="memory_system_ila_0_0" Part="xcu250-figd2104-2L-e" ConstrsSet="memory_system_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/memory_system_ila_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/memory_system_ila_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/memory_system_ila_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -706,35 +729,26 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="memory_system_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xcu250-figd2104-2L-e" ConstrsSet="memory_system_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="memory_system_ila_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/memory_system_ila_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/memory_system_ila_0_0_impl_1" ParallelReportGen="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2024"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
   </Runs>
-  <MsgRule>
-    <MsgAttr Name="RuleType" Val="0"/>
-    <MsgAttr Name="Limit" Val="-1"/>
-    <MsgAttr Name="NewSeverity" Val="ANY"/>
-    <MsgAttr Name="Id" Val="[BD 41-1306]"/>
-    <MsgAttr Name="Severity" Val="ANY"/>
-    <MsgAttr Name="ShowRule" Val="1"/>
-    <MsgAttr Name="RuleSource" Val="2"/>
-    <MsgAttr Name="StringIsRegExp" Val="0"/>
-    <MsgAttr Name="RuleId" Val="1"/>
-    <MsgAttr Name="Note" Val=""/>
-    <MsgAttr Name="Author" Val=""/>
-    <MsgAttr Name="CreatedTimestamp" Val=""/>
-  </MsgRule>
-  <MsgRule>
-    <MsgAttr Name="RuleType" Val="0"/>
-    <MsgAttr Name="Limit" Val="-1"/>
-    <MsgAttr Name="NewSeverity" Val="ANY"/>
-    <MsgAttr Name="Id" Val="[BD 41-1271]"/>
-    <MsgAttr Name="Severity" Val="ANY"/>
-    <MsgAttr Name="ShowRule" Val="1"/>
-    <MsgAttr Name="RuleSource" Val="2"/>
-    <MsgAttr Name="StringIsRegExp" Val="0"/>
-    <MsgAttr Name="RuleId" Val="2"/>
-    <MsgAttr Name="Note" Val=""/>
-    <MsgAttr Name="Author" Val=""/>
-    <MsgAttr Name="CreatedTimestamp" Val=""/>
-  </MsgRule>
   <MsgRule>
     <MsgAttr Name="RuleType" Val="0"/>
     <MsgAttr Name="Limit" Val="-1"/>
@@ -787,6 +801,34 @@
     <MsgAttr Name="RuleSource" Val="2"/>
     <MsgAttr Name="StringIsRegExp" Val="0"/>
     <MsgAttr Name="RuleId" Val="6"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="[BD 41-1306]"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="2"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="7"/>
+    <MsgAttr Name="Note" Val=""/>
+    <MsgAttr Name="Author" Val=""/>
+    <MsgAttr Name="CreatedTimestamp" Val=""/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="0"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="ANY"/>
+    <MsgAttr Name="Id" Val="[BD 41-1271]"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="2"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+    <MsgAttr Name="RuleId" Val="8"/>
     <MsgAttr Name="Note" Val=""/>
     <MsgAttr Name="Author" Val=""/>
     <MsgAttr Name="CreatedTimestamp" Val=""/>
