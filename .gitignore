@@ -20,3 +20,5 @@
 
 # Ignore other temporary directories
 *.Xil/
+
+bitstream_backup/
