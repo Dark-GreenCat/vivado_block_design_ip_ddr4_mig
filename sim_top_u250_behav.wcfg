@@ -6,22 +6,24 @@
       <db_ref path="sim_top_u250_behav.wdb" id="1">
          <top_modules>
             <top_module name="arch_package" />
+            <top_module name="axi_bram_ctrl_funcs" />
             <top_module name="axi_cdma_pkg" />
             <top_module name="glbl" />
             <top_module name="lib_pkg" />
             <top_module name="proj_package" />
             <top_module name="sim_top_u250" />
+            <top_module name="vcomponents" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="19.734530 us"></ZoomStartTime>
-      <ZoomEndTime time="28.532510 us"></ZoomEndTime>
-      <Cursor1Time time="23.142198 us"></Cursor1Time>
+      <ZoomStartTime time="828.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,860.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="205"></NameColumnWidth>
-      <ValueColumnWidth column_width="282"></ValueColumnWidth>
+      <ValueColumnWidth column_width="278"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="42" />
    <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/c0_ddr4_ui_clk">

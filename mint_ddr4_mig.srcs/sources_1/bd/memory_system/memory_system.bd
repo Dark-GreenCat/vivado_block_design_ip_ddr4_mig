@@ -529,7 +529,7 @@
         "inst_hier_path": "ila_0",
         "parameters": {
           "C_DATA_DEPTH": {
-            "value": "16384"
+            "value": "4096"
           },
           "C_MONITOR_TYPE": {
             "value": "Native"
