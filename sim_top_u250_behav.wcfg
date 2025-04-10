@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_top_u250_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="arch_package" />
+            <top_module name="axi_cdma_pkg" />
+            <top_module name="glbl" />
+            <top_module name="lib_pkg" />
+            <top_module name="proj_package" />
+            <top_module name="sim_top_u250" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="19.734530 us"></ZoomStartTime>
+      <ZoomEndTime time="28.532510 us"></ZoomEndTime>
+      <Cursor1Time time="23.142198 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="205"></NameColumnWidth>
+      <ValueColumnWidth column_width="282"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/c0_ddr4_ui_clk">
+      <obj_property name="ElementShortName">c0_ddr4_ui_clk</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ui_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/sys_rst">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim_top_u250/u_top_u250/clk_counter">
+      <obj_property name="ElementShortName">clk_counter[63:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_counter[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider286" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/sys_rst">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/c0_init_calib_complete">
+      <obj_property name="ElementShortName">c0_init_calib_complete</obj_property>
+      <obj_property name="ObjectShortName">c0_init_calib_complete</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/c0_ddr4_ui_clk">
+      <obj_property name="ElementShortName">c0_ddr4_ui_clk</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ui_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/c0_ddr4_ui_clk_sync_rst">
+      <obj_property name="ElementShortName">c0_ddr4_ui_clk_sync_rst</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ui_clk_sync_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/c0_ddr4_aresetn">
+      <obj_property name="ElementShortName">c0_ddr4_aresetn</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider301" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_traffic_gen_0/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider303" type="divider">
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/S_AXI_LITE">
+      <obj_property name="ElementShortName">S_AXI_LITE</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_LITE</obj_property>
+      <obj_property name="children_use_element_short_name">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank 1=#D399FF 2=pink</obj_property>
+      <obj_property name="EnumTransactionValueTable">0=blank;1=Read;2=Write;3=Read/Write</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">turquoise</obj_property>
+      <obj_property name="Render_Data">/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/S_AXI_LITE.readWriteSummary</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">36</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/M_AXI">
+      <obj_property name="children_use_element_short_name">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank 1=#D399FF 2=pink</obj_property>
+      <obj_property name="EnumTransactionValueTable">0=blank;1=Read;2=Write;3=Read/Write</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">turquoise</obj_property>
+      <obj_property name="Render_Data">/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/M_AXI.readWriteSummary</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">36</obj_property>
+      <obj_property name="ElementShortName">M_AXI</obj_property>
+      <obj_property name="ObjectShortName">M_AXI</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="divider549" type="divider">
+      <obj_property name="label">CDMA_CONFIG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_awaddr">
+      <obj_property name="ElementShortName">s_axi_lite_awaddr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awaddr[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_awvalid">
+      <obj_property name="ElementShortName">s_axi_lite_awvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_awready">
+      <obj_property name="ElementShortName">s_axi_lite_awready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_wdata">
+      <obj_property name="ElementShortName">s_axi_lite_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_wvalid">
+      <obj_property name="ElementShortName">s_axi_lite_wvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_wready">
+      <obj_property name="ElementShortName">s_axi_lite_wready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_wready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_bvalid">
+      <obj_property name="ElementShortName">s_axi_lite_bvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/s_axi_lite_bready">
+      <obj_property name="ElementShortName">s_axi_lite_bready</obj_property>
+      <obj_property name="ObjectShortName">s_axi_lite_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider548" type="divider">
+      <obj_property name="label">CDMA_DATA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_araddr">
+      <obj_property name="ElementShortName">m_axi_araddr[33:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_araddr[33:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_arvalid">
+      <obj_property name="ElementShortName">m_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_arready">
+      <obj_property name="ElementShortName">m_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_rdata">
+      <obj_property name="ElementShortName">m_axi_rdata[511:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rdata[511:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_rvalid">
+      <obj_property name="ElementShortName">m_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_rready">
+      <obj_property name="ElementShortName">m_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_awaddr">
+      <obj_property name="ElementShortName">m_axi_awaddr[33:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awaddr[33:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_awvalid">
+      <obj_property name="ElementShortName">m_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_awready">
+      <obj_property name="ElementShortName">m_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_wdata">
+      <obj_property name="ElementShortName">m_axi_wdata[511:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wdata[511:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_wvalid">
+      <obj_property name="ElementShortName">m_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_wready">
+      <obj_property name="ElementShortName">m_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_bvalid">
+      <obj_property name="ElementShortName">m_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/axi_cdma_0/m_axi_bready">
+      <obj_property name="ElementShortName">m_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider573" type="divider">
+      <obj_property name="label">DDR4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/sys_rst">
+      <obj_property name="ElementShortName">sys_rst</obj_property>
+      <obj_property name="ObjectShortName">sys_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/c0_ddr4_ui_clk_sync_rst">
+      <obj_property name="ElementShortName">c0_ddr4_ui_clk_sync_rst</obj_property>
+      <obj_property name="ObjectShortName">c0_ddr4_ui_clk_sync_rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sim_top_u250/u_top_u250/memory_system_i/memory_system_i/DDR4_MIG/c0_init_calib_complete">
+      <obj_property name="ElementShortName">c0_init_calib_complete</obj_property>
+      <obj_property name="ObjectShortName">c0_init_calib_complete</obj_property>
+   </wvobject>
+</wave_config>
