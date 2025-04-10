@@ -594,6 +594,9 @@
           "Load_Init_File": {
             "value": "true"
           },
+          "Read_Width_A": {
+            "value": "512"
+          },
           "Register_PortA_Output_of_Memory_Primitives": {
             "value": "false"
           },
@@ -666,8 +669,8 @@
       "CDMA_CONFIG_awaddr": {
         "ports": [
           "axi_traffic_gen_0/m_axi_lite_ch1_awaddr",
-          "ila_0/probe0",
-          "axi_cdma_0/s_axi_lite_awaddr"
+          "axi_cdma_0/s_axi_lite_awaddr",
+          "ila_0/probe0"
         ]
       },
       "CDMA_CONFIG_awready": {
@@ -680,15 +683,15 @@
       "CDMA_CONFIG_awvalid": {
         "ports": [
           "axi_traffic_gen_0/m_axi_lite_ch1_awvalid",
-          "ila_0/probe1",
-          "axi_cdma_0/s_axi_lite_awvalid"
+          "axi_cdma_0/s_axi_lite_awvalid",
+          "ila_0/probe1"
         ]
       },
       "CDMA_CONFIG_bready": {
         "ports": [
           "axi_traffic_gen_0/m_axi_lite_ch1_bready",
-          "ila_0/probe7",
-          "axi_cdma_0/s_axi_lite_bready"
+          "axi_cdma_0/s_axi_lite_bready",
+          "ila_0/probe7"
         ]
       },
       "CDMA_CONFIG_bvalid": {
@@ -701,8 +704,8 @@
       "CDMA_CONFIG_wdata": {
         "ports": [
           "axi_traffic_gen_0/m_axi_lite_ch1_wdata",
-          "ila_0/probe3",
-          "axi_cdma_0/s_axi_lite_wdata"
+          "axi_cdma_0/s_axi_lite_wdata",
+          "ila_0/probe3"
         ]
       },
       "CDMA_CONFIG_wready": {
@@ -715,15 +718,15 @@
       "CDMA_CONFIG_wvalid": {
         "ports": [
           "axi_traffic_gen_0/m_axi_lite_ch1_wvalid",
-          "ila_0/probe4",
-          "axi_cdma_0/s_axi_lite_wvalid"
+          "axi_cdma_0/s_axi_lite_wvalid",
+          "ila_0/probe4"
         ]
       },
       "CDMA_DATA_araddr": {
         "ports": [
           "axi_cdma_0/m_axi_araddr",
-          "ila_0/probe8",
-          "smartconnect_0/S00_AXI_araddr"
+          "smartconnect_0/S00_AXI_araddr",
+          "ila_0/probe8"
         ]
       },
       "CDMA_DATA_arready": {
@@ -736,15 +739,15 @@
       "CDMA_DATA_arvalid": {
         "ports": [
           "axi_cdma_0/m_axi_arvalid",
-          "ila_0/probe9",
-          "smartconnect_0/S00_AXI_arvalid"
+          "smartconnect_0/S00_AXI_arvalid",
+          "ila_0/probe9"
         ]
       },
       "CDMA_DATA_awaddr": {
         "ports": [
           "axi_cdma_0/m_axi_awaddr",
-          "ila_0/probe14",
-          "smartconnect_0/S00_AXI_awaddr"
+          "smartconnect_0/S00_AXI_awaddr",
+          "ila_0/probe14"
         ]
       },
       "CDMA_DATA_awready": {
@@ -757,15 +760,15 @@
       "CDMA_DATA_awvalid": {
         "ports": [
           "axi_cdma_0/m_axi_awvalid",
-          "ila_0/probe15",
-          "smartconnect_0/S00_AXI_awvalid"
+          "smartconnect_0/S00_AXI_awvalid",
+          "ila_0/probe15"
         ]
       },
       "CDMA_DATA_bready": {
         "ports": [
           "axi_cdma_0/m_axi_bready",
-          "ila_0/probe21",
-          "smartconnect_0/S00_AXI_bready"
+          "smartconnect_0/S00_AXI_bready",
+          "ila_0/probe21"
         ]
       },
       "CDMA_DATA_bvalid": {
@@ -785,8 +788,8 @@
       "CDMA_DATA_rready": {
         "ports": [
           "axi_cdma_0/m_axi_rready",
-          "ila_0/probe13",
-          "smartconnect_0/S00_AXI_rready"
+          "smartconnect_0/S00_AXI_rready",
+          "ila_0/probe13"
         ]
       },
       "CDMA_DATA_rvalid": {
@@ -799,8 +802,8 @@
       "CDMA_DATA_wdata": {
         "ports": [
           "axi_cdma_0/m_axi_wdata",
-          "ila_0/probe17",
-          "smartconnect_0/S00_AXI_wdata"
+          "smartconnect_0/S00_AXI_wdata",
+          "ila_0/probe17"
         ]
       },
       "CDMA_DATA_wready": {
@@ -813,8 +816,8 @@
       "CDMA_DATA_wvalid": {
         "ports": [
           "axi_cdma_0/m_axi_wvalid",
-          "ila_0/probe18",
-          "smartconnect_0/S00_AXI_wvalid"
+          "smartconnect_0/S00_AXI_wvalid",
+          "ila_0/probe18"
         ]
       },
       "DDR4_MIG_c0_ddr4_ui_clk1": {
@@ -825,8 +828,8 @@
           "axi_traffic_gen_0/s_axi_aclk",
           "axi_cdma_0/m_axi_aclk",
           "axi_cdma_0/s_axi_lite_aclk",
-          "ila_0/clk",
-          "axi_bram_ctrl_0/s_axi_aclk"
+          "axi_bram_ctrl_0/s_axi_aclk",
+          "ila_0/clk"
         ]
       },
       "DDR4_c0_ddr4_ui_clk_sync_rst": {
