@@ -36,6 +36,11 @@ module top_u250 (
     if (clk_counter == 10) begin
       sys_rst <= 1'b0;
     end
+
+    if (clk_counter == 64'd30000000000) begin
+      sys_rst <= 1'b1;
+      clk_counter <= 1'b0;
+    end
   end
 
   memory_system_wrapper memory_system_i (
