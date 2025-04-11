@@ -579,17 +579,17 @@
         "xci_path": "ip/memory_system_blk_mem_gen_0_0/memory_system_blk_mem_gen_0_0.xci",
         "inst_hier_path": "blk_mem_gen_0",
         "parameters": {
-          "Byte_Size": {
-            "value": "8"
-          },
           "Coe_File": {
             "value": "../bram_init.coe"
           },
           "EN_SAFETY_CKT": {
             "value": "false"
           },
-          "Fill_Remaining_Memory_Locations": {
+          "Enable_32bit_Address": {
             "value": "true"
+          },
+          "Fill_Remaining_Memory_Locations": {
+            "value": "false"
           },
           "Load_Init_File": {
             "value": "true"
@@ -599,12 +599,6 @@
           },
           "Register_PortA_Output_of_Memory_Primitives": {
             "value": "false"
-          },
-          "Remaining_Memory_Locations": {
-            "value": "DEADBEEF"
-          },
-          "Use_Byte_Write_Enable": {
-            "value": "true"
           },
           "Use_RSTA_Pin": {
             "value": "true"
@@ -879,12 +873,6 @@
           "blk_mem_gen_0/ena"
         ]
       },
-      "axi_bram_ctrl_0_bram_rst_a": {
-        "ports": [
-          "axi_bram_ctrl_0/bram_rst_a",
-          "blk_mem_gen_0/rsta"
-        ]
-      },
       "axi_bram_ctrl_0_bram_we_a": {
         "ports": [
           "axi_bram_ctrl_0/bram_we_a",
@@ -940,7 +928,7 @@
               "SEG_axi_bram_ctrl_0_Mem0": {
                 "address_block": "/axi_bram_ctrl_0/S_AXI/Mem0",
                 "offset": "0x000000000",
-                "range": "64K"
+                "range": "128K"
               }
             }
           }

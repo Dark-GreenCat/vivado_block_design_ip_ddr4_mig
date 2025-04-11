@@ -33,11 +33,11 @@ module top_u250 (
   always @(posedge c0_ddr4_ui_clk) begin
     clk_counter <= clk_counter + 1;
 
-    if (clk_counter == 3000000) begin
+    if (clk_counter == 10) begin
       sys_rst <= 1'b0;
     end
 
-    if (clk_counter == 64'd3000000000) begin
+    if (clk_counter == 64'd9000000000) begin
       sys_rst <= 1'b1;
       clk_counter <= 1'b0;
     end
